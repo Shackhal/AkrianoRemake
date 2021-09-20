@@ -6,4 +6,4 @@ Este proyecto es desarrollado por los siguientes miembros:
 - Roberth Hernandez
 - Alejandro Castro
 - Diego del Solar
-- Alejandro Cirian
+- Alejandro Ciriani
