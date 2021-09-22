@@ -1,0 +1,428 @@
+fileFormatVersion: 2
+guid: af739e10950874e48995a6d0a3a3bcca
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8778005367609031126
+    second: Arboles tileset_0
+  - first:
+      213: -1158088243531979140
+    second: Arboles tileset_1
+  - first:
+      213: -1694535284924660720
+    second: Arboles tileset_2
+  - first:
+      213: -6175955879648787048
+    second: Arboles tileset_3
+  - first:
+      213: -1598118672719859302
+    second: Arboles tileset_4
+  - first:
+      213: 5047431670055851132
+    second: Arboles tileset_5
+  - first:
+      213: -937222295897368104
+    second: Arboles tileset_6
+  - first:
+      213: 8334606308465229854
+    second: Arboles tileset_7
+  - first:
+      213: -7318402195333121528
+    second: Arboles tileset_8
+  - first:
+      213: 3753119187569873910
+    second: Arboles tileset_9
+  - first:
+      213: -7208834763415324544
+    second: Arboles tileset_10
+  - first:
+      213: -7493992236415339965
+    second: Arboles tileset_11
+  - first:
+      213: -722553931397411952
+    second: Arboles tileset_12
+  - first:
+      213: 2682343437800283900
+    second: Arboles tileset_13
+  - first:
+      213: 5102518311513702370
+    second: Arboles tileset_14
+  - first:
+      213: 7630678258413321561
+    second: Arboles tileset_15
+  - first:
+      213: 4804406390140699572
+    second: Arboles tileset_16
+  - first:
+      213: 8821712119823596848
+    second: Arboles tileset_17
+  - first:
+      213: 3455144922807898522
+    second: Arboles tileset_18
+  - first:
+      213: -975578581524253088
+    second: Arboles tileset_19
+  - first:
+      213: -8892587545133543747
+    second: Arboles tileset_20
+  - first:
+      213: 4347953857591745527
+    second: Arboles tileset_21
+  - first:
+      213: -2332603264995097052
+    second: Arboles tileset_22
+  - first:
+      213: 5508232121957581356
+    second: Arboles tileset_23
+  - first:
+      213: 5924281917280245090
+    second: Arboles tileset_24
+  - first:
+      213: 8446484810708772777
+    second: Arboles tileset_25
+  - first:
+      213: -3949302042051189846
+    second: Arboles tileset_26
+  - first:
+      213: 2551052781135097830
+    second: Arboles tileset_27
+  - first:
+      213: -6072912921322072219
+    second: Arboles tileset_28
+  - first:
+      213: -7170382140691590725
+    second: Arboles tileset_29
+  - first:
+      213: -7929748082916457740
+    second: Arboles tileset_30
+  - first:
+      213: 6194634807891476929
+    second: Arboles tileset_31
+  - first:
+      213: -5994499961907239546
+    second: Arboles tileset_0
+  - first:
+      213: 6744147507487476792
+    second: Arboles tileset_1
+  - first:
+      213: 6549517891240252721
+    second: Arboles tileset_2
+  - first:
+      213: -1908510350978941393
+    second: Arboles tileset_3
+  - first:
+      213: -6618893010195792153
+    second: Arboles tileset_4
+  - first:
+      213: 3295942159976685712
+    second: Arboles tileset_5
+  - first:
+      213: 5773231422407842947
+    second: Arboles tileset_6
+  - first:
+      213: -633921333343772722
+    second: Arboles tileset_7
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Arboles tileset_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6852d6c7b024fcca0800000000000000
+      internalID: -5994499961907239546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arboles tileset_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c80a01d66089d50800000000000000
+      internalID: 6744147507487476792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arboles tileset_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135d07d32df84ea50800000000000000
+      internalID: 6549517891240252721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arboles tileset_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e7ebf82fb9385e0800000000000000
+      internalID: -1908510350978941393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arboles tileset_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eeb6f820e7f424a0800000000000000
+      internalID: -6618893010195792153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arboles tileset_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090e4ad8ee98dbd20800000000000000
+      internalID: 3295942159976685712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arboles tileset_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38c1eba0463ae1050800000000000000
+      internalID: 5773231422407842947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arboles tileset_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf908ee7ebd337f0800000000000000
+      internalID: -633921333343772722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

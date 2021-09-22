@@ -1,0 +1,593 @@
+fileFormatVersion: 2
+guid: 5efa3b76a99364446b7e25646bc9a850
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8665047306510135222
+    second: Mundo 2 al 5 habitaciones_0
+  - first:
+      213: -2874964998709531419
+    second: Mundo 2 al 5 habitaciones_1
+  - first:
+      213: -2535791100466243787
+    second: Mundo 2 al 5 habitaciones_2
+  - first:
+      213: -9119377580083978746
+    second: Mundo 2 al 5 habitaciones_3
+  - first:
+      213: -8244905640031747212
+    second: Mundo 2 al 5 habitaciones_4
+  - first:
+      213: -884495073554956160
+    second: Mundo 2 al 5 habitaciones_5
+  - first:
+      213: -4546943244194420686
+    second: Mundo 2 al 5 habitaciones_6
+  - first:
+      213: -690806224398155410
+    second: Mundo 2 al 5 habitaciones_7
+  - first:
+      213: 2359161663112477595
+    second: Mundo 2 al 5 habitaciones_8
+  - first:
+      213: -3442470665035933901
+    second: Mundo 2 al 5 habitaciones_9
+  - first:
+      213: -3069653277020920203
+    second: Mundo 2 al 5 habitaciones_10
+  - first:
+      213: -8258144472471255941
+    second: Mundo 2 al 5 habitaciones_11
+  - first:
+      213: -5693050645901991547
+    second: Mundo 2 al 5 habitaciones_12
+  - first:
+      213: -7199985037502698549
+    second: Mundo 2 al 5 habitaciones_13
+  - first:
+      213: 2089629669011679283
+    second: Mundo 2 al 5 habitaciones_14
+  - first:
+      213: -9130848273856322729
+    second: Mundo 2 al 5 habitaciones_15
+  - first:
+      213: 5180571798997608406
+    second: Mundo 2 al 5 habitaciones_16
+  - first:
+      213: 4866189324996667668
+    second: Mundo 2 al 5 habitaciones_17
+  - first:
+      213: -7628148925474603470
+    second: Mundo 2 al 5 habitaciones_18
+  - first:
+      213: -8859280734979684763
+    second: Mundo 2 al 5 habitaciones_19
+  - first:
+      213: 4545629824569775314
+    second: Mundo 2 al 5 habitaciones_20
+  - first:
+      213: 3666871459053392700
+    second: Mundo 2 al 5 habitaciones_21
+  - first:
+      213: -6865837379050954016
+    second: Mundo 2 al 5 habitaciones_22
+  - first:
+      213: -491665999956721023
+    second: Mundo 2 al 5 habitaciones_23
+  - first:
+      213: 1884307606933282715
+    second: Mundo 2 al 5 habitaciones_24
+  - first:
+      213: -5878895626080129100
+    second: Mundo 2 al 5 habitaciones_25
+  - first:
+      213: -2306131731922294945
+    second: Mundo 2 al 5 habitaciones_26
+  - first:
+      213: -8856359297024276335
+    second: Mundo 2 al 5 habitaciones_27
+  - first:
+      213: 6527433567424659016
+    second: Mundo 2 al 5 habitaciones_28
+  - first:
+      213: -861593225493347875
+    second: Mundo 2 al 5 habitaciones_29
+  - first:
+      213: 8872229285496536506
+    second: Mundo 2 al 5 habitaciones_30
+  - first:
+      213: -4901500593433343787
+    second: Mundo 2 al 5 habitaciones_31
+  - first:
+      213: 3848137177003136602
+    second: Mundo 2 al 5 habitaciones_32
+  - first:
+      213: 204790166537437605
+    second: Mundo 2 al 5 habitaciones_33
+  - first:
+      213: 3698020979414858799
+    second: Mundo 2 al 5 habitaciones_34
+  - first:
+      213: 1294990772757851535
+    second: Mundo 2 al 5 habitaciones_35
+  - first:
+      213: -7859332354231640026
+    second: Mundo 2 al 5 habitaciones_36
+  - first:
+      213: 4695334181668019225
+    second: Mundo 2 al 5 habitaciones_37
+  - first:
+      213: -4511531621935510873
+    second: Mundo 2 al 5 habitaciones_38
+  - first:
+      213: -13385039756069671
+    second: Mundo 2 al 5 habitaciones_39
+  - first:
+      213: -3789603743797515403
+    second: Mundo 2 al 5 habitaciones_40
+  - first:
+      213: 794103553290006156
+    second: Mundo 2 al 5 habitaciones_41
+  - first:
+      213: 3472596727154324162
+    second: Mundo 2 al 5 habitaciones_42
+  - first:
+      213: 3906675085227843787
+    second: Mundo 2 al 5 habitaciones_43
+  - first:
+      213: 4553337881419452175
+    second: Mundo 2 al 5 habitaciones_44
+  - first:
+      213: -5462768312102594807
+    second: Mundo 2 al 5 habitaciones_45
+  - first:
+      213: 3446246440087970703
+    second: Mundo 2 al 5 habitaciones_46
+  - first:
+      213: -230604445350614294
+    second: Mundo 2 al 5 habitaciones_47
+  - first:
+      213: 8168930697276291294
+    second: Mundo 2 al 5 habitaciones_48
+  - first:
+      213: -6596162974290849950
+    second: Mundo 2 al 5 habitaciones_49
+  - first:
+      213: -7664711106795152627
+    second: Mundo 2 al 5 habitaciones_50
+  - first:
+      213: -131244031477620931
+    second: Mundo 2 al 5 habitaciones_51
+  - first:
+      213: -2322092709864711078
+    second: Mundo 2 al 5 habitaciones_52
+  - first:
+      213: -1817626406482360835
+    second: Mundo 2 al 5 habitaciones_53
+  - first:
+      213: 6856298464727654007
+    second: Mundo 2 al 5 habitaciones_54
+  - first:
+      213: -7541816177408553391
+    second: Mundo 2 al 5 habitaciones_55
+  - first:
+      213: 1556625919073251264
+    second: Mundo 2 al 5 habitaciones_56
+  - first:
+      213: -5839237599082225138
+    second: Mundo 2 al 5 habitaciones_57
+  - first:
+      213: -8525511688894036362
+    second: Mundo 2 al 5 habitaciones_58
+  - first:
+      213: 1058841010610092980
+    second: Mundo 2 al 5 habitaciones_59
+  - first:
+      213: 6040212189039966664
+    second: Mundo 2 al 5 habitaciones_60
+  - first:
+      213: 4435705289000559395
+    second: Mundo 2 al 5 habitaciones_61
+  - first:
+      213: -7879749625416779216
+    second: Mundo 2 al 5 habitaciones_62
+  - first:
+      213: 5112681359880563637
+    second: Mundo 2 al 5 habitaciones_63
+  - first:
+      213: 4518766812423677714
+    second: Mundo 2 al 5 habitaciones_64
+  - first:
+      213: -4844140170012779022
+    second: Mundo 2 al 5 habitaciones_65
+  - first:
+      213: 5873659397977517625
+    second: Mundo 2 al 5 habitaciones_66
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 70
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mundo 2 al 5 habitaciones_0
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 2451
+        width: 1544
+        height: 870
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfed7aad9e604870800000000000000
+      internalID: 8665047306510135222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mundo 2 al 5 habitaciones_1
+      rect:
+        serializedVersion: 2
+        x: 2164
+        y: 2447
+        width: 1541
+        height: 856
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ecac3ed0921a18d0800000000000000
+      internalID: -2874964998709531419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mundo 2 al 5 habitaciones_2
+      rect:
+        serializedVersion: 2
+        x: 4097
+        y: 2451
+        width: 1537
+        height: 864
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537dc18ed6f0fccd0800000000000000
+      internalID: -2535791100466243787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mundo 2 al 5 habitaciones_3
+      rect:
+        serializedVersion: 2
+        x: 6015
+        y: 2451
+        width: 1542
+        height: 864
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ede6e4866717180800000000000000
+      internalID: -9119377580083978746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mundo 2 al 5 habitaciones_15
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 1373
+        width: 1544
+        height: 870
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7532eca4fd5b84180800000000000000
+      internalID: -9130848273856322729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mundo 2 al 5 habitaciones_16
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1415
+        width: 1536
+        height: 862
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d7a8a47a9615e740800000000000000
+      internalID: 5180571798997608406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mundo 2 al 5 habitaciones_17
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 1422
+        width: 1533
+        height: 859
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 419693ea86d288340800000000000000
+      internalID: 4866189324996667668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mundo 2 al 5 habitaciones_18
+      rect:
+        serializedVersion: 2
+        x: 6015
+        y: 1422
+        width: 1537
+        height: 855
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23efe4bc7fe532690800000000000000
+      internalID: -7628148925474603470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mundo 2 al 5 habitaciones_30
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 272
+        width: 1544
+        height: 870
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abdb6df278d702b70800000000000000
+      internalID: 8872229285496536506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mundo 2 al 5 habitaciones_50
+      rect:
+        serializedVersion: 2
+        x: 4052
+        y: 284
+        width: 1538
+        height: 865
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0bdb759bd971a590800000000000000
+      internalID: -7664711106795152627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mundo 2 al 5 habitaciones_51
+      rect:
+        serializedVersion: 2
+        x: 2181
+        y: 284
+        width: 1533
+        height: 865
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3fd2ecaf3abd2ef0800000000000000
+      internalID: -131244031477620931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mundo 2 al 5 habitaciones_55
+      rect:
+        serializedVersion: 2
+        x: 6017
+        y: 284
+        width: 1533
+        height: 862
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ec4481526165790800000000000000
+      internalID: -7541816177408553391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

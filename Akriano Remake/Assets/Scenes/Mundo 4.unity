@@ -1,0 +1,2473 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &328185774
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 328185776}
+  - component: {fileID: 328185775}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &328185775
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328185774}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a92a5db0a767c7444aa5d1334d678d87, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &328185776
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328185774}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 53.489407, y: -34.434326, z: -1599.8013}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &443516580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 443516585}
+  - component: {fileID: 443516584}
+  - component: {fileID: 443516583}
+  - component: {fileID: 443516582}
+  - component: {fileID: 443516581}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &443516581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443516580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddfb69c10394d1d479333f9036d1c1aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &443516582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443516580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &443516583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443516580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &443516584
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443516580}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &443516585
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443516580}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 457016091}
+  - {fileID: 1633713176}
+  - {fileID: 970152712}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!1 &457016090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 457016091}
+  - component: {fileID: 457016093}
+  - component: {fileID: 457016092}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &457016091
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457016090}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 443516585}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &457016092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457016090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &457016093
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457016090}
+  m_CullTransparentMesh: 0
+--- !u!1 &483296713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1484628805}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 483296714}
+  m_Layer: 0
+  m_Name: GUI_basic (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &483296714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1484628805}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483296713}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1484628806}
+  m_Father: {fileID: 1562784117}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &820454481 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8869910657318456042, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1911986352}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &820454482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820454481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9db60a96c129924489371fe6337348a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bala_Player_Original: {fileID: 151609549162983840, guid: d16912f741cc4f54297a4decc8e086b1,
+    type: 3}
+--- !u!114 &820454488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820454481}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05939ddc6381e444587334021ef7a024, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runSpeed: 5
+--- !u!1 &970152711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 970152712}
+  - component: {fileID: 970152714}
+  - component: {fileID: 970152713}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &970152712
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970152711}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 443516585}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000005722, y: 29}
+  m_SizeDelta: {x: 221.1, y: 41.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &970152713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970152711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 33
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Pausa
+--- !u!222 &970152714
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970152711}
+  m_CullTransparentMesh: 0
+--- !u!1 &1204274969
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1484628805}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1484628806}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1001 &1484628805
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1562784117}
+    m_Modifications:
+    - target: {fileID: 567415258096963002, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.211
+      objectReference: {fileID: 0}
+    - target: {fileID: 567415258096963002, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.979
+      objectReference: {fileID: 0}
+    - target: {fileID: 567415258096963002, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.248
+      objectReference: {fileID: 0}
+    - target: {fileID: 567415258096963002, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.139
+      objectReference: {fileID: 0}
+    - target: {fileID: 900179279910966713, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.452
+      objectReference: {fileID: 0}
+    - target: {fileID: 900179279910966713, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.979
+      objectReference: {fileID: 0}
+    - target: {fileID: 900179279910966713, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.248
+      objectReference: {fileID: 0}
+    - target: {fileID: 900179279910966713, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.139
+      objectReference: {fileID: 0}
+    - target: {fileID: 1028397342940357766, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.982
+      objectReference: {fileID: 0}
+    - target: {fileID: 1028397342940357766, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.386
+      objectReference: {fileID: 0}
+    - target: {fileID: 1028397342940357766, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6836742
+      objectReference: {fileID: 0}
+    - target: {fileID: 1028397342940357766, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6239623
+      objectReference: {fileID: 0}
+    - target: {fileID: 1603797461935268923, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1603797461935268923, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.975
+      objectReference: {fileID: 0}
+    - target: {fileID: 1603797461935268923, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.248
+      objectReference: {fileID: 0}
+    - target: {fileID: 1603797461935268923, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.139
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661654216910812645, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.452
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661654216910812645, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.979
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661654216910812645, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.248
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661654216910812645, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.139
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795015960409627795, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_Name
+      value: GUI_basic
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309559827164047513, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.459
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309559827164047513, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.979
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309559827164047513, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.248
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309559827164047513, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.139
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2654246928720979429, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.227
+      objectReference: {fileID: 0}
+    - target: {fileID: 2654246928720979429, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.9900002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2654246928720979429, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.248
+      objectReference: {fileID: 0}
+    - target: {fileID: 2654246928720979429, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.139
+      objectReference: {fileID: 0}
+    - target: {fileID: 4613921955910577734, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.708
+      objectReference: {fileID: 0}
+    - target: {fileID: 4613921955910577734, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.979
+      objectReference: {fileID: 0}
+    - target: {fileID: 4613921955910577734, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.248
+      objectReference: {fileID: 0}
+    - target: {fileID: 4613921955910577734, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.139
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901245079256083198, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.211
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901245079256083198, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.979
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901245079256083198, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.248
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901245079256083198, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.139
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294971261799005499, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294971261799005499, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.979
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294971261799005499, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.248
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294971261799005499, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.139
+      objectReference: {fileID: 0}
+    - target: {fileID: 5514283307849160371, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.204
+      objectReference: {fileID: 0}
+    - target: {fileID: 5514283307849160371, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.979
+      objectReference: {fileID: 0}
+    - target: {fileID: 5514283307849160371, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.248
+      objectReference: {fileID: 0}
+    - target: {fileID: 5514283307849160371, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.139
+      objectReference: {fileID: 0}
+    - target: {fileID: 5819631635876180501, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.956
+      objectReference: {fileID: 0}
+    - target: {fileID: 5819631635876180501, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.979
+      objectReference: {fileID: 0}
+    - target: {fileID: 5819631635876180501, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.248
+      objectReference: {fileID: 0}
+    - target: {fileID: 5819631635876180501, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.139
+      objectReference: {fileID: 0}
+    - target: {fileID: 5845743116735200439, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.196
+      objectReference: {fileID: 0}
+    - target: {fileID: 5845743116735200439, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.282
+      objectReference: {fileID: 0}
+    - target: {fileID: 5845743116735200439, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.248
+      objectReference: {fileID: 0}
+    - target: {fileID: 5845743116735200439, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.139
+      objectReference: {fileID: 0}
+    - target: {fileID: 6505003991594072071, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.956
+      objectReference: {fileID: 0}
+    - target: {fileID: 6505003991594072071, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.979
+      objectReference: {fileID: 0}
+    - target: {fileID: 6505003991594072071, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.248
+      objectReference: {fileID: 0}
+    - target: {fileID: 6505003991594072071, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.139
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535579228762779882, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.624
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535579228762779882, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.719
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535579228762779882, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.74805117
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535579228762779882, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6827166
+      objectReference: {fileID: 0}
+    - target: {fileID: 6545589284745461387, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.459
+      objectReference: {fileID: 0}
+    - target: {fileID: 6545589284745461387, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.979
+      objectReference: {fileID: 0}
+    - target: {fileID: 6545589284745461387, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.248
+      objectReference: {fileID: 0}
+    - target: {fileID: 6545589284745461387, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.139
+      objectReference: {fileID: 0}
+    - target: {fileID: 6643211029709374042, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.547
+      objectReference: {fileID: 0}
+    - target: {fileID: 6643211029709374042, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.746
+      objectReference: {fileID: 0}
+    - target: {fileID: 6643211029709374042, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8409525
+      objectReference: {fileID: 0}
+    - target: {fileID: 6643211029709374042, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.767504
+      objectReference: {fileID: 0}
+    - target: {fileID: 7072149583998515588, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.204
+      objectReference: {fileID: 0}
+    - target: {fileID: 7072149583998515588, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.979
+      objectReference: {fileID: 0}
+    - target: {fileID: 7072149583998515588, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.248
+      objectReference: {fileID: 0}
+    - target: {fileID: 7072149583998515588, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.139
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674742948323899354, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674742948323899354, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.979
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674742948323899354, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.248
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674742948323899354, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.139
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353518000679188764, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.708
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353518000679188764, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.979
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353518000679188764, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.248
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353518000679188764, guid: dc2c2f8178637204faed1480e04ed02e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.139
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+--- !u!4 &1484628806
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1484628805}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204274969}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 483296714}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1562784114
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1562784117}
+  - component: {fileID: 1562784116}
+  - component: {fileID: 1562784115}
+  - component: {fileID: 1562784118}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1562784115
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562784114}
+  m_Enabled: 1
+--- !u!20 &1562784116
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562784114}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.4745098, g: 0.34679672, b: 0.19215688, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0
+  far clip plane: 0.01
+  field of view: 60
+  orthographic: 1
+  orthographic size: 6.107244
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1562784117
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562784114}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 483296714}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1562784118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562784114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91153674406a0d841b20bf76910c2684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cuartos:
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 0, y: 0}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 10.79, y: 0}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: -90}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 1
+      Numero_Cuarto: 1
+    Enemigos:
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 0, y: 3}
+      Imagen_Enemigo: {fileID: 1999557339657108691, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 30
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 0, y: 0}
+      Imagen_Enemigo: {fileID: 1999557339657108691, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 30
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 0, y: -3}
+      Imagen_Enemigo: {fileID: 1999557339657108691, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 30
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 21.95, y: 0}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 11.19, y: 0}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: -90}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 0
+      Numero_Cuarto: 0
+    - Posicion_Puerta: {x: 21.95, y: 5.79}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 2
+    Enemigos:
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 21.95, y: 3}
+      Imagen_Enemigo: {fileID: 1999557339657108691, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 35
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 21.95, y: 0}
+      Imagen_Enemigo: {fileID: 1999557339657108691, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 35
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 21.95, y: -3}
+      Imagen_Enemigo: {fileID: 1999557339657108691, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 35
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 21.95, y: 12.3}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 21.95, y: 6.47}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 1
+    - Posicion_Puerta: {x: 32.5, y: 12.3}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: -90}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 1
+      Numero_Cuarto: 3
+    Enemigos:
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 21.95, y: 12.3}
+      Imagen_Enemigo: {fileID: 1999557339657108691, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 35
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 21.95, y: 9}
+      Imagen_Enemigo: {fileID: 1999557339657108691, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 35
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 21.95, y: 15}
+      Imagen_Enemigo: {fileID: 1999557339657108691, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 35
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 43.9, y: 12.3}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 33.02, y: 12.3}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: -90}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 0
+      Numero_Cuarto: 2
+    - Posicion_Puerta: {x: 43.9, y: 6.47}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 4
+    Enemigos:
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 43.9, y: 12.3}
+      Imagen_Enemigo: {fileID: 1999557339657108691, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 35
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 43.9, y: 9}
+      Imagen_Enemigo: {fileID: 1999557339657108691, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 35
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 43.9, y: 15}
+      Imagen_Enemigo: {fileID: 1999557339657108691, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 35
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 43.9, y: 0}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 43.9, y: 5.79}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 3
+    - Posicion_Puerta: {x: 43.9, y: -5.83}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 5
+    Enemigos:
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 43.9, y: 3}
+      Imagen_Enemigo: {fileID: 1999557339657108691, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 35
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 43.9, y: 0}
+      Imagen_Enemigo: {fileID: 1999557339657108691, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 35
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 43.9, y: -3}
+      Imagen_Enemigo: {fileID: 1999557339657108691, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 35
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 43.9, y: -12.3}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 43.9, y: -6.51}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 4
+    - Posicion_Puerta: {x: 54.51, y: -12.3}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: -90}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 1
+      Numero_Cuarto: 6
+    Enemigos:
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 43.9, y: -12.3}
+      Imagen_Enemigo: {fileID: 1999557339657108691, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 35
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 43.9, y: -9}
+      Imagen_Enemigo: {fileID: 1999557339657108691, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 35
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 43.9, y: -15}
+      Imagen_Enemigo: {fileID: 1999557339657108691, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 35
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 65.85, y: -12.3}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 54.96, y: -12.3}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: -90}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 0
+      Numero_Cuarto: 5
+    - Posicion_Puerta: {x: 65.82, y: -6.51}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 7
+    Enemigos:
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 65.85, y: -12.3}
+      Imagen_Enemigo: {fileID: 1999557339657108691, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 35
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 65.85, y: -9}
+      Imagen_Enemigo: {fileID: 8555473096503448078, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 40
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 65.85, y: -15}
+      Imagen_Enemigo: {fileID: 1999557339657108691, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 35
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 65.85, y: 0}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 65.82, y: -5.83}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 6
+    - Posicion_Puerta: {x: 65.82, y: 5.79}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 8
+    Enemigos:
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 65.85, y: 3}
+      Imagen_Enemigo: {fileID: 8555473096503448078, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 40
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 65.85, y: 0}
+      Imagen_Enemigo: {fileID: 8555473096503448078, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 40
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 65.85, y: -3}
+      Imagen_Enemigo: {fileID: 8555473096503448078, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 40
+  - Fondo: {fileID: 503851379714283322, guid: bdd59b70c07f70a408ee737fce2769be, type: 3}
+    Posicion_Cuarto: {x: 65.85, y: 12.3}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 65.82, y: 6.47}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 7
+    - Posicion_Puerta: {x: 65.82, y: 18.04}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 9
+    Enemigos: []
+  - Fondo: {fileID: -7628148925474603470, guid: 5efa3b76a99364446b7e25646bc9a850,
+      type: 3}
+    Posicion_Cuarto: {x: 65.85, y: 24.6}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 65.85, y: 18.72}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 8
+    - Posicion_Puerta: {x: 76.54, y: 24.6}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: -90}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 1
+      Numero_Cuarto: 10
+    Enemigos:
+    - Nombre_Enemigo: Slime Metalico
+      Posicion_Enemigo: {x: 65.85, y: 24.6}
+      Imagen_Enemigo: {fileID: -4070991570406375490, guid: 98d04a73d392ce349846f061e676d12f,
+        type: 3}
+      Tipo_Enemigo: 2
+      vida_enemigo: 70
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 87.8, y: 24.6}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 76.88, y: 24.6}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: -90}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 0
+      Numero_Cuarto: 9
+    - Posicion_Puerta: {x: 87.8, y: 18.72}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 11
+    Enemigos:
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 87.8, y: 24.6}
+      Imagen_Enemigo: {fileID: 8555473096503448078, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 40
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 87.8, y: 21}
+      Imagen_Enemigo: {fileID: 8555473096503448078, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 40
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 87.8, y: 27}
+      Imagen_Enemigo: {fileID: 8555473096503448078, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 40
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 87.8, y: 12.3}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 87.8, y: 18.04}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 10
+    - Posicion_Puerta: {x: 87.8, y: 6.47}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 12
+    Enemigos:
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 87.8, y: 12.3}
+      Imagen_Enemigo: {fileID: 8555473096503448078, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 40
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 87.8, y: 9}
+      Imagen_Enemigo: {fileID: 8555473096503448078, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 40
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 87.8, y: 15}
+      Imagen_Enemigo: {fileID: 8555473096503448078, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 40
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 87.8, y: 0}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 87.8, y: 5.74}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 11
+    - Posicion_Puerta: {x: 87.8, y: -5.83}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 13
+    Enemigos:
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 87.8, y: 3}
+      Imagen_Enemigo: {fileID: 8555473096503448078, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 40
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 87.8, y: 0}
+      Imagen_Enemigo: {fileID: 8555473096503448078, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 40
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 87.8, y: -3}
+      Imagen_Enemigo: {fileID: 8555473096503448078, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 40
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 87.8, y: -12.3}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 87.8, y: -6.51}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 12
+    - Posicion_Puerta: {x: 87.8, y: -18.13}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 14
+    Enemigos:
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 87.8, y: -12.3}
+      Imagen_Enemigo: {fileID: 8555473096503448078, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 40
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 87.8, y: -9}
+      Imagen_Enemigo: {fileID: 8555473096503448078, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 40
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 87.8, y: -15}
+      Imagen_Enemigo: {fileID: 8555473096503448078, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 40
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 87.8, y: -24.6}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 87.8, y: -18.81}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 13
+    - Posicion_Puerta: {x: 98.44, y: -24.6}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: -90}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 1
+      Numero_Cuarto: 15
+    Enemigos:
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 87.8, y: -24.6}
+      Imagen_Enemigo: {fileID: 8555473096503448078, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 40
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 87.8, y: -21}
+      Imagen_Enemigo: {fileID: 8555473096503448078, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 40
+    - Nombre_Enemigo: Slime Tierrra
+      Posicion_Enemigo: {x: 87.8, y: -27}
+      Imagen_Enemigo: {fileID: 8555473096503448078, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 40
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 109.75, y: -24.6}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 98.88, y: -24.6}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: -90}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 0
+      Numero_Cuarto: 14
+    - Posicion_Puerta: {x: 109.75, y: -18.81}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 16
+    Enemigos:
+    - Nombre_Enemigo: Slime Tierra
+      Posicion_Enemigo: {x: 109.75, y: -24.6}
+      Imagen_Enemigo: {fileID: 8555473096503448078, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 40
+    - Nombre_Enemigo: Slime Tierra
+      Posicion_Enemigo: {x: 109.75, y: -21}
+      Imagen_Enemigo: {fileID: 8555473096503448078, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 40
+    - Nombre_Enemigo: Slime Tierra
+      Posicion_Enemigo: {x: 109.75, y: -27}
+      Imagen_Enemigo: {fileID: 8555473096503448078, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 40
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 109.75, y: -12.3}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 109.75, y: -18.13}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 15
+    - Posicion_Puerta: {x: 109.75, y: -6.51}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 17
+    Enemigos:
+    - Nombre_Enemigo: Slime Tierra
+      Posicion_Enemigo: {x: 109.75, y: -12.3}
+      Imagen_Enemigo: {fileID: 8555473096503448078, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 40
+    - Nombre_Enemigo: Slime Tierra
+      Posicion_Enemigo: {x: 109.75, y: -9}
+      Imagen_Enemigo: {fileID: 8555473096503448078, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 40
+    - Nombre_Enemigo: Slime Tierra
+      Posicion_Enemigo: {x: 109.75, y: -15}
+      Imagen_Enemigo: {fileID: 8555473096503448078, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 40
+  - Fondo: {fileID: 503851379714283322, guid: bdd59b70c07f70a408ee737fce2769be, type: 3}
+    Posicion_Cuarto: {x: 109.75, y: 0}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 109.75, y: -5.83}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 16
+    - Posicion_Puerta: {x: 109.75, y: 5.74}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 18
+    Enemigos: []
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 109.75, y: 12.3}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 109.75, y: 6.47}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 17
+    - Posicion_Puerta: {x: 109.75, y: 18.09}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 19
+    Enemigos:
+    - Nombre_Enemigo: Slime Tierra
+      Posicion_Enemigo: {x: 109.75, y: 12.3}
+      Imagen_Enemigo: {fileID: -9149415581403977754, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 45
+    - Nombre_Enemigo: Slime Tierra
+      Posicion_Enemigo: {x: 109.75, y: 9}
+      Imagen_Enemigo: {fileID: -9149415581403977754, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 45
+    - Nombre_Enemigo: Slime Tierra
+      Posicion_Enemigo: {x: 109.75, y: 15}
+      Imagen_Enemigo: {fileID: -9149415581403977754, guid: a8079e578d913644e94aaac6acbde10e,
+        type: 3}
+      Tipo_Enemigo: 0
+      vida_enemigo: 45
+  - Fondo: {fileID: 8872229285496536506, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 109.75, y: 24.6}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 109.75, y: 18.72}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 18
+    - Posicion_Puerta: {x: 109.75, y: 29.95}
+      Imagen_Puerta: {fileID: 2351914277228790167, guid: 235b93eda4e00304ba39fe663ee3d56a,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 4
+      Direccion_Puerta: 0
+      Numero_Cuarto: 0
+    Enemigos:
+    - Nombre_Enemigo: Slime Metalicos
+      Posicion_Enemigo: {x: 109.75, y: 24.6}
+      Imagen_Enemigo: {fileID: 5836322238776859309, guid: 98d04a73d392ce349846f061e676d12f,
+        type: 3}
+      Tipo_Enemigo: 2
+      vida_enemigo: 80
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 0, y: 0}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 10.79, y: 0}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: -90}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 1
+      Numero_Cuarto: 0
+    Enemigos: []
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 21.95, y: 0}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 11.19, y: 0}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: -90}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 0
+      Numero_Cuarto: 0
+    - Posicion_Puerta: {x: 21.95, y: 5.79}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 0
+    Enemigos: []
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 21.95, y: 12.3}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 21.95, y: 6.47}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 0
+    - Posicion_Puerta: {x: 32.5, y: 12.3}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: -90}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 1
+      Numero_Cuarto: 0
+    Enemigos: []
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 43.9, y: 12.3}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 33.02, y: 12.3}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: -90}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 0
+      Numero_Cuarto: 0
+    - Posicion_Puerta: {x: 43.9, y: 6.47}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 0
+    Enemigos: []
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 43.9, y: 0}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 43.9, y: 5.79}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 0
+    - Posicion_Puerta: {x: 43.9, y: -5.83}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 0
+    Enemigos: []
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 43.9, y: -12.3}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 43.9, y: -6.51}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 0
+    - Posicion_Puerta: {x: 54.51, y: -12.3}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: -90}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 1
+      Numero_Cuarto: 0
+    Enemigos: []
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 65.85, y: -12.3}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 54.96, y: -12.3}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: -90}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 0
+      Numero_Cuarto: 0
+    - Posicion_Puerta: {x: 65.82, y: -6.51}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 0
+    Enemigos: []
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 65.85, y: 0}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 65.82, y: -5.83}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 0
+    - Posicion_Puerta: {x: 65.82, y: 5.79}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 0
+    Enemigos: []
+  - Fondo: {fileID: 503851379714283322, guid: bdd59b70c07f70a408ee737fce2769be, type: 3}
+    Posicion_Cuarto: {x: 65.85, y: 12.3}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 65.82, y: 6.47}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 0
+    - Posicion_Puerta: {x: 65.82, y: 18.04}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 0
+    Enemigos: []
+  - Fondo: {fileID: -7628148925474603470, guid: 5efa3b76a99364446b7e25646bc9a850,
+      type: 3}
+    Posicion_Cuarto: {x: 65.85, y: 24.6}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 65.85, y: 18.72}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 0
+    - Posicion_Puerta: {x: 76.54, y: 24.6}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: -90}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 1
+      Numero_Cuarto: 0
+    Enemigos: []
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 87.8, y: 24.6}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 76.88, y: 24.6}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: -90}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 0
+      Numero_Cuarto: 0
+    - Posicion_Puerta: {x: 87.8, y: 18.72}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 0
+    Enemigos: []
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 87.8, y: 12.3}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 87.8, y: 18.04}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 0
+    - Posicion_Puerta: {x: 87.8, y: 6.47}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 0
+    Enemigos: []
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 87.8, y: 0}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 87.8, y: 5.74}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 0
+    - Posicion_Puerta: {x: 87.8, y: -5.83}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 0
+    Enemigos: []
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 87.8, y: -12.3}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 87.8, y: -6.51}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 0
+    - Posicion_Puerta: {x: 87.8, y: -18.13}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 0
+    Enemigos: []
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 87.8, y: -24.6}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 87.8, y: -18.81}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 0
+    - Posicion_Puerta: {x: 98.44, y: -24.6}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: -90}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 1
+      Numero_Cuarto: 0
+    Enemigos: []
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 109.75, y: -24.6}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 98.88, y: -24.6}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: -90}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 0
+      Numero_Cuarto: 0
+    - Posicion_Puerta: {x: 109.75, y: -18.81}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 0
+    Enemigos: []
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 109.75, y: -12.3}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 109.75, y: -18.13}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 0
+    - Posicion_Puerta: {x: 109.75, y: -6.51}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 0
+    Enemigos: []
+  - Fondo: {fileID: 503851379714283322, guid: bdd59b70c07f70a408ee737fce2769be, type: 3}
+    Posicion_Cuarto: {x: 109.75, y: 0}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 109.75, y: -5.83}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 0
+    - Posicion_Puerta: {x: 109.75, y: 5.74}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 0
+    Enemigos: []
+  - Fondo: {fileID: 4866189324996667668, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 109.75, y: 12.3}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 109.75, y: 6.47}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 0
+    - Posicion_Puerta: {x: 109.75, y: 18.09}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 2
+      Numero_Cuarto: 0
+    Enemigos: []
+  - Fondo: {fileID: 8872229285496536506, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
+    Posicion_Cuarto: {x: 109.75, y: 24.6}
+    Puertas_Cuarto:
+    - Posicion_Puerta: {x: 109.75, y: 18.72}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 0
+      Direccion_Puerta: 3
+      Numero_Cuarto: 0
+    - Posicion_Puerta: {x: 109.75, y: 29.95}
+      Imagen_Puerta: {fileID: 2351914277228790167, guid: 235b93eda4e00304ba39fe663ee3d56a,
+        type: 3}
+      Rotacion_Puerta: {x: 0, y: 0, z: 0}
+      Tipo_Puerta: 4
+      Direccion_Puerta: 0
+      Numero_Cuarto: 0
+    Enemigos: []
+  CuartosCreados: []
+  Index_Cuarto_Actual: 0
+  Mapa_Colision: {fileID: 2672704083913025624, guid: f84a228b4efcff746b0c4d362c44ae1d,
+    type: 3}
+--- !u!1 &1633713175
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1633713176}
+  - component: {fileID: 1633713179}
+  - component: {fileID: 1633713178}
+  - component: {fileID: 1633713177}
+  m_Layer: 5
+  m_Name: Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1633713176
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633713175}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 443516585}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -170, y: -86}
+  m_SizeDelta: {x: 45.4, y: 37}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1633713177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633713175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1633713178}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2040013599}
+        m_MethodName: CambiarEscena
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Menu
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1633713178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633713175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -2240705184806839175, guid: 7f8e0d508b206084e849851e81eef35c,
+    type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1633713179
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633713175}
+  m_CullTransparentMesh: 0
+--- !u!1001 &1911986352
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456033, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456036, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.02300334
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456036, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.4411474
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456036, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.00000013411045
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456036, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.81666994
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456037, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
+        type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456039, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456039, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456042, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
+        type: 3}
+      propertyPath: m_Name
+      value: 'Akriano '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456042, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
+--- !u!1 &2040013598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2040013600}
+  - component: {fileID: 2040013599}
+  m_Layer: 0
+  m_Name: Salir del Nivel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2040013599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040013598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd954802c5a8c9a45ab3c2b5301c4842, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2040013600
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040013598}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 250.78468, y: 116.92725, z: -58.103657}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
