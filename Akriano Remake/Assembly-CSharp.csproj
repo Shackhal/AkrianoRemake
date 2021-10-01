@@ -53,38 +53,20 @@
     <UnityVersion>2021.1.18f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Menu\Pausa.cs" />
-    <Compile Include="Assets\Scripts\Colision.cs" />
-    <Compile Include="Assets\Scripts\Niveles\Aciones_Enemigo\Seguir_Enemigo.cs" />
-    <Compile Include="Assets\Scripts\DialogueManager.cs" />
-    <Compile Include="Assets\Scripts\Niveles\Plantillas\Enemigo.cs" />
-    <Compile Include="Assets\Scripts\Movimiento.cs" />
-    <Compile Include="Assets\Scripts\Niveles\PuertaMover.cs" />
-    <Compile Include="Assets\Scripts\Niveles\PuertaFinalizar2.cs" />
-    <Compile Include="Assets\Scripts\AdministrarSonidos.cs" />
-    <Compile Include="Assets\Scripts\Menu\Controlador.cs" />
-    <Compile Include="Assets\Scripts\Niveles\PuertaFinalizar4.cs" />
-    <Compile Include="Assets\Scripts\Niveles\Plantillas\Puerta.cs" />
-    <Compile Include="Assets\Scripts\Menu\ControladorSalida.cs" />
-    <Compile Include="Assets\Scripts\Niveles\PuertaFinalizar.cs" />
-    <Compile Include="Assets\Scripts\AdministrarFlujo.cs" />
-    <Compile Include="Assets\Scripts\Niveles\MotorCuarto.cs" />
-    <Compile Include="Assets\Scripts\ColisionFinal.cs" />
-    <Compile Include="Assets\Scripts\Dialogue.cs" />
-    <Compile Include="Assets\Scripts\Niveles\LogicaCuarto.cs" />
-    <Compile Include="Assets\Scripts\Niveles\LogicaEnemigo.cs" />
-    <Compile Include="Assets\Scripts\Niveles\Plantillas\Cuarto.cs" />
-    <Compile Include="Assets\Scripts\MovementCharacter.cs" />
-    <Compile Include="Assets\Scripts\Niveles\PuertaFinalizar3.cs" />
-    <Compile Include="Assets\Scripts\MoveCamera.cs" />
-    <Compile Include="Assets\Scripts\Niveles\Aciones_Enemigo\Disparar_Enemigo.cs" />
-    <Compile Include="Assets\Scripts\PlayerRespawn.cs" />
-    <Compile Include="Assets\Scripts\Niveles\Aciones_Enemigo\Seguir.cs" />
-    <Compile Include="Assets\Scripts\Menu\ControladorEscena.cs" />
-    <Compile Include="Assets\Scripts\Niveles\MotorPuerta.cs" />
-    <Compile Include="Assets\Scripts\CamaraSeguir.cs" />
-    <Compile Include="Assets\Scripts\Niveles\PuertaFInal.cs" />
-    <Compile Include="Assets\Scripts\Niveles\DispararPersonaje.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\PuertaFinalizar.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\fuego.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\Menu\Controlador.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\PlayerRespawn.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\ColisionFinal.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Personaje\Movimiento.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\AdministrarSonidos.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Personaje\DispararPersonaje.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\LogicaEnemigo.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\MoveCamera.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\CamaraSeguir.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\EnemyProjectile.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\PuertaFinalizar3.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\DialogueManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />

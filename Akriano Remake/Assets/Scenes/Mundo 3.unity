@@ -43,7 +43,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 12
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_LightingSettings: {fileID: 4890085278179872738, guid: ad2f310f9678ef146b158dea5b31f77e, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -118,6 +118,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
@@ -150,7 +152,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 52907758}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddfb69c10394d1d479333f9036d1c1aa, type: 3}
+  m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &52907760
@@ -192,6 +194,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
 --- !u!223 &52907762
 Canvas:
   m_ObjectHideFlags: 0
@@ -242,465 +245,373 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2058880736}
     m_Modifications:
-    - target: {fileID: 567415258096963002, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.019
+    - target: {fileID: 567415258096963002, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.241
       objectReference: {fileID: 0}
-    - target: {fileID: 567415258096963002, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 567415258096963002, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 567415258096963002, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.0279999
       objectReference: {fileID: 0}
-    - target: {fileID: 567415258096963002, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.091
-      objectReference: {fileID: 0}
-    - target: {fileID: 567415258096963002, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.241
-      objectReference: {fileID: 0}
-    - target: {fileID: 900179279910966713, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 567415258096963002, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalPosition.y
       value: 6.019
       objectReference: {fileID: 0}
-    - target: {fileID: 900179279910966713, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -9.232
-      objectReference: {fileID: 0}
-    - target: {fileID: 900179279910966713, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.091
-      objectReference: {fileID: 0}
-    - target: {fileID: 900179279910966713, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 900179279910966713, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.241
       objectReference: {fileID: 0}
-    - target: {fileID: 1028397342940357766, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.452
-      objectReference: {fileID: 0}
-    - target: {fileID: 1028397342940357766, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.13
-      objectReference: {fileID: 0}
-    - target: {fileID: 1028397342940357766, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 900179279910966713, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5976671
+      value: 1.091
       objectReference: {fileID: 0}
-    - target: {fileID: 1028397342940357766, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 900179279910966713, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.232
+      objectReference: {fileID: 0}
+    - target: {fileID: 900179279910966713, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.019
+      objectReference: {fileID: 0}
+    - target: {fileID: 1028397342940357766, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6798395
       objectReference: {fileID: 0}
-    - target: {fileID: 1603797461935268923, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.015
+    - target: {fileID: 1028397342940357766, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5976671
       objectReference: {fileID: 0}
-    - target: {fileID: 1603797461935268923, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 1028397342940357766, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1028397342940357766, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.452
+      objectReference: {fileID: 0}
+    - target: {fileID: 1603797461935268923, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.241
+      objectReference: {fileID: 0}
+    - target: {fileID: 1603797461935268923, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 1603797461935268923, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.4830003
       objectReference: {fileID: 0}
-    - target: {fileID: 1603797461935268923, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.091
+    - target: {fileID: 1603797461935268923, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.015
       objectReference: {fileID: 0}
-    - target: {fileID: 1603797461935268923, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 1661654216910812645, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.241
       objectReference: {fileID: 0}
-    - target: {fileID: 1661654216910812645, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.019
+    - target: {fileID: 1661654216910812645, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.091
       objectReference: {fileID: 0}
-    - target: {fileID: 1661654216910812645, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 1661654216910812645, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.232
       objectReference: {fileID: 0}
-    - target: {fileID: 1661654216910812645, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.091
+    - target: {fileID: 1661654216910812645, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.019
       objectReference: {fileID: 0}
-    - target: {fileID: 1661654216910812645, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.241
-      objectReference: {fileID: 0}
-    - target: {fileID: 1795015960409627795, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 1795015960409627795, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_Name
       value: GUI_basic
       objectReference: {fileID: 0}
-    - target: {fileID: 2309559827164047513, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.019
-      objectReference: {fileID: 0}
-    - target: {fileID: 2309559827164047513, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.269
-      objectReference: {fileID: 0}
-    - target: {fileID: 2309559827164047513, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.091
-      objectReference: {fileID: 0}
-    - target: {fileID: 2309559827164047513, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 2309559827164047513, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.241
       objectReference: {fileID: 0}
-    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 2309559827164047513, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309559827164047513, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -4.269
       objectReference: {fileID: 0}
-    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 2309559827164047513, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 6.019
       objectReference: {fileID: 0}
-    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 2358648892936425615, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2654246928720979429, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.03
+    - target: {fileID: 2654246928720979429, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.241
       objectReference: {fileID: 0}
-    - target: {fileID: 2654246928720979429, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 2654246928720979429, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 2654246928720979429, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.368
       objectReference: {fileID: 0}
-    - target: {fileID: 2654246928720979429, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.091
+    - target: {fileID: 2654246928720979429, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.03
       objectReference: {fileID: 0}
-    - target: {fileID: 2654246928720979429, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 4613921955910577734, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.241
       objectReference: {fileID: 0}
-    - target: {fileID: 4613921955910577734, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.019
+    - target: {fileID: 4613921955910577734, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.091
       objectReference: {fileID: 0}
-    - target: {fileID: 4613921955910577734, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 4613921955910577734, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.509
       objectReference: {fileID: 0}
-    - target: {fileID: 4613921955910577734, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.091
-      objectReference: {fileID: 0}
-    - target: {fileID: 4613921955910577734, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.241
-      objectReference: {fileID: 0}
-    - target: {fileID: 4901245079256083198, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 4613921955910577734, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalPosition.y
       value: 6.019
       objectReference: {fileID: 0}
-    - target: {fileID: 4901245079256083198, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 4901245079256083198, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.241
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901245079256083198, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901245079256083198, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.0279999
       objectReference: {fileID: 0}
-    - target: {fileID: 4901245079256083198, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.091
-      objectReference: {fileID: 0}
-    - target: {fileID: 4901245079256083198, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.241
-      objectReference: {fileID: 0}
-    - target: {fileID: 5294971261799005499, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 4901245079256083198, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalPosition.y
       value: 6.019
       objectReference: {fileID: 0}
-    - target: {fileID: 5294971261799005499, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 5294971261799005499, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.241
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294971261799005499, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294971261799005499, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.473001
       objectReference: {fileID: 0}
-    - target: {fileID: 5294971261799005499, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.091
-      objectReference: {fileID: 0}
-    - target: {fileID: 5294971261799005499, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.241
-      objectReference: {fileID: 0}
-    - target: {fileID: 5514283307849160371, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 5294971261799005499, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalPosition.y
       value: 6.019
       objectReference: {fileID: 0}
-    - target: {fileID: 5514283307849160371, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 5514283307849160371, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.241
+      objectReference: {fileID: 0}
+    - target: {fileID: 5514283307849160371, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 5514283307849160371, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.991
       objectReference: {fileID: 0}
-    - target: {fileID: 5514283307849160371, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.091
-      objectReference: {fileID: 0}
-    - target: {fileID: 5514283307849160371, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.241
-      objectReference: {fileID: 0}
-    - target: {fileID: 5819631635876180501, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 5514283307849160371, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalPosition.y
       value: 6.019
       objectReference: {fileID: 0}
-    - target: {fileID: 5819631635876180501, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 5819631635876180501, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.091
-      objectReference: {fileID: 0}
-    - target: {fileID: 5819631635876180501, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 5819631635876180501, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.241
       objectReference: {fileID: 0}
-    - target: {fileID: 5845743116735200439, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.563
+    - target: {fileID: 5819631635876180501, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.091
       objectReference: {fileID: 0}
-    - target: {fileID: 5845743116735200439, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 5819631635876180501, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5819631635876180501, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.019
+      objectReference: {fileID: 0}
+    - target: {fileID: 5845743116735200439, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.241
+      objectReference: {fileID: 0}
+    - target: {fileID: 5845743116735200439, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 5845743116735200439, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.36000007
       objectReference: {fileID: 0}
-    - target: {fileID: 5845743116735200439, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.091
+    - target: {fileID: 5845743116735200439, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.563
       objectReference: {fileID: 0}
-    - target: {fileID: 5845743116735200439, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 6505003991594072071, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.241
       objectReference: {fileID: 0}
-    - target: {fileID: 6505003991594072071, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.019
+    - target: {fileID: 6505003991594072071, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.091
       objectReference: {fileID: 0}
-    - target: {fileID: 6505003991594072071, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 6505003991594072071, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.75
       objectReference: {fileID: 0}
-    - target: {fileID: 6505003991594072071, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.091
-      objectReference: {fileID: 0}
-    - target: {fileID: 6505003991594072071, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.241
-      objectReference: {fileID: 0}
-    - target: {fileID: 6535579228762779882, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 6505003991594072071, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.77
+      value: 6.019
       objectReference: {fileID: 0}
-    - target: {fileID: 6535579228762779882, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.773
-      objectReference: {fileID: 0}
-    - target: {fileID: 6535579228762779882, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.6539454
-      objectReference: {fileID: 0}
-    - target: {fileID: 6535579228762779882, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 6535579228762779882, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7438554
       objectReference: {fileID: 0}
-    - target: {fileID: 6545589284745461387, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.019
+    - target: {fileID: 6535579228762779882, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6539454
       objectReference: {fileID: 0}
-    - target: {fileID: 6545589284745461387, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 6535579228762779882, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.773
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535579228762779882, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 6545589284745461387, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.241
+      objectReference: {fileID: 0}
+    - target: {fileID: 6545589284745461387, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 6545589284745461387, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.269
       objectReference: {fileID: 0}
-    - target: {fileID: 6545589284745461387, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.091
-      objectReference: {fileID: 0}
-    - target: {fileID: 6545589284745461387, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.241
-      objectReference: {fileID: 0}
-    - target: {fileID: 6643211029709374042, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 6545589284745461387, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.796
+      value: 6.019
       objectReference: {fileID: 0}
-    - target: {fileID: 6643211029709374042, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.6980002
-      objectReference: {fileID: 0}
-    - target: {fileID: 6643211029709374042, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.7351596
-      objectReference: {fileID: 0}
-    - target: {fileID: 6643211029709374042, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 6643211029709374042, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.8362357
       objectReference: {fileID: 0}
-    - target: {fileID: 7072149583998515588, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.019
+    - target: {fileID: 6643211029709374042, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7351596
       objectReference: {fileID: 0}
-    - target: {fileID: 7072149583998515588, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 6643211029709374042, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.6980002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6643211029709374042, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.796
+      objectReference: {fileID: 0}
+    - target: {fileID: 7072149583998515588, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.241
+      objectReference: {fileID: 0}
+    - target: {fileID: 7072149583998515588, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 7072149583998515588, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.991
       objectReference: {fileID: 0}
-    - target: {fileID: 7072149583998515588, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.091
-      objectReference: {fileID: 0}
-    - target: {fileID: 7072149583998515588, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.241
-      objectReference: {fileID: 0}
-    - target: {fileID: 7674742948323899354, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 7072149583998515588, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalPosition.y
       value: 6.019
       objectReference: {fileID: 0}
-    - target: {fileID: 7674742948323899354, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 7674742948323899354, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.241
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674742948323899354, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674742948323899354, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.473001
       objectReference: {fileID: 0}
-    - target: {fileID: 7674742948323899354, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.091
-      objectReference: {fileID: 0}
-    - target: {fileID: 7674742948323899354, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.241
-      objectReference: {fileID: 0}
-    - target: {fileID: 8353518000679188764, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 7674742948323899354, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalPosition.y
       value: 6.019
       objectReference: {fileID: 0}
-    - target: {fileID: 8353518000679188764, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.509
+    - target: {fileID: 8353518000679188764, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.241
       objectReference: {fileID: 0}
-    - target: {fileID: 8353518000679188764, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
+    - target: {fileID: 8353518000679188764, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
       propertyPath: m_LocalScale.y
       value: 1.091
       objectReference: {fileID: 0}
-    - target: {fileID: 8353518000679188764, guid: dc2c2f8178637204faed1480e04ed02e,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.241
+    - target: {fileID: 8353518000679188764, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.509
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353518000679188764, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.019
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
@@ -708,14 +619,13 @@ PrefabInstance:
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 80482746}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815345918}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1614582342}
+  m_Children: []
   m_Father: {fileID: 2058880736}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -769,108 +679,87 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456033, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
+    - target: {fileID: 8869910657318456033, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456036, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: -0.029834308
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456036, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
+    - target: {fileID: 8869910657318456036, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
       propertyPath: m_Size.x
       value: 0.43005502
       objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456036, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -0.000000059604645
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456036, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
+    - target: {fileID: 8869910657318456036, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
       propertyPath: m_Size.y
       value: 0.816906
       objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456037, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
+    - target: {fileID: 8869910657318456036, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.029834308
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456036, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.000000059604645
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456037, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
       propertyPath: speed
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456039, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
+    - target: {fileID: 8869910657318456039, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456039, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
+    - target: {fileID: 8869910657318456039, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
       propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456042, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
+    - target: {fileID: 8869910657318456042, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
       propertyPath: m_Name
       value: 'Akriano '
       objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456042, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
+    - target: {fileID: 8869910657318456042, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
@@ -880,7 +769,7 @@ PrefabInstance:
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 80482746}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -944,6 +833,8 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1148,6 +1039,8 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.392}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1221,6 +1114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -1251,6 +1145,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 372370704}
+        m_TargetAssemblyTypeName: 
         m_MethodName: CambiarEscena
         m_Mode: 5
         m_Arguments:
@@ -1276,11 +1171,12 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2240705184806839175, guid: 7f8e0d508b206084e849851e81eef35c,
-    type: 3}
+  m_Sprite: {fileID: -2240705184806839175, guid: 7f8e0d508b206084e849851e81eef35c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1302,7 +1198,7 @@ CanvasRenderer:
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 80482746}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -1317,8 +1213,7 @@ GameObject:
 --- !u!4 &1614582342
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 4245449890426225678, guid: dc2c2f8178637204faed1480e04ed02e,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 4245449890426225678, guid: dc2c2f8178637204faed1480e04ed02e, type: 3}
   m_PrefabInstance: {fileID: 80482746}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1614582341}
@@ -1326,42 +1221,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 80482747}
-  m_RootOrder: 0
+  m_Father: {fileID: 2058880736}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1911403592 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8869910657318456042, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-    type: 3}
-  m_PrefabInstance: {fileID: 792633966}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1911403593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1911403592}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05939ddc6381e444587334021ef7a024, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  runSpeed: 5
---- !u!114 &1911403594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1911403592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9db60a96c129924489371fe6337348a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bala_Player_Original: {fileID: 8491982111322871645, guid: 00e8a6d50b5bbfd43b00736237d71732,
-    type: 3}
 --- !u!1 &2058880733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1444,8 +1306,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 80482747}
+  - {fileID: 1614582342}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2058880738
 MonoBehaviour:
@@ -1460,13 +1323,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cuartos:
-  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850,
-      type: 3}
+  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 0, y: 0}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 0, y: -5.83}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 3
@@ -1474,36 +1335,30 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 0, y: 0}
-      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 1
       vida_enemigo: 25
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 7.23, y: -3.44}
-      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 1
       vida_enemigo: 25
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 7.23, y: -3.21}
-      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 1
       vida_enemigo: 25
-  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850,
-      type: 3}
+  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 0, y: -12.3}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 0, y: -6.51}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 2
       Numero_Cuarto: 0
     - Posicion_Puerta: {x: 0, y: -18.13}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 3
@@ -1511,36 +1366,30 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 0, y: -12.3}
-      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 0, y: -9}
-      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 0, y: -15}
-      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
-  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850,
-      type: 3}
+  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 0, y: -24.6}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 0, y: -18.81}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 2
       Numero_Cuarto: 1
     - Posicion_Puerta: {x: 10.79, y: -24.6}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 1
@@ -1548,36 +1397,30 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 0, y: -24.6}
-      Imagen_Enemigo: {fileID: -6072974144654581597, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6072974144654581597, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 0, y: -21}
-      Imagen_Enemigo: {fileID: -6072974144654581597, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6072974144654581597, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 0, y: -27}
-      Imagen_Enemigo: {fileID: -6072974144654581597, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6072974144654581597, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
-  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850,
-      type: 3}
+  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 21.95, y: -24.6}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 11.19, y: -24.6}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 0
       Numero_Cuarto: 2
     - Posicion_Puerta: {x: 32.74, y: -24.6}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 1
@@ -1585,62 +1428,52 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 21.95, y: -24.6}
-      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 21.95, y: -21}
-      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 21.95, y: -27}
-      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
-  - Fondo: {fileID: -7476728093637688004, guid: bdd59b70c07f70a408ee737fce2769be,
-      type: 3}
+  - Fondo: {fileID: -7476728093637688004, guid: bdd59b70c07f70a408ee737fce2769be, type: 3}
     Posicion_Cuarto: {x: 43.9, y: -24.6}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 33.14, y: -24.6}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 0
       Numero_Cuarto: 3
     - Posicion_Puerta: {x: 43.9, y: -18.81}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 2
       Numero_Cuarto: 5
     - Posicion_Puerta: {x: 43.9, y: -30.43}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 3
       Numero_Cuarto: 19
     Enemigos: []
-  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850,
-      type: 3}
+  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 43.9, y: -12.3}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 43.9, y: -18.13}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 3
       Numero_Cuarto: 4
     - Posicion_Puerta: {x: 54.69, y: -12.3}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 1
@@ -1648,36 +1481,30 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 43.9, y: -12.3}
-      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 43.9, y: -9}
-      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 43.9, y: -15}
-      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
-  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850,
-      type: 3}
+  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 65.85, y: -12.3}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 55.09, y: -12.3}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 0
       Numero_Cuarto: 5
     - Posicion_Puerta: {x: 65.85, y: -6.51}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 2
@@ -1685,36 +1512,30 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 65.85, y: -12.3}
-      Imagen_Enemigo: {fileID: -6072974144654581597, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6072974144654581597, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 65.85, y: -9}
-      Imagen_Enemigo: {fileID: -6072974144654581597, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6072974144654581597, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 65.85, y: -15}
-      Imagen_Enemigo: {fileID: -6072974144654581597, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6072974144654581597, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
-  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850,
-      type: 3}
+  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 65.85, y: 0}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 65.85, y: -5.83}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 3
       Numero_Cuarto: 6
     - Posicion_Puerta: {x: 76.64, y: 0}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 1
@@ -1722,36 +1543,30 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 65.85, y: 3}
-      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 65.85, y: 0}
-      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 65.85, y: -3}
-      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
-  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850,
-      type: 3}
+  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 87.8, y: 0}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 77.04, y: 0}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 0
       Numero_Cuarto: 7
     - Posicion_Puerta: {x: 98.59, y: 0}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 1
@@ -1759,43 +1574,36 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 87.8, y: 3}
-      Imagen_Enemigo: {fileID: -6072974144654581597, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6072974144654581597, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 87.8, y: 0}
-      Imagen_Enemigo: {fileID: -6072974144654581597, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6072974144654581597, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 87.8, y: -3}
-      Imagen_Enemigo: {fileID: -6072974144654581597, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6072974144654581597, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
-  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850,
-      type: 3}
+  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 109.75, y: 0}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 98.99, y: 0}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 0
       Numero_Cuarto: 8
     - Posicion_Puerta: {x: 109.75, y: 5.79}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 2
       Numero_Cuarto: 10
     - Posicion_Puerta: {x: 109.75, y: -5.83}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 3
@@ -1803,29 +1611,24 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 109.75, y: 3}
-      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 109.75, y: 0}
-      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 109.75, y: -3}
-      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: 293052523955905062, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
-  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850,
-      type: 3}
+  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 109.75, y: 12.3}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 109.75, y: 6.47}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 3
@@ -1833,62 +1636,52 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 109.75, y: 15}
-      Imagen_Enemigo: {fileID: -6072974144654581597, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6072974144654581597, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 109.75, y: 12.3}
-      Imagen_Enemigo: {fileID: -6072974144654581597, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6072974144654581597, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 109.75, y: 9}
-      Imagen_Enemigo: {fileID: -6072974144654581597, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6072974144654581597, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
-  - Fondo: {fileID: -7476728093637688004, guid: bdd59b70c07f70a408ee737fce2769be,
-      type: 3}
+  - Fondo: {fileID: -7476728093637688004, guid: bdd59b70c07f70a408ee737fce2769be, type: 3}
     Posicion_Cuarto: {x: 109.75, y: -12.3}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 109.75, y: -6.51}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 2
       Numero_Cuarto: 9
     - Posicion_Puerta: {x: 109.75, y: -18.13}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 3
       Numero_Cuarto: 12
     Enemigos: []
-  - Fondo: {fileID: -9130848273856322729, guid: 5efa3b76a99364446b7e25646bc9a850,
-      type: 3}
+  - Fondo: {fileID: -9130848273856322729, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 109.75, y: -24.6}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 109.75, y: -18.81}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 2
       Numero_Cuarto: 11
     - Posicion_Puerta: {x: 120.54, y: -24.6}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 1
       Numero_Cuarto: 13
     - Posicion_Puerta: {x: 109.75, y: -30.43}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 3
@@ -1896,23 +1689,20 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Mini Ifrit
       Posicion_Enemigo: {x: 109.75, y: -24.6}
-      Imagen_Enemigo: {fileID: -3367490944592433925, guid: bb39973016927c44fb651d6c9b44987d,
-        type: 3}
+      Imagen_Enemigo: {fileID: -3367490944592433925, guid: bb39973016927c44fb651d6c9b44987d, type: 3}
       Tipo_Enemigo: 1
       vida_enemigo: 50
   - Fondo: {fileID: 5180571798997608406, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 131.7, y: -24.6}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 120.94, y: -24.6}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 0
       Numero_Cuarto: 12
     - Posicion_Puerta: {x: 142.6, y: -24.6}
-      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4,
-        type: 3}
+      Imagen_Puerta: {fileID: 3195961758363057250, guid: 26f489a81046bcf4cb103d811e5a63d4, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 3
       Direccion_Puerta: 0
@@ -1920,24 +1710,20 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Ifrit
       Posicion_Enemigo: {x: 131.7, y: -24.6}
-      Imagen_Enemigo: {fileID: 8989699570366979199, guid: bd177b690a73d0343ba17fd14e05ed44,
-        type: 3}
+      Imagen_Enemigo: {fileID: 8989699570366979199, guid: bd177b690a73d0343ba17fd14e05ed44, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 60
-  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850,
-      type: 3}
+  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 109.75, y: -36.9}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 109.75, y: -31.11}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 2
       Numero_Cuarto: 12
     - Posicion_Puerta: {x: 109.75, y: -42.73}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 3
@@ -1945,74 +1731,62 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 109.75, y: -33}
-      Imagen_Enemigo: {fileID: 4389800936034139744, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: 4389800936034139744, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 109.75, y: -36.9}
-      Imagen_Enemigo: {fileID: 4389800936034139744, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: 4389800936034139744, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 109.75, y: -39}
-      Imagen_Enemigo: {fileID: 4389800936034139744, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: 4389800936034139744, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 25
-  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850,
-      type: 3}
+  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 109.75, y: -49.2}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 109.75, y: -43.41}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 2
       Numero_Cuarto: 14
     - Posicion_Puerta: {x: 98.99, y: -49.2}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 0
       Numero_Cuarto: 16
     Enemigos: []
-  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850,
-      type: 3}
+  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 87.8, y: -49.2}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 98.59, y: -49.2}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 1
       Numero_Cuarto: 15
     - Posicion_Puerta: {x: 77.04, y: -49.2}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 0
       Numero_Cuarto: 17
     Enemigos: []
-  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850,
-      type: 3}
+  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 65.85, y: -49.2}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 76.64, y: -49.2}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 1
       Numero_Cuarto: 16
     - Posicion_Puerta: {x: 65.85, y: -43.41}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 2
@@ -2020,36 +1794,30 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 65.85, y: -52}
-      Imagen_Enemigo: {fileID: -4832009208749066213, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: -4832009208749066213, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 30
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 65.85, y: -49.2}
-      Imagen_Enemigo: {fileID: -4832009208749066213, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: -4832009208749066213, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 30
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 65.85, y: -46}
-      Imagen_Enemigo: {fileID: -4832009208749066213, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: -4832009208749066213, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 30
-  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850,
-      type: 3}
+  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 65.85, y: -36.9}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 65.85, y: -42.73}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 3
       Numero_Cuarto: 17
     - Posicion_Puerta: {x: 55.09, y: -36.9}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 0
@@ -2057,36 +1825,30 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 65.85, y: -36.9}
-      Imagen_Enemigo: {fileID: 4389800936034139744, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: 4389800936034139744, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 30
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 65.85, y: -33}
-      Imagen_Enemigo: {fileID: 4389800936034139744, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: 4389800936034139744, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 30
     - Nombre_Enemigo: Flamerianos
       Posicion_Enemigo: {x: 65.85, y: -39}
-      Imagen_Enemigo: {fileID: 4389800936034139744, guid: e404bb95a569aa34b937379b77dd3efe,
-        type: 3}
+      Imagen_Enemigo: {fileID: 4389800936034139744, guid: e404bb95a569aa34b937379b77dd3efe, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 30
-  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850,
-      type: 3}
+  - Fondo: {fileID: -9119377580083978746, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 43.9, y: -36.9}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 54.69, y: -36.9}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 1
       Numero_Cuarto: 0
     - Posicion_Puerta: {x: 43.9, y: -31.11}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 2
@@ -2094,5 +1856,4 @@ MonoBehaviour:
     Enemigos: []
   CuartosCreados: []
   Index_Cuarto_Actual: 0
-  Mapa_Colision: {fileID: 2672704083913025624, guid: f84a228b4efcff746b0c4d362c44ae1d,
-    type: 3}
+  Mapa_Colision: {fileID: 2672704083913025624, guid: f84a228b4efcff746b0c4d362c44ae1d, type: 3}

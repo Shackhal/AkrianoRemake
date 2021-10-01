@@ -43,7 +43,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 12
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_LightingSettings: {fileID: 1192811775}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -118,9 +118,143 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &329813347
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 329813348}
+  - component: {fileID: 329813351}
+  - component: {fileID: 329813350}
+  - component: {fileID: 329813349}
+  m_Layer: 5
+  m_Name: Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &329813348
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329813347}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2143606798}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -170, y: -86}
+  m_SizeDelta: {x: 45.4, y: 37}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &329813349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329813347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 329813350}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 865293321}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: CambiarEscena
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Menu
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &329813350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329813347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -2240705184806839175, guid: 7f8e0d508b206084e849851e81eef35c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &329813351
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329813347}
+  m_CullTransparentMesh: 0
 --- !u!1 &405175841
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,6 +307,8 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.392}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -196,8 +332,7 @@ CanvasRenderer:
   m_CullTransparentMesh: 0
 --- !u!1 &561181432 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 8869910657318456042, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 8869910657318456042, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
   m_PrefabInstance: {fileID: 1419559640}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &561181433
@@ -213,6 +348,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 5
+--- !u!114 &561181434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561181432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96a92e69771875e42abb9ceb8eb0f6b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  maxHealth: 100
+  inmunityTime: 0.5
+--- !u!114 &561181435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561181432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8ffe8e27294e6b40a3e99b801297981, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  original: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  blink: {fileID: 2100000, guid: 7dcafe62a0159454094b44788a510343, type: 2}
 --- !u!114 &561181440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,8 +389,139 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9db60a96c129924489371fe6337348a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bala_Player_Original: {fileID: 6787600543437981616, guid: eae15ccc1373ff44691088736d8e50b1,
-    type: 3}
+  Bala_Player_Original: {fileID: 6787600543437981616, guid: eae15ccc1373ff44691088736d8e50b1, type: 3}
+--- !u!1 &716946837
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 716946838}
+  - component: {fileID: 716946841}
+  - component: {fileID: 716946840}
+  - component: {fileID: 716946839}
+  m_Layer: 5
+  m_Name: Repetir Nivel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &716946838
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716946837}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2143606798}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 197, y: -86}
+  m_SizeDelta: {x: 45.4, y: 37}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &716946839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716946837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 716946840}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1276633211}
+        m_TargetAssemblyTypeName: ControladorEscena, Assembly-CSharp
+        m_MethodName: CambiarEscena
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Mundo 2
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &716946840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716946837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 8186314436482940044, guid: 2318807a6d9384e48ae92d81185f7147, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &716946841
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716946837}
+  m_CullTransparentMesh: 1
 --- !u!1 &865293320
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,6 +692,133 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1054759625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1054759628}
+  - component: {fileID: 1054759627}
+  - component: {fileID: 1054759626}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1054759626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054759625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1054759627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054759625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1054759628
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054759625}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!850595691 &1192811775
+LightingSettings:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Settings.lighting
+  serializedVersion: 3
+  m_GIWorkflowMode: 1
+  m_EnableBakedLightmaps: 0
+  m_EnableRealtimeLightmaps: 0
+  m_RealtimeEnvironmentLighting: 1
+  m_BounceScale: 1
+  m_AlbedoBoost: 1
+  m_IndirectOutputScale: 1
+  m_UsingShadowmask: 1
+  m_BakeBackend: 1
+  m_LightmapMaxSize: 1024
+  m_BakeResolution: 40
+  m_Padding: 2
+  m_TextureCompression: 1
+  m_AO: 0
+  m_AOMaxDistance: 1
+  m_CompAOExponent: 1
+  m_CompAOExponentDirect: 0
+  m_ExtractAO: 0
+  m_MixedBakeMode: 2
+  m_LightmapsBakeMode: 1
+  m_FilterMode: 1
+  m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000, type: 0}
+  m_ExportTrainingData: 0
+  m_TrainingDataDestination: TrainingData
+  m_RealtimeResolution: 2
+  m_ForceWhiteAlbedo: 0
+  m_ForceUpdates: 0
+  m_FinalGather: 0
+  m_FinalGatherRayCount: 256
+  m_FinalGatherFiltering: 1
+  m_PVRCulling: 1
+  m_PVRSampling: 1
+  m_PVRDirectSampleCount: 32
+  m_PVRSampleCount: 512
+  m_PVREnvironmentSampleCount: 256
+  m_PVREnvironmentReferencePointCount: 2048
+  m_LightProbeSampleCountMultiplier: 4
+  m_PVRBounces: 2
+  m_PVRMinBounces: 2
+  m_PVREnvironmentMIS: 1
+  m_PVRFilteringMode: 1
+  m_PVRDenoiserTypeDirect: 1
+  m_PVRDenoiserTypeIndirect: 1
+  m_PVRDenoiserTypeAO: 1
+  m_PVRFilterTypeDirect: 0
+  m_PVRFilterTypeIndirect: 0
+  m_PVRFilterTypeAO: 0
+  m_PVRFilteringGaussRadiusDirect: 1
+  m_PVRFilteringGaussRadiusIndirect: 5
+  m_PVRFilteringGaussRadiusAO: 2
+  m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+  m_PVRFilteringAtrousPositionSigmaIndirect: 2
+  m_PVRFilteringAtrousPositionSigmaAO: 1
 --- !u!1 &1249097644
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,6 +871,8 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -474,6 +898,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249097644}
   m_CullTransparentMesh: 0
+--- !u!1 &1276633209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1276633210}
+  - component: {fileID: 1276633211}
+  m_Layer: 0
+  m_Name: Controlador
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1276633210
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276633209}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 612.74524, y: 311.999, z: -41.081093}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1276633211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276633209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d153339e774844bacb48bfe9abcb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1419559640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -481,108 +948,95 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -9.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
+    - target: {fileID: 8869910657318456032, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456033, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
+    - target: {fileID: 8869910657318456033, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456036, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: -0.029832527
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456036, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
+    - target: {fileID: 8869910657318456036, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
       propertyPath: m_Size.x
       value: 0.44743398
       objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456036, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0.0027118921
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456036, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
+    - target: {fileID: 8869910657318456036, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
       propertyPath: m_Size.y
       value: 0.8267212
       objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456037, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
+    - target: {fileID: 8869910657318456036, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.029832527
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456036, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0027118921
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456037, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
       propertyPath: speed
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456039, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
+    - target: {fileID: 8869910657318456037, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
+      propertyPath: MyCanvas
+      value: 
+      objectReference: {fileID: 1901238329}
+    - target: {fileID: 8869910657318456037, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
+      propertyPath: CantDeCorazon
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869910657318456039, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456039, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
+    - target: {fileID: 8869910657318456039, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
       propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456042, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
+    - target: {fileID: 8869910657318456042, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
       propertyPath: m_Name
       value: 'Akriano '
       objectReference: {fileID: 0}
-    - target: {fileID: 8869910657318456042, guid: 79120f5bcfcd9f4408b66be9a5eab90a,
-        type: 3}
+    - target: {fileID: 8869910657318456042, guid: 79120f5bcfcd9f4408b66be9a5eab90a, type: 3}
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
@@ -640,6 +1094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -670,6 +1125,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 865293321}
+        m_TargetAssemblyTypeName: 
         m_MethodName: CambiarEscena
         m_Mode: 5
         m_Arguments:
@@ -695,11 +1151,12 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2240705184806839175, guid: 7f8e0d508b206084e849851e81eef35c,
-    type: 3}
+  m_Sprite: {fileID: -2240705184806839175, guid: 7f8e0d508b206084e849851e81eef35c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -731,7 +1188,7 @@ GameObject:
   - component: {fileID: 1901238327}
   - component: {fileID: 1901238326}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Pausa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -788,6 +1245,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
 --- !u!223 &1901238329
 Canvas:
   m_ObjectHideFlags: 0
@@ -831,6 +1289,160 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1916399745
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1916399746}
+  - component: {fileID: 1916399748}
+  - component: {fileID: 1916399747}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1916399746
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916399745}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2143606798}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000015259, y: 32.4251}
+  m_SizeDelta: {x: 505.8682, y: 94.8503}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1916399747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916399745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.68235296, g: 0, b: 0.009894119, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 72
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 7
+    m_MaxSize: 72
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Perdiste
+--- !u!222 &1916399748
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916399745}
+  m_CullTransparentMesh: 1
+--- !u!1 &1929643603
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1929643604}
+  - component: {fileID: 1929643606}
+  - component: {fileID: 1929643605}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1929643604
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929643603}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2143606798}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1929643605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929643603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.6981132, g: 0, b: 0, a: 0.3529412}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1929643606
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929643603}
+  m_CullTransparentMesh: 1
 --- !u!1 &1980263269
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,7 +1537,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1980263269}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 247f210f14aacdf41a30af48f5f76b6f, type: 3}
+  m_Script: {fileID: 11500000, guid: 176aa19a394c6ad46ac16495a2a43c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1980263274
@@ -945,8 +1557,7 @@ MonoBehaviour:
     Posicion_Cuarto: {x: 0, y: 0}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 0, y: -5.83}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 3
@@ -954,36 +1565,33 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: 0, y: 0}
-      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 10
+      damageToGive: 5
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: 0, y: 3}
-      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 10
+      damageToGive: 5
   - Fondo: {fileID: 8665047306510135222, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 0, y: -12.3}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 0, y: -6.51}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 2
       Numero_Cuarto: 0
     - Posicion_Puerta: {x: -10.79, y: -12.3}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 0
       Numero_Cuarto: 2
     - Posicion_Puerta: {x: 10.79, y: -12.3}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 1
@@ -991,35 +1599,33 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: 0, y: -12.3}
-      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 15
+      damageToGive: 5
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: 0, y: -7}
-      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 15
+      damageToGive: 5
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: 0, y: -14}
-      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 15
+      damageToGive: 5
   - Fondo: {fileID: 8665047306510135222, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: -21.95, y: -12.3}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: -11.19, y: -12.3}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 1
       Numero_Cuarto: 1
     - Posicion_Puerta: {x: -32.74, y: -12.3}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 0
@@ -1027,42 +1633,39 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: -21.95, y: -12.3}
-      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 15
+      damageToGive: 5
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: -21.95, y: -8}
-      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 15
+      damageToGive: 5
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: -21.95, y: -14}
-      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 15
+      damageToGive: 5
   - Fondo: {fileID: 9021441954568626396, guid: bdd59b70c07f70a408ee737fce2769be, type: 3}
     Posicion_Cuarto: {x: -43.9, y: -12.3}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: -33.14, y: -12.3}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 1
       Numero_Cuarto: 2
     - Posicion_Puerta: {x: -43.9, y: -6.51}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 2
       Numero_Cuarto: 4
     - Posicion_Puerta: {x: -43.9, y: -18.13}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 3
@@ -1072,8 +1675,7 @@ MonoBehaviour:
     Posicion_Cuarto: {x: -43.9, y: 0}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: -43.9, y: -5.83}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 3
@@ -1081,42 +1683,39 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: -43.9, y: 0}
-      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 15
+      damageToGive: 5
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: -43.9, y: 4}
-      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 15
+      damageToGive: 5
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: -43.9, y: 3}
-      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 15
+      damageToGive: 5
   - Fondo: {fileID: 8665047306510135222, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: -43.9, y: -24.6}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: -43.9, y: -18.81}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 2
       Numero_Cuarto: 3
     - Posicion_Puerta: {x: -54.69, y: -24.6}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 0
       Numero_Cuarto: 6
     - Posicion_Puerta: {x: -43.9, y: -30.43}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 3
@@ -1124,29 +1723,27 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: -43.9, y: -24.6}
-      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 15
+      damageToGive: 5
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: -43.9, y: -22}
-      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 15
+      damageToGive: 5
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: 0, y: -26}
-      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -7717969148469104071, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 15
-  - Fondo: {fileID: -2874964998709531419, guid: 5efa3b76a99364446b7e25646bc9a850,
-      type: 3}
+      damageToGive: 5
+  - Fondo: {fileID: -2874964998709531419, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: -65.85, y: -24.6}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: -55.09, y: -24.6}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 1
@@ -1154,36 +1751,33 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Gemelos Helados
       Posicion_Enemigo: {x: -65.85, y: -21}
-      Imagen_Enemigo: {fileID: 485686084673500104, guid: ee2b71e4c739e3d41bec80e1f0ff59ef,
-        type: 3}
+      Imagen_Enemigo: {fileID: 485686084673500104, guid: ee2b71e4c739e3d41bec80e1f0ff59ef, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 30
+      damageToGive: 10
     - Nombre_Enemigo: Gemelos Helados
       Posicion_Enemigo: {x: -65.85, y: -27}
-      Imagen_Enemigo: {fileID: 7688969084217940467, guid: ee2b71e4c739e3d41bec80e1f0ff59ef,
-        type: 3}
+      Imagen_Enemigo: {fileID: 7688969084217940467, guid: ee2b71e4c739e3d41bec80e1f0ff59ef, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 30
+      damageToGive: 10
   - Fondo: {fileID: 8665047306510135222, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: -43.9, y: -36.9}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: -43.9, y: -31.11}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 2
       Numero_Cuarto: 5
     - Posicion_Puerta: {x: -43.9, y: -42.73}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 3
       Numero_Cuarto: 8
     - Posicion_Puerta: {x: -33.14, y: -36.9}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 1
@@ -1191,28 +1785,27 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: -43.9, y: -36.9}
-      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 20
+      damageToGive: 5
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: -43.9, y: -33}
-      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 20
+      damageToGive: 5
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: -43.9, y: -39}
-      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 20
+      damageToGive: 5
   - Fondo: {fileID: 8665047306510135222, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: -43.9, y: -49.2}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: -43.9, y: -43.41}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 2
@@ -1220,35 +1813,33 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: -43.9, y: -49.2}
-      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 20
+      damageToGive: 5
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: -43.9, y: -46}
-      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 20
+      damageToGive: 5
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: -43.9, y: -52}
-      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 20
+      damageToGive: 5
   - Fondo: {fileID: 8665047306510135222, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: -21.95, y: -36.9}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: -32.74, y: -36.9}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 0
       Numero_Cuarto: 7
     - Posicion_Puerta: {x: -11.19, y: -36.9}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 1
@@ -1256,42 +1847,39 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: -21.95, y: -36.9}
-      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 20
+      damageToGive: 5
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: -21.95, y: -33}
-      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 20
+      damageToGive: 5
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: -21.95, y: -39}
-      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 20
+      damageToGive: 5
   - Fondo: {fileID: 8665047306510135222, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 0, y: -36.9}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: -10.79, y: -36.9}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 0
       Numero_Cuarto: 9
     - Posicion_Puerta: {x: 0, y: -42.73}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 3
       Numero_Cuarto: 11
     - Posicion_Puerta: {x: 10.79, y: -36.9}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 1
@@ -1299,28 +1887,27 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: 0, y: -33}
-      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 20
+      damageToGive: 5
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: 0, y: -36.9}
-      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 20
+      damageToGive: 5
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: 0, y: -39}
-      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 20
+      damageToGive: 5
   - Fondo: {fileID: 8665047306510135222, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 0, y: -49.2}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 0, y: -43.41}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 2
@@ -1328,35 +1915,33 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: 0, y: -46}
-      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 25
+      damageToGive: 5
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: 0, y: -49.2}
-      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 25
+      damageToGive: 5
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: 0, y: -52}
-      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 25
+      damageToGive: 5
   - Fondo: {fileID: 9021441954568626396, guid: bdd59b70c07f70a408ee737fce2769be, type: 3}
     Posicion_Cuarto: {x: 21.95, y: -36.9}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 11.19, y: -36.9}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 0
       Numero_Cuarto: 10
     - Posicion_Puerta: {x: 32.74, y: -36.9}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 1
@@ -1366,22 +1951,19 @@ MonoBehaviour:
     Posicion_Cuarto: {x: 43.9, y: -36.9}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 33.14, y: -36.9}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 0
       Numero_Cuarto: 12
     - Posicion_Puerta: {x: 43.9, y: -42.73}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 3
       Numero_Cuarto: 14
     - Posicion_Puerta: {x: 43.9, y: -31.11}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 2
@@ -1389,36 +1971,33 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: 43.9, y: -36.9}
-      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 20
+      damageToGive: 5
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: 43.9, y: -33}
-      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 20
+      damageToGive: 5
     - Nombre_Enemigo: Slime agua
       Posicion_Enemigo: {x: 43.9, y: -39}
-      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: -6939604280483605443, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 20
-  - Fondo: {fileID: -2535791100466243787, guid: 5efa3b76a99364446b7e25646bc9a850,
-      type: 3}
+      damageToGive: 5
+  - Fondo: {fileID: -2535791100466243787, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 43.9, y: -49.2}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 43.9, y: -43.41}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 2
       Numero_Cuarto: 13
     - Posicion_Puerta: {x: 43.9, y: -54.9}
-      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca,
-        type: 3}
+      Imagen_Puerta: {fileID: 6256072765160564429, guid: 1262ddc7d169e8640917b5915e4706ca, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 2
       Direccion_Puerta: 0
@@ -1426,30 +2005,27 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Boss de Agua
       Posicion_Enemigo: {x: 43.9, y: -49.2}
-      Imagen_Enemigo: {fileID: 394912989818903910, guid: ee7501ccf471bed48a030acf75b2f830,
-        type: 3}
+      Imagen_Enemigo: {fileID: 394912989818903910, guid: ee7501ccf471bed48a030acf75b2f830, type: 3}
       Tipo_Enemigo: 2
       vida_enemigo: 50
+      damageToGive: 15
   - Fondo: {fileID: 8665047306510135222, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 43.9, y: -24.6}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 43.9, y: -30.43}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 3
       Numero_Cuarto: 13
     - Posicion_Puerta: {x: 54.69, y: -24.6}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 1
       Numero_Cuarto: 16
     - Posicion_Puerta: {x: 43.9, y: -18.81}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 2
@@ -1457,28 +2033,27 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Slime Hielo
       Posicion_Enemigo: {x: 43.9, y: -24.6}
-      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 30
+      damageToGive: 5
     - Nombre_Enemigo: Slime Hielo
       Posicion_Enemigo: {x: 43.9, y: -21}
-      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 30
+      damageToGive: 5
     - Nombre_Enemigo: Slime Hielo
       Posicion_Enemigo: {x: 43.9, y: -27}
-      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 30
+      damageToGive: 5
   - Fondo: {fileID: 8665047306510135222, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 65.85, y: -24.6}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 55.09, y: -24.6}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 0
@@ -1486,42 +2061,39 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Slime Hielo
       Posicion_Enemigo: {x: 65.85, y: -24.6}
-      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 30
+      damageToGive: 5
     - Nombre_Enemigo: Slime Hielo
       Posicion_Enemigo: {x: 65.85, y: -21}
-      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 30
+      damageToGive: 5
     - Nombre_Enemigo: Slime Hielo
       Posicion_Enemigo: {x: 65.85, y: -27}
-      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 30
+      damageToGive: 5
   - Fondo: {fileID: 8665047306510135222, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 43.9, y: -12.3}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 43.9, y: -18.13}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 3
       Numero_Cuarto: 15
     - Posicion_Puerta: {x: 43.9, y: -6.51}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 2
       Numero_Cuarto: 18
     - Posicion_Puerta: {x: 33.14, y: -12.3}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 0
@@ -1529,28 +2101,27 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Slime Hielo
       Posicion_Enemigo: {x: 43.9, y: -12.3}
-      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 30
+      damageToGive: 5
     - Nombre_Enemigo: Slime Hielo
       Posicion_Enemigo: {x: 43.9, y: -9}
-      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 30
+      damageToGive: 5
     - Nombre_Enemigo: Slime Hielo
       Posicion_Enemigo: {x: 43.9, y: -15}
-      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 30
+      damageToGive: 5
   - Fondo: {fileID: 8665047306510135222, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 43.9, y: 0}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 43.9, y: -5.83}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: 0}
       Tipo_Puerta: 0
       Direccion_Puerta: 3
@@ -1558,35 +2129,33 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Slime Hielo
       Posicion_Enemigo: {x: 43.9, y: 0}
-      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 30
+      damageToGive: 5
     - Nombre_Enemigo: Slime Hielo
       Posicion_Enemigo: {x: 43.9, y: 3}
-      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 30
+      damageToGive: 5
     - Nombre_Enemigo: Slime Hielo
       Posicion_Enemigo: {x: 43.9, y: -3}
-      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 30
+      damageToGive: 5
   - Fondo: {fileID: 8665047306510135222, guid: 5efa3b76a99364446b7e25646bc9a850, type: 3}
     Posicion_Cuarto: {x: 21.95, y: -12.3}
     Puertas_Cuarto:
     - Posicion_Puerta: {x: 11.19, y: -12.3}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 0
       Numero_Cuarto: 1
     - Posicion_Puerta: {x: 32.74, y: -12.3}
-      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c,
-        type: 3}
+      Imagen_Puerta: {fileID: -4884317009972963965, guid: 850acad60a007644bad3739e13c7875c, type: 3}
       Rotacion_Puerta: {x: 0, y: 0, z: -90}
       Tipo_Puerta: 0
       Direccion_Puerta: 1
@@ -1594,26 +2163,128 @@ MonoBehaviour:
     Enemigos:
     - Nombre_Enemigo: Slime Hielo
       Posicion_Enemigo: {x: 21.95, y: -9}
-      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 30
+      damageToGive: 5
     - Nombre_Enemigo: Slime Hielo
       Posicion_Enemigo: {x: 21.95, y: -12.3}
-      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 30
+      damageToGive: 5
     - Nombre_Enemigo: Slime Hielo
       Posicion_Enemigo: {x: 21.95, y: -15}
-      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e,
-        type: 3}
+      Imagen_Enemigo: {fileID: 8469031030942767032, guid: a8079e578d913644e94aaac6acbde10e, type: 3}
       Tipo_Enemigo: 0
       vida_enemigo: 30
+      damageToGive: 5
   CuartosCreados: []
   Index_Cuarto_Actual: 0
-  Mapa_Colision: {fileID: 2672704083913025624, guid: f84a228b4efcff746b0c4d362c44ae1d,
-    type: 3}
+  Mapa_Colision: {fileID: 2672704083913025624, guid: f84a228b4efcff746b0c4d362c44ae1d, type: 3}
+--- !u!1 &2143606794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2143606798}
+  - component: {fileID: 2143606797}
+  - component: {fileID: 2143606796}
+  - component: {fileID: 2143606795}
+  m_Layer: 5
+  m_Name: Perdiste
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &2143606795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143606794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &2143606796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143606794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &2143606797
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143606794}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &2143606798
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143606794}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 1929643604}
+  - {fileID: 716946838}
+  - {fileID: 1916399746}
+  - {fileID: 329813348}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1001 &1702773395383782722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1621,63 +2292,51 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4606438647454299194, guid: eae15ccc1373ff44691088736d8e50b1,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 290.05804
-      objectReference: {fileID: 0}
-    - target: {fileID: 4606438647454299194, guid: eae15ccc1373ff44691088736d8e50b1,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -52.773453
-      objectReference: {fileID: 0}
-    - target: {fileID: 4606438647454299194, guid: eae15ccc1373ff44691088736d8e50b1,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4606438647454299194, guid: eae15ccc1373ff44691088736d8e50b1,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4606438647454299194, guid: eae15ccc1373ff44691088736d8e50b1,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4606438647454299194, guid: eae15ccc1373ff44691088736d8e50b1,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.70778525
-      objectReference: {fileID: 0}
-    - target: {fileID: 4606438647454299194, guid: eae15ccc1373ff44691088736d8e50b1,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7064277
-      objectReference: {fileID: 0}
-    - target: {fileID: 4606438647454299194, guid: eae15ccc1373ff44691088736d8e50b1,
-        type: 3}
+    - target: {fileID: 4606438647454299194, guid: eae15ccc1373ff44691088736d8e50b1, type: 3}
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 4606438647454299194, guid: eae15ccc1373ff44691088736d8e50b1,
-        type: 3}
+    - target: {fileID: 4606438647454299194, guid: eae15ccc1373ff44691088736d8e50b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 290.05804
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606438647454299194, guid: eae15ccc1373ff44691088736d8e50b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -52.773453
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606438647454299194, guid: eae15ccc1373ff44691088736d8e50b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606438647454299194, guid: eae15ccc1373ff44691088736d8e50b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7064277
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606438647454299194, guid: eae15ccc1373ff44691088736d8e50b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606438647454299194, guid: eae15ccc1373ff44691088736d8e50b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606438647454299194, guid: eae15ccc1373ff44691088736d8e50b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.70778525
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606438647454299194, guid: eae15ccc1373ff44691088736d8e50b1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4606438647454299194, guid: eae15ccc1373ff44691088736d8e50b1,
-        type: 3}
+    - target: {fileID: 4606438647454299194, guid: eae15ccc1373ff44691088736d8e50b1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4606438647454299194, guid: eae15ccc1373ff44691088736d8e50b1,
-        type: 3}
+    - target: {fileID: 4606438647454299194, guid: eae15ccc1373ff44691088736d8e50b1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90.11
       objectReference: {fileID: 0}
-    - target: {fileID: 6787600543437981616, guid: eae15ccc1373ff44691088736d8e50b1,
-        type: 3}
+    - target: {fileID: 6787600543437981616, guid: eae15ccc1373ff44691088736d8e50b1, type: 3}
       propertyPath: m_Name
       value: Hielo
       objectReference: {fileID: 0}
