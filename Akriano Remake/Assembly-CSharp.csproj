@@ -54,19 +54,43 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\PuertaFinalizar.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\Menu\ControladorEscena.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Enemigos\Seguir_Enemigo.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\Dialogue.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\fuego.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\Menu\Controlador.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\PuertaFInal.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\MotorCuarto.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\MovementCharacter.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\Plantillas\Puerta.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\Menu\ControladorSalida.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\Aciones_Enemigo\Disparar_Enemigo.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\PuertaFinalizar2.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\PlayerRespawn.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\ColisionFinal.cs" />
     <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Personaje\Movimiento.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\MotorPuerta.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Blink.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\AdministrarFlujo.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\AdministrarSonidos.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\PuertaMover.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\PuertaFinalizar4.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Personaje\PlayerHealth.cs" />
     <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Personaje\DispararPersonaje.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\Plantillas\Cuarto.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\LogicaEnemigo.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\MoveCamera.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\Menu\Pausa.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\Plantillas\Enemigo.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\Colision.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\LogicaCuarto.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Enemigos\EnemyHealth.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\CamaraSeguir.cs" />
     <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\EnemyProjectile.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\PuertaFinalizar3.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\Aciones_Enemigo\Seguir.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\DialogueManager.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Enemigos\Enemy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
