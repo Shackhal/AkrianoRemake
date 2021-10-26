@@ -57,11 +57,11 @@ public class Movimiento : MonoBehaviour
         if (mov != Vector2.zero) {
             anim.SetFloat("MovX", mov.x);
             anim.SetFloat("MovY", mov.y);
-            anim.SetBool("Walk", true);
+            anim.SetBool("Caminar", true);
         }
         else
         {
-            anim.SetBool("Walk", false);
+            anim.SetBool("Caminar", false);
         }
 
         /*if (Input.GetKeyUp (KeyCode.A))
@@ -98,6 +98,10 @@ public class Movimiento : MonoBehaviour
             Destroy(MyCanvas.transform.GetChild(CantDeCorazon + 1).gameObject);
             CantDeCorazon -= 1;
             Destroy(collision.gameObject);
+
+            anim.SetTrigger("Muerte");
+
+
         }
     }
 }
