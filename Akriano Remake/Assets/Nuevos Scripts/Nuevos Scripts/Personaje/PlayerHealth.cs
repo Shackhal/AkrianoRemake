@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour
     public float inmunityTime;
     Blink material;
     SpriteRenderer sprite;
+    Animator anim;
 
 
     // Start is called before the first frame update
@@ -39,6 +40,7 @@ public class PlayerHealth : MonoBehaviour
             if (health <= 0) 
             {
                 Destroy(gameObject);
+                anim.SetTrigger("Muerte");
             }
         }
 

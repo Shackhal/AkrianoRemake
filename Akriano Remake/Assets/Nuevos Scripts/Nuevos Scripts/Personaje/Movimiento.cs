@@ -98,10 +98,9 @@ public class Movimiento : MonoBehaviour
             Destroy(MyCanvas.transform.GetChild(CantDeCorazon + 1).gameObject);
             CantDeCorazon -= 1;
             Destroy(collision.gameObject);
-
-            anim.SetTrigger("Muerte");
-
+            anim.SetBool("Muerte", true);
 
         }
+        
     }
 }
