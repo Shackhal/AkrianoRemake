@@ -91,16 +91,5 @@ public class Movimiento : MonoBehaviour
 
 
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Enemigo")
-        {
-            Destroy(MyCanvas.transform.GetChild(CantDeCorazon + 1).gameObject);
-            CantDeCorazon -= 1;
-            Destroy(collision.gameObject);
-            anim.SetBool("Muerte", true);
-
-        }
-        
-    }
+    
 }
