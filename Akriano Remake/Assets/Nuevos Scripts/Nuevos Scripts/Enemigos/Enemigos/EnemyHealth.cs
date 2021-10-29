@@ -12,11 +12,6 @@ public class EnemyHealth : MonoBehaviour
     Rigidbody2D rb;
     Animator anim;
 
-    public GameObject projectile;
-
-    public float timeToShoot;
-    public float Shootcooldown;
-
     Transform objetivo;
 
 
@@ -28,35 +23,13 @@ public class EnemyHealth : MonoBehaviour
         material = GetComponent<Blink>();
         anim = GetComponent<Animator>();
 
-        Shootcooldown = timeToShoot;
-        objetivo = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-
+        
     }
 
     void Update()
     {
 
-        Shootcooldown -= Time.deltaTime;
-
-
-
-        if (Shootcooldown < 0)
-        {
-            GameObject bala = Instantiate(projectile, transform.position, Quaternion.identity);
-
-            if (transform.localScale.x < 0)
-            {
-                bala.GetComponent<Rigidbody2D>().AddForce(new Vector2(300f, 0f), ForceMode2D.Force);
-            }
-
-            else
-            {
-                bala.GetComponent<Rigidbody2D>().AddForce(new Vector2(-300f, 0f), ForceMode2D.Force);
-            }
-
-            Shootcooldown = timeToShoot;
-
-        }
+       
     }
 
 
