@@ -1,0 +1,816 @@
+fileFormatVersion: 2
+guid: 73d6efffa91a17a4b8754a1937d18180
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2918209845695172301
+    second: EnemigoJefe_MorirDer_0
+  - first:
+      213: 2978681373673499944
+    second: EnemigoJefe_MorirDer_1
+  - first:
+      213: -3794924163241205174
+    second: EnemigoJefe_MorirDer_2
+  - first:
+      213: -3205458852349194971
+    second: EnemigoJefe_MorirDer_3
+  - first:
+      213: -6464846640556674343
+    second: EnemigoJefe_MorirDer_4
+  - first:
+      213: 1496566020567074357
+    second: EnemigoJefe_MorirDer_5
+  - first:
+      213: 7787799641161762100
+    second: EnemigoJefe_MorirDer_6
+  - first:
+      213: -6661328372477930684
+    second: EnemigoJefe_MorirDer_7
+  - first:
+      213: 6296624280460160381
+    second: EnemigoJefe_MorirDer_8
+  - first:
+      213: 3035217552721293890
+    second: EnemigoJefe_MorirDer_9
+  - first:
+      213: 2255422991587261095
+    second: EnemigoJefe_MorirDer_10
+  - first:
+      213: 568835058711384150
+    second: EnemigoJefe_MorirDer_11
+  - first:
+      213: -6826263503484631988
+    second: EnemigoJefe_MorirDer_12
+  - first:
+      213: 8716920888726399975
+    second: EnemigoJefe_MorirDer_13
+  - first:
+      213: -8212096529343682130
+    second: EnemigoJefe_MorirDer_14
+  - first:
+      213: 4359251293201301090
+    second: EnemigoJefe_MorirDer_16
+  - first:
+      213: -2825233845903663531
+    second: EnemigoJefe_MorirDer_17
+  - first:
+      213: -6801704553686073863
+    second: EnemigoJefe_MorirDer_18
+  - first:
+      213: 9085154371435652367
+    second: EnemigoJefe_MorirDer_19
+  - first:
+      213: 8024762072585077360
+    second: EnemigoJefe_MorirDer_20
+  - first:
+      213: 3780836241548975677
+    second: EnemigoJefe_MorirDer_21
+  - first:
+      213: 7081628332164386772
+    second: EnemigoJefe_MorirDer_22
+  - first:
+      213: 7251784870975007496
+    second: EnemigoJefe_MorirDer_23
+  - first:
+      213: 2761133333275645253
+    second: EnemigoJefe_MorirDer_24
+  - first:
+      213: 2940030519029497431
+    second: EnemigoJefe_MorirDer_25
+  - first:
+      213: -8362301967564381197
+    second: EnemigoJefe_MorirDer_26
+  - first:
+      213: -7172329304617847005
+    second: EnemigoJefe_MorirDer_27
+  - first:
+      213: -5763050110344240481
+    second: EnemigoJefe_MorirDer_28
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 3
+        width: 44
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce45b0b4609f7820800000000000000
+      internalID: 2918209845695172301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_1
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 3
+        width: 43
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82da1e87de6665920800000000000000
+      internalID: 2978681373673499944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_2
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 3
+        width: 44
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4226747498b55bc0800000000000000
+      internalID: -3794924163241205174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_3
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 3
+        width: 44
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d4893382ce383d0800000000000000
+      internalID: -3205458852349194971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_4
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 3
+        width: 45
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2fd3e8b304846a0800000000000000
+      internalID: -6464846640556674343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_5
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 3
+        width: 43
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53602d6ddded4c410800000000000000
+      internalID: 1496566020567074357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_6
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 3
+        width: 44
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4358c591382d31c60800000000000000
+      internalID: 7787799641161762100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_7
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 3
+        width: 44
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 443d83273253e83a0800000000000000
+      internalID: -6661328372477930684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_8
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 3
+        width: 43
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d6de01c6a126750800000000000000
+      internalID: 6296624280460160381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_9
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 3
+        width: 44
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242bbfd68424f1a20800000000000000
+      internalID: 3035217552721293890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_10
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 3
+        width: 44
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aabec7d24fdc4f10800000000000000
+      internalID: 2255422991587261095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_11
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 3
+        width: 45
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 650d74ad878e4e700800000000000000
+      internalID: 568835058711384150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_12
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 3
+        width: 43
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44c59bb28d3441a0800000000000000
+      internalID: -6826263503484631988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_13
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 3
+        width: 45
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb28b33d59b8f870800000000000000
+      internalID: 8716920888726399975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_14
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 3
+        width: 46
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9604357b5c80e80800000000000000
+      internalID: -8212096529343682130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_16
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 3
+        width: 46
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26efce174fb2f7c30800000000000000
+      internalID: 4359251293201301090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_17
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 3
+        width: 46
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e508f29c0cac8d0800000000000000
+      internalID: -2825233845903663531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_18
+      rect:
+        serializedVersion: 2
+        x: 1658
+        y: 3
+        width: 48
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd7262debd7b91a0800000000000000
+      internalID: -6801704553686073863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_19
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 3
+        width: 49
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05620ff3c3f41e70800000000000000
+      internalID: 9085154371435652367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_20
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 3
+        width: 47
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0720677869ead5f60800000000000000
+      internalID: 8024762072585077360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_21
+      rect:
+        serializedVersion: 2
+        x: 1946
+        y: 3
+        width: 48
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e137ba78a387430800000000000000
+      internalID: 3780836241548975677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_22
+      rect:
+        serializedVersion: 2
+        x: 2042
+        y: 3
+        width: 47
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df0002b27ff64260800000000000000
+      internalID: 7081628332164386772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_23
+      rect:
+        serializedVersion: 2
+        x: 2138
+        y: 3
+        width: 47
+        height: 82
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b64062be383a460800000000000000
+      internalID: 7251784870975007496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_24
+      rect:
+        serializedVersion: 2
+        x: 2234
+        y: 3
+        width: 48
+        height: 82
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54592633324815620800000000000000
+      internalID: 2761133333275645253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_25
+      rect:
+        serializedVersion: 2
+        x: 2330
+        y: 3
+        width: 48
+        height: 82
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e7f8b1e261dc820800000000000000
+      internalID: 2940030519029497431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_26
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 3
+        width: 49
+        height: 82
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f366c67aa223fb80800000000000000
+      internalID: -8362301967564381197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_27
+      rect:
+        serializedVersion: 2
+        x: 2523
+        y: 3
+        width: 47
+        height: 82
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327f0228f74c67c90800000000000000
+      internalID: -7172329304617847005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoJefe_MorirDer_28
+      rect:
+        serializedVersion: 2
+        x: 2618
+        y: 3
+        width: 48
+        height: 82
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92e72665788500b0800000000000000
+      internalID: -5763050110344240481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

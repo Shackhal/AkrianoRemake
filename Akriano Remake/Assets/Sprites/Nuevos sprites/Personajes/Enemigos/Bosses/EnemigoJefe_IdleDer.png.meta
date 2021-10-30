@@ -1,28 +1,25 @@
 fileFormatVersion: 2
-guid: f131793a6db35304aa0f67eb799dcb49
+guid: 44f6d94d4a75bd04688b1de1b25263f9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2347109740536176804
-    second: EnemigoMelee_MorirDer_0
+      213: 576156345543261828
+    second: EnemigoJefe_IdleDer_0
   - first:
-      213: 716208067723395752
-    second: EnemigoMelee_MorirDer_1
+      213: -728180765703197088
+    second: EnemigoJefe_IdleDer_1
   - first:
-      213: -2439454475607666747
-    second: EnemigoMelee_MorirDer_2
+      213: -8256198063628632715
+    second: EnemigoJefe_IdleDer_2
   - first:
-      213: 4821129509679465458
-    second: EnemigoMelee_MorirDer_3
+      213: -3412251422724815100
+    second: EnemigoJefe_IdleDer_3
   - first:
-      213: -543757205487024170
-    second: EnemigoMelee_MorirDer_4
+      213: -8982972351663568238
+    second: EnemigoJefe_IdleDer_4
   - first:
-      213: 5248363317743775020
-    second: EnemigoMelee_MorirDer_5
-  - first:
-      213: 1060923429727944857
-    second: EnemigoMelee_MorirDer_9
+      213: 4201910697397795511
+    second: EnemigoJefe_IdleDer_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -148,13 +145,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EnemigoMelee_MorirDer_0
+      name: EnemigoJefe_IdleDer_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 4
-        width: 12
-        height: 19
+        x: 27
+        y: 3
+        width: 42
+        height: 92
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5f5b7260246d6fd0800000000000000
-      internalID: -2347109740536176804
+      spriteID: 48e7137c42beef700800000000000000
+      internalID: 576156345543261828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemigoMelee_MorirDer_1
+      name: EnemigoJefe_IdleDer_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 4
-        width: 14
-        height: 19
+        x: 123
+        y: 3
+        width: 42
+        height: 92
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,20 +180,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a20ce5617b70f900800000000000000
-      internalID: 716208067723395752
+      spriteID: 06e2dff937bf4e5f0800000000000000
+      internalID: -728180765703197088
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemigoMelee_MorirDer_2
+      name: EnemigoJefe_IdleDer_2
       rect:
         serializedVersion: 2
-        x: 68
-        y: 4
-        width: 18
-        height: 19
+        x: 219
+        y: 3
+        width: 42
+        height: 92
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,20 +201,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cf0ba74411552ed0800000000000000
-      internalID: -2439454475607666747
+      spriteID: 57db526ba971c6d80800000000000000
+      internalID: -8256198063628632715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemigoMelee_MorirDer_3
+      name: EnemigoJefe_IdleDer_3
       rect:
         serializedVersion: 2
-        x: 98
-        y: 4
-        width: 20
-        height: 19
+        x: 315
+        y: 3
+        width: 42
+        height: 93
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f30990eeb718e240800000000000000
-      internalID: 4821129509679465458
+      spriteID: 4078a20f86f35a0d0800000000000000
+      internalID: -3412251422724815100
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemigoMelee_MorirDer_4
+      name: EnemigoJefe_IdleDer_4
       rect:
         serializedVersion: 2
-        x: 129
-        y: 4
-        width: 21
-        height: 19
+        x: 411
+        y: 3
+        width: 42
+        height: 93
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,20 +243,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d703ead3bf2478f0800000000000000
-      internalID: -543757205487024170
+      spriteID: 29a00ff6d32165380800000000000000
+      internalID: -8982972351663568238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemigoMelee_MorirDer_5
+      name: EnemigoJefe_IdleDer_5
       rect:
         serializedVersion: 2
-        x: 161
-        y: 4
-        width: 21
-        height: 16
+        x: 507
+        y: 3
+        width: 42
+        height: 93
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,29 +264,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2dee4661aee5d840800000000000000
-      internalID: 5248363317743775020
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EnemigoMelee_MorirDer_9
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 4
-        width: 9
-        height: 4
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 990c2d20d3829be00800000000000000
-      internalID: 1060923429727944857
+      spriteID: 7ba3f40448f205a30800000000000000
+      internalID: 4201910697397795511
       vertices: []
       indices: 
       edges: []

@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: f131793a6db35304aa0f67eb799dcb49
+guid: 3bc55ccb37a24fe4991c1741b84d7b70
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2347109740536176804
-    second: EnemigoMelee_MorirDer_0
+      213: -3311856277582202719
+    second: EnemigoJefe_AtacarDer_0
   - first:
-      213: 716208067723395752
-    second: EnemigoMelee_MorirDer_1
+      213: -2157728609970582603
+    second: EnemigoJefe_AtacarDer_1
   - first:
-      213: -2439454475607666747
-    second: EnemigoMelee_MorirDer_2
+      213: 4882719289064062866
+    second: EnemigoJefe_AtacarDer_2
   - first:
-      213: 4821129509679465458
-    second: EnemigoMelee_MorirDer_3
+      213: -618059229281950796
+    second: EnemigoJefe_AtacarDer_3
   - first:
-      213: -543757205487024170
-    second: EnemigoMelee_MorirDer_4
+      213: 8138437116781086746
+    second: EnemigoJefe_AtacarDer_4
   - first:
-      213: 5248363317743775020
-    second: EnemigoMelee_MorirDer_5
+      213: 753036928498976519
+    second: EnemigoJefe_AtacarDer_5
   - first:
-      213: 1060923429727944857
-    second: EnemigoMelee_MorirDer_9
+      213: -4069196268896126790
+    second: EnemigoJefe_AtacarDer_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -148,13 +148,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EnemigoMelee_MorirDer_0
+      name: EnemigoJefe_AtacarDer_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 4
-        width: 12
-        height: 19
+        x: 27
+        y: 3
+        width: 42
+        height: 92
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5f5b7260246d6fd0800000000000000
-      internalID: -2347109740536176804
+      spriteID: 1a8b093334ce902d0800000000000000
+      internalID: -3311856277582202719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemigoMelee_MorirDer_1
+      name: EnemigoJefe_AtacarDer_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 4
-        width: 14
-        height: 19
+        x: 123
+        y: 3
+        width: 42
+        height: 93
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a20ce5617b70f900800000000000000
-      internalID: 716208067723395752
+      spriteID: 5bb8109e2453e02e0800000000000000
+      internalID: -2157728609970582603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemigoMelee_MorirDer_2
+      name: EnemigoJefe_AtacarDer_2
       rect:
         serializedVersion: 2
-        x: 68
-        y: 4
-        width: 18
-        height: 19
+        x: 219
+        y: 3
+        width: 42
+        height: 93
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,20 +204,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cf0ba74411552ed0800000000000000
-      internalID: -2439454475607666747
+      spriteID: 29f7c9ad257e2c340800000000000000
+      internalID: 4882719289064062866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemigoMelee_MorirDer_3
+      name: EnemigoJefe_AtacarDer_3
       rect:
         serializedVersion: 2
-        x: 98
-        y: 4
-        width: 20
-        height: 19
+        x: 315
+        y: 3
+        width: 42
+        height: 93
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,20 +225,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f30990eeb718e240800000000000000
-      internalID: 4821129509679465458
+      spriteID: 4b36f74d7663c67f0800000000000000
+      internalID: -618059229281950796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemigoMelee_MorirDer_4
+      name: EnemigoJefe_AtacarDer_4
       rect:
         serializedVersion: 2
-        x: 129
-        y: 4
-        width: 21
-        height: 19
+        x: 411
+        y: 3
+        width: 42
+        height: 93
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,20 +246,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d703ead3bf2478f0800000000000000
-      internalID: -543757205487024170
+      spriteID: a18479c307981f070800000000000000
+      internalID: 8138437116781086746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemigoMelee_MorirDer_5
+      name: EnemigoJefe_AtacarDer_5
       rect:
         serializedVersion: 2
-        x: 161
-        y: 4
-        width: 21
-        height: 16
+        x: 507
+        y: 3
+        width: 42
+        height: 93
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,20 +267,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2dee4661aee5d840800000000000000
-      internalID: 5248363317743775020
+      spriteID: 707cee1c813537a00800000000000000
+      internalID: 753036928498976519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemigoMelee_MorirDer_9
+      name: EnemigoJefe_AtacarDer_6
       rect:
         serializedVersion: 2
-        x: 205
-        y: 4
-        width: 9
-        height: 4
+        x: 603
+        y: 3
+        width: 42
+        height: 92
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,8 +288,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 990c2d20d3829be00800000000000000
-      internalID: 1060923429727944857
+      spriteID: ab8f91f8d8f4787c0800000000000000
+      internalID: -4069196268896126790
       vertices: []
       indices: 
       edges: []
