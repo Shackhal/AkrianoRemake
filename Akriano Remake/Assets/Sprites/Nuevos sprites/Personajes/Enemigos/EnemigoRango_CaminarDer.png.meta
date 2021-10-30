@@ -1,25 +1,37 @@
 fileFormatVersion: 2
-guid: b518cd6dd15022748beb453fa130a34e
+guid: 909df88988bb029448dcb06a66d0f2c0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5835693012703959276
-    second: EnemigoMelee_CorrerDer_0
+      213: 9033160428409289296
+    second: EnemigoRango_CaminarDer_0
   - first:
-      213: 1141535579239126545
-    second: EnemigoMelee_CorrerDer_1
+      213: 6380766476111620481
+    second: EnemigoRango_CaminarDer_1
   - first:
-      213: -6974950656591113856
-    second: EnemigoMelee_CorrerDer_2
+      213: 3160735058366499608
+    second: EnemigoRango_CaminarDer_2
   - first:
-      213: 8491872104837402195
-    second: EnemigoMelee_CorrerDer_3
+      213: 4991495137907224554
+    second: EnemigoRango_CaminarDer_3
   - first:
-      213: -4958401792007001589
-    second: EnemigoMelee_CorrerDer_4
+      213: 6118542529846782382
+    second: EnemigoRango_CaminarDer_4
   - first:
-      213: 4646232509262547197
-    second: EnemigoMelee_CorrerDer_5
+      213: -2803505573982799368
+    second: EnemigoRango_CaminarDer_5
+  - first:
+      213: -5822116844393063446
+    second: EnemigoRango_CaminarDer_6
+  - first:
+      213: -3008305157151721463
+    second: EnemigoRango_CaminarDer_7
+  - first:
+      213: 5779302443435778181
+    second: EnemigoRango_CaminarDer_8
+  - first:
+      213: -5371916042373625278
+    second: EnemigoRango_CaminarDer_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -145,13 +157,55 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EnemigoMelee_CorrerDer_0
+      name: EnemigoRango_CaminarDer_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 4
+        x: 8
+        y: 3
+        width: 14
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a7376cc8b3c5d70800000000000000
+      internalID: 9033160428409289296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoRango_CaminarDer_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 3
+        width: 15
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189aa53ad490d8850800000000000000
+      internalID: 6380766476111620481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoRango_CaminarDer_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 3
         width: 13
-        height: 20
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +213,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce8d27050eb8cf050800000000000000
-      internalID: 5835693012703959276
+      spriteID: 81b0f0f0acf2ddb20800000000000000
+      internalID: 3160735058366499608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemigoMelee_CorrerDer_1
+      name: EnemigoRango_CaminarDer_3
       rect:
         serializedVersion: 2
-        x: 42
-        y: 5
+        x: 104
+        y: 3
+        width: 14
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aefac01c16a554540800000000000000
+      internalID: 4991495137907224554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoRango_CaminarDer_4
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 3
         width: 13
-        height: 18
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,83 +255,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 116940baf8c87df00800000000000000
-      internalID: 1141535579239126545
+      spriteID: ea923a2730e69e450800000000000000
+      internalID: 6118542529846782382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemigoMelee_CorrerDer_2
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 5
-        width: 12
-        height: 18
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 081520c255ff33f90800000000000000
-      internalID: -6974950656591113856
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EnemigoMelee_CorrerDer_3
-      rect:
-        serializedVersion: 2
-        x: 106
-        y: 4
-        width: 12
-        height: 20
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35ec1eeffa039d570800000000000000
-      internalID: 8491872104837402195
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EnemigoMelee_CorrerDer_4
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 4
-        width: 12
-        height: 19
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0a23c547d7303bb0800000000000000
-      internalID: -4958401792007001589
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EnemigoMelee_CorrerDer_5
+      name: EnemigoRango_CaminarDer_5
       rect:
         serializedVersion: 2
         x: 170
-        y: 4
-        width: 13
-        height: 19
+        y: 3
+        width: 12
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,8 +276,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df84772b9dbba7040800000000000000
-      internalID: 4646232509262547197
+      spriteID: 8f97de8b882f719d0800000000000000
+      internalID: -2803505573982799368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoRango_CaminarDer_6
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 3
+        width: 11
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb1221b39fa33fa0800000000000000
+      internalID: -5822116844393063446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoRango_CaminarDer_7
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 4
+        width: 10
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908fef3f56a5046d0800000000000000
+      internalID: -3008305157151721463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoRango_CaminarDer_8
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 4
+        width: 12
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5806986c3f4343050800000000000000
+      internalID: 5779302443435778181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoRango_CaminarDer_9
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 3
+        width: 13
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a091332de1375b0800000000000000
+      internalID: -5371916042373625278
       vertices: []
       indices: 
       edges: []

@@ -1,25 +1,34 @@
 fileFormatVersion: 2
-guid: b518cd6dd15022748beb453fa130a34e
+guid: 21b479786d2b2b5459dbcb77e8fe4684
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5835693012703959276
-    second: EnemigoMelee_CorrerDer_0
+      213: -7080203594714770362
+    second: EnemigoRango_MorirDer_0
   - first:
-      213: 1141535579239126545
-    second: EnemigoMelee_CorrerDer_1
+      213: -7056784026810208659
+    second: EnemigoRango_MorirDer_1
   - first:
-      213: -6974950656591113856
-    second: EnemigoMelee_CorrerDer_2
+      213: -6532476543412167981
+    second: EnemigoRango_MorirDer_2
   - first:
-      213: 8491872104837402195
-    second: EnemigoMelee_CorrerDer_3
+      213: 5160779773875677139
+    second: EnemigoRango_MorirDer_3
   - first:
-      213: -4958401792007001589
-    second: EnemigoMelee_CorrerDer_4
+      213: 453051084530960743
+    second: EnemigoRango_MorirDer_4
   - first:
-      213: 4646232509262547197
-    second: EnemigoMelee_CorrerDer_5
+      213: -2587029695018220754
+    second: EnemigoRango_MorirDer_5
+  - first:
+      213: -6178363797934345156
+    second: EnemigoRango_MorirDer_6
+  - first:
+      213: -3717250382650970066
+    second: EnemigoRango_MorirDer_7
+  - first:
+      213: -7662082374901924674
+    second: EnemigoRango_MorirDer_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -145,12 +154,75 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EnemigoMelee_CorrerDer_0
+      name: EnemigoRango_MorirDer_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 4
-        width: 13
+        x: 8
+        y: 3
+        width: 14
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6441597d7501ebd90800000000000000
+      internalID: -7080203594714770362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoRango_MorirDer_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 3
+        width: 16
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ea359e054411e90800000000000000
+      internalID: -7056784026810208659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoRango_MorirDer_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 3
+        width: 21
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da985eb13bf755a0800000000000000
+      internalID: -6532476543412167981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoRango_MorirDer_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 3
+        width: 22
         height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -159,61 +231,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce8d27050eb8cf050800000000000000
-      internalID: 5835693012703959276
+      spriteID: 3d761e18cd5ce9740800000000000000
+      internalID: 5160779773875677139
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemigoMelee_CorrerDer_1
+      name: EnemigoRango_MorirDer_4
       rect:
         serializedVersion: 2
-        x: 42
-        y: 5
-        width: 13
-        height: 18
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 116940baf8c87df00800000000000000
-      internalID: 1141535579239126545
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EnemigoMelee_CorrerDer_2
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 5
-        width: 12
-        height: 18
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 081520c255ff33f90800000000000000
-      internalID: -6974950656591113856
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EnemigoMelee_CorrerDer_3
-      rect:
-        serializedVersion: 2
-        x: 106
-        y: 4
-        width: 12
+        x: 137
+        y: 3
+        width: 21
         height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -222,20 +252,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35ec1eeffa039d570800000000000000
-      internalID: 8491872104837402195
+      spriteID: 769c29e9f8f894600800000000000000
+      internalID: 453051084530960743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemigoMelee_CorrerDer_4
+      name: EnemigoRango_MorirDer_5
       rect:
         serializedVersion: 2
-        x: 138
-        y: 4
-        width: 12
-        height: 19
+        x: 171
+        y: 3
+        width: 14
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,20 +273,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0a23c547d7303bb0800000000000000
-      internalID: -4958401792007001589
+      spriteID: e234d05f236091cd0800000000000000
+      internalID: -2587029695018220754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EnemigoMelee_CorrerDer_5
+      name: EnemigoRango_MorirDer_6
       rect:
         serializedVersion: 2
-        x: 170
-        y: 4
-        width: 13
-        height: 19
+        x: 203
+        y: 3
+        width: 14
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,8 +294,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df84772b9dbba7040800000000000000
-      internalID: 4646232509262547197
+      spriteID: c347df23cda024aa0800000000000000
+      internalID: -6178363797934345156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoRango_MorirDer_7
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 3
+        width: 14
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2077e8c87ca96cc0800000000000000
+      internalID: -3717250382650970066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemigoRango_MorirDer_8
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 3
+        width: 14
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc703ceca0daa590800000000000000
+      internalID: -7662082374901924674
       vertices: []
       indices: 
       edges: []
