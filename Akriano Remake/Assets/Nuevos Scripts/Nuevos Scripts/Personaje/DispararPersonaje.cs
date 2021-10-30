@@ -28,6 +28,7 @@ public class DispararPersonaje : MonoBehaviour
             //agregando colision
             bala_clon.AddComponent<BoxCollider2D>().isTrigger = true;
             bala_clon.tag = "Kill";
+            
             //determinar la direccion
             //necesitamos 2 posiciones
             //la del player

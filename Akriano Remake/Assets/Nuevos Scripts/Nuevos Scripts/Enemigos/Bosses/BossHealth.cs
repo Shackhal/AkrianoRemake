@@ -62,8 +62,11 @@ public class BossHealth : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
         if (collision.CompareTag("Kill") && !isDamage)
+
         {
+            Debug.Log(collision.gameObject.tag);
             Boss.BosshealthPoints -= 5f;
             if (collision.transform.position.x < transform.position.x)
             {
@@ -76,7 +79,7 @@ public class BossHealth : MonoBehaviour
 
 
 
-            _ = StartCoroutine(Damager());
+            StartCoroutine(Damager());
             if (Boss.BosshealthPoints <= 0)
             {
                 anim.SetTrigger("Muerte_Enemigo");

@@ -7,10 +7,17 @@ public class EnemyHealth : MonoBehaviour
 
     Enemy enemy;
     public bool isDamage;
+    public bool attack;
+    public float cronometro;
+    public float speed_walk;
     Blink material;
     SpriteRenderer sprite;
     Rigidbody2D rb;
-    Animator anim;
+    Animator anim; 
+    public int rutina;
+    public int direccion;
+
+    public GameObject target;
 
     Transform objetivo;
 
@@ -22,15 +29,59 @@ public class EnemyHealth : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         material = GetComponent<Blink>();
         anim = GetComponent<Animator>();
-
+        target = GameObject.Find("Player");
         
     }
 
     void Update()
     {
-
-       
+        Comportamientos();
     }
+
+
+    public void Comportamientos() 
+    {
+        anim.SetBool("Caminar_Enemigo", false);
+        cronometro += 1 + Time.deltaTime;
+
+        if (cronometro >= 4) 
+        {
+            rutina = Random.Range(0, 2);
+            cronometro = 0;
+        }
+
+        switch (rutina) 
+        {
+            case 0:
+                anim.SetBool("Caminar_Enemigo", false);
+                break;
+
+            case 1:
+                direccion = Random.Range(0, 2);
+                rutina++;
+                break;
+            case 2:
+                
+                switch (direccion)
+                {
+                    case 0:
+                        transform.rotation = Quaternion.Euler(0, 0, 0);
+                        transform.Translate(Vector3.right * speed_walk * Time.deltaTime);
+                        break;
+                    case 1:
+                        transform.rotation = Quaternion.Euler(0, 180, 0);
+                        transform.Translate(Vector3.right * speed_walk * Time.deltaTime);
+                        break;
+                }
+                anim.SetBool("Caminar_Enemigo", true);
+                break;
+
+        }
+
+
+    }
+
+
 
 
     private void OnTriggerEnter2D(Collider2D collision)
