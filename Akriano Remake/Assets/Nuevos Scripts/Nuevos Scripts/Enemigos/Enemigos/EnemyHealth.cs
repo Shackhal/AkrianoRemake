@@ -7,20 +7,20 @@ public class EnemyHealth : MonoBehaviour
 
     Enemy enemy;
     public bool isDamage;
-    public bool attack;
-    public float cronometro;
-    public float speed_walk;
+    public float speed;
+    public float visionRadius;
+
+
     Blink material;
     SpriteRenderer sprite;
     Rigidbody2D rb;
     Animator anim; 
-    public int rutina;
-    public int direccion;
+    
 
-    public GameObject target;
+    GameObject Player;
 
     Transform objetivo;
-
+    Vector3 initialPosition;
 
     private void Start()
     {
@@ -29,58 +29,34 @@ public class EnemyHealth : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         material = GetComponent<Blink>();
         anim = GetComponent<Animator>();
-        target = GameObject.Find("Player");
+
+        Player = GameObject.FindGameObjectWithTag("Player");
+
+        initialPosition = transform.position;
+
         
     }
 
     void Update()
     {
-        Comportamientos();
+        Vector3 target = initialPosition;
+
+        float dist = Vector3.Distance(Player.transform.position, transform.position);
+        if (dist < visionRadius) target = Player.transform.position;
+
+        float fixedSpeed = speed * Time.deltaTime;
+        transform.position = Vector3.MoveTowards(transform.position, target, fixedSpeed);
+
+        Debug.DrawLine(transform.position, target, Color.red);
+
+
     }
 
-
-    public void Comportamientos() 
+    private void OnDrawGizmos()
     {
-        anim.SetBool("Caminar_Enemigo", false);
-        cronometro += 1 + Time.deltaTime;
-
-        if (cronometro >= 4) 
-        {
-            rutina = Random.Range(0, 2);
-            cronometro = 0;
-        }
-
-        switch (rutina) 
-        {
-            case 0:
-                anim.SetBool("Caminar_Enemigo", false);
-                break;
-
-            case 1:
-                direccion = Random.Range(0, 2);
-                rutina++;
-                break;
-            case 2:
-                
-                switch (direccion)
-                {
-                    case 0:
-                        transform.rotation = Quaternion.Euler(0, 0, 0);
-                        transform.Translate(Vector3.right * speed_walk * Time.deltaTime);
-                        break;
-                    case 1:
-                        transform.rotation = Quaternion.Euler(0, 180, 0);
-                        transform.Translate(Vector3.right * speed_walk * Time.deltaTime);
-                        break;
-                }
-                anim.SetBool("Caminar_Enemigo", true);
-                break;
-
-        }
-
-
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, visionRadius);
     }
-
 
 
 

@@ -12,8 +12,9 @@ public class PlayerHealth : MonoBehaviour
     Blink material;
     SpriteRenderer sprite;
     Animator anim;
-    Movimiento movimiento;
-    Vector2 mov;
+    
+
+    Vector3 target;
     public float speed = 4f;
     Rigidbody2D rb2d;
 
@@ -26,23 +27,18 @@ public class PlayerHealth : MonoBehaviour
         health = maxHealth;
         anim = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
+        target = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        mov = new Vector2(
-              Input.GetAxisRaw("Horizontal"),
-              Input.GetAxisRaw("Vertical")
-              );
-
-
-
-
-        if (mov != Vector2.zero)
+        if (Input.GetMouseButtonDown(0))
         {
-            anim.SetFloat("MovX", mov.x);
-            anim.SetFloat("MovY", mov.y);
+            target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+            target.z = 0f;
+
             anim.SetBool("Caminar", true);
         }
         else
@@ -50,17 +46,17 @@ public class PlayerHealth : MonoBehaviour
             anim.SetBool("Caminar", false);
         }
 
+        transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
+
+        Debug.DrawLine(transform.position, target, Color.green);
+
         if (health> maxHealth) 
         {
             health = maxHealth;
         }  
     }
 
-    void FixedUpdate()
-    {
-        rb2d.MovePosition(rb2d.position + mov * speed * Time.deltaTime);
-    }
-
+    
 
 
 
