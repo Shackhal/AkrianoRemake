@@ -74,11 +74,12 @@
     <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\MotorPuerta.cs" />
     <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Enemigos\Enemigos\EnemyHealth.cs" />
     <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Blink.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Personaje\DisparoAuto.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\AdministrarFlujo.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\AdministrarSonidos.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\PuertaMover.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\PuertaFinalizar4.cs" />
-    <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Personaje\PlayerHealth.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Personaje\Player.cs" />
     <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Personaje\DispararPersonaje.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\Plantillas\Cuarto.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\LogicaEnemigo.cs" />
@@ -93,7 +94,7 @@
     <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\Aciones_Enemigo\Seguir.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\DialogueManager.cs" />
     <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Enemigos\Enemigos\Enemy.cs" />
-    <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Personaje\DisparoAuto.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Borrador.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />

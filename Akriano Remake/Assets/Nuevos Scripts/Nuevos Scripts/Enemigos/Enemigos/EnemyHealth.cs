@@ -42,7 +42,20 @@ public class EnemyHealth : MonoBehaviour
         Vector3 target = initialPosition;
 
         float dist = Vector3.Distance(Player.transform.position, transform.position);
-        if (dist < visionRadius) target = Player.transform.position;
+        if (dist < visionRadius)
+        {
+            target = Player.transform.position;
+
+            anim.SetBool("Caminar_Enemigo", true);
+            anim.SetBool("Atacar_Enemigo", true);
+
+        }
+
+        else
+        {
+            anim.SetBool("Caminar_Enemigo", false);
+            anim.SetBool("Atacar_Enemigo", false);
+        }
 
         float fixedSpeed = speed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, target, fixedSpeed);
@@ -54,7 +67,7 @@ public class EnemyHealth : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.yellow;
+        Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, visionRadius);
     }
 
@@ -76,7 +89,7 @@ public class EnemyHealth : MonoBehaviour
 
 
 
-            _ = StartCoroutine(Damager());
+            StartCoroutine(Damager());
             if (enemy.healthPoints <= 0) 
             {
                 anim.SetTrigger("Muerte_Enemigo");

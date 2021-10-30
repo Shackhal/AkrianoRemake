@@ -7,6 +7,9 @@ public class BossHealth : MonoBehaviour
 
     Boss Boss;
     public bool isDamage;
+    public float speed;
+    public float visionRadius;
+
     Blink material;
     SpriteRenderer sprite;
     Rigidbody2D rb;
@@ -17,8 +20,10 @@ public class BossHealth : MonoBehaviour
     public float timeToShoot;
     public float Shootcooldown;
 
-    Transform objetivo;
+    GameObject Player;
 
+    Transform objetivo;
+    Vector3 initialPosition;
 
     private void Start()
     {
@@ -36,6 +41,27 @@ public class BossHealth : MonoBehaviour
     void Update()
     {
 
+        Vector3 target = initialPosition;
+
+        float dist = Vector3.Distance(Player.transform.position, transform.position);
+        if (dist < visionRadius)
+        {
+            target = Player.transform.position;
+
+            anim.SetBool("Atacar_Enemigo", true);
+
+        }
+
+        else
+        {
+            anim.SetBool("Atacar_Enemigo", false);
+        }
+
+        float fixedSpeed = speed * Time.deltaTime;
+        transform.position = Vector3.MoveTowards(transform.position, target, fixedSpeed);
+
+        Debug.DrawLine(transform.position, target, Color.red);
+
         Shootcooldown -= Time.deltaTime;
 
 
@@ -52,6 +78,7 @@ public class BossHealth : MonoBehaviour
             else
             {
                 bala.GetComponent<Rigidbody2D>().AddForce(new Vector2(-300f, 0f), ForceMode2D.Force);
+                Destroy(gameObject, 10);
             }
 
             Shootcooldown = timeToShoot;
@@ -59,10 +86,16 @@ public class BossHealth : MonoBehaviour
         }
     }
 
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.black;
+        Gizmos.DrawWireSphere(transform.position, visionRadius);
+    }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        Debug.Log("Muereee");
         if (collision.CompareTag("Kill") && !isDamage)
 
         {

@@ -6,7 +6,6 @@ public class Boss : MonoBehaviour
 {
     public string BossName;
     public float BosshealthPoints;
-    public float speed;
     public float damageToGive;
     public float knockbackForceX;
     public float knockbackForceY;

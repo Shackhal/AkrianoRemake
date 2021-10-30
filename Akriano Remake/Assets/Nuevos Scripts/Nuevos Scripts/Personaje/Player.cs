@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour
+public class Player : MonoBehaviour
 {
 
     public float health;
@@ -70,6 +70,7 @@ public class PlayerHealth : MonoBehaviour
             {
                 anim.SetTrigger("Muerte");
                 this.enabled = false;
+                gameObject.GetComponent<BoxCollider2D>().enabled = false;
                 Destroy(gameObject, 20);
             }
         }
