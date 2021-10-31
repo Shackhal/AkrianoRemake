@@ -10,6 +10,7 @@ public class DisparoAuto : MonoBehaviour
     public float Shootcooldown;
 
     Transform objetivo;
+    Vector2 enemyPosition;
 
     void Start()
     {
@@ -20,7 +21,7 @@ public class DisparoAuto : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        enemyPosition = FindClosestEnemy();
         Shootcooldown -= Time.deltaTime;
 
 
@@ -29,14 +30,14 @@ public class DisparoAuto : MonoBehaviour
         {
             GameObject bala = Instantiate(projectile, transform.position, Quaternion.identity);
 
-            if (transform.localScale.x < 0)
+            if (enemyPosition.x < transform.position.x)
             {
-                bala.GetComponent<Rigidbody2D>().AddForce(new Vector2(300f, 0f), ForceMode2D.Force);
+                bala.GetComponent<Rigidbody2D>().AddForceAtPosition(enemyPosition, transform.position, ForceMode2D.Force);
             }
 
             else
             {
-                bala.GetComponent<Rigidbody2D>().AddForce(new Vector2(-300f, 0f), ForceMode2D.Force);
+                bala.GetComponent<Rigidbody2D>().AddForceAtPosition(enemyPosition, transform.position, ForceMode2D.Force);
             }
 
             Shootcooldown = timeToShoot;
@@ -45,6 +46,26 @@ public class DisparoAuto : MonoBehaviour
 
         
 
+    }
+
+     private Vector2 FindClosestEnemy()
+    {
+        float distanceToClosestEnemy = Mathf.Infinity;
+        Enemy closestEnemy = null;
+        Enemy[] allEnemies = GameObject.FindObjectsOfType<Enemy>();
+
+        foreach (Enemy currentEnemy in allEnemies)
+        {
+            float distanceToEnemy = (currentEnemy.transform.position - this.transform.position).sqrMagnitude;
+            if (distanceToEnemy < distanceToClosestEnemy)
+            {
+                distanceToClosestEnemy = distanceToEnemy;
+                closestEnemy = currentEnemy;
+            }
+        }
+
+        Debug.DrawLine(this.transform.position, closestEnemy.transform.position);
+        return closestEnemy.transform.position;
     }
 
 

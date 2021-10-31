@@ -10,6 +10,5 @@ public class Enemy : MonoBehaviour
     public float damageToGive;
     public float knockbackForceX;
     public float knockbackForceY;
-    
-
+    internal object position;
 }
