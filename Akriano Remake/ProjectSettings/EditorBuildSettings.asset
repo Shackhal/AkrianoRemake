@@ -8,10 +8,4 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: 5d66a3a8a0d0f254ab4e3dd5596dcd53
-  - enabled: 1
-    path: Assets/Scenes/Mundo Hierba.unity
-    guid: 337e43e06d33bad49877690371350ee3
   m_configObjects: {}

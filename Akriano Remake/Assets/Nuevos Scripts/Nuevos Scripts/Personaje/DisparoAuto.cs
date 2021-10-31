@@ -10,55 +10,32 @@ public class DisparoAuto : MonoBehaviour
     public float Shootcooldown;
 
     Transform objetivo;
-<<<<<<< HEAD
     Vector3 enemyPosition;
 
     Vector3 BossPosition;
 
-<<<<<<< HEAD
-    
-=======
-    Vector2 enemyPosition;
->>>>>>> parent of cb7e1d5 (Mejorado)
-=======
     Vector3 LargePosition;
->>>>>>> parent of cc34bc0 (Merge branch 'main' of https://github.com/Shackhal/AkrianoRemake)
 
     void Start()
     {
         Shootcooldown = timeToShoot;
         objetivo = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Transform>();
-<<<<<<< HEAD
         objetivo = GameObject.FindGameObjectWithTag("Boss").GetComponent<Transform>();
-<<<<<<< HEAD
-        
-=======
->>>>>>> parent of cb7e1d5 (Mejorado)
-=======
         objetivo = GameObject.FindGameObjectWithTag("EnemyDistance").GetComponent<Transform>();
->>>>>>> parent of cc34bc0 (Merge branch 'main' of https://github.com/Shackhal/AkrianoRemake)
     }
 
     // Update is called once per frame
     void Update()
     {
         enemyPosition = FindClosestEnemy();
-<<<<<<< HEAD
         BossPosition = FindClosestBoss();
-<<<<<<< HEAD
-        
-=======
->>>>>>> parent of cb7e1d5 (Mejorado)
-=======
         LargePosition = FindClosestEnemyDistance();
->>>>>>> parent of cc34bc0 (Merge branch 'main' of https://github.com/Shackhal/AkrianoRemake)
         Shootcooldown -= Time.deltaTime;
 
 
 
         if (Shootcooldown < 0)
         {
-<<<<<<< HEAD
             {
                 GameObject bala = Instantiate(projectile, transform.position, Quaternion.identity);
 
@@ -110,25 +87,24 @@ public class DisparoAuto : MonoBehaviour
 
         /*if (Shootcooldown < 0)
         {
-=======
->>>>>>> parent of cb7e1d5 (Mejorado)
             GameObject bala = Instantiate(projectile, transform.position, Quaternion.identity);
 
-            if (enemyPosition.x < transform.position.x)
+            if (BossPosition.x < transform.position.x)
             {
-                bala.GetComponent<Rigidbody2D>().AddForceAtPosition(enemyPosition, transform.position, ForceMode2D.Force);
+                bala.GetComponent<Rigidbody2D>().velocity = (BossPosition - transform.position) * new Vector2(1f, 1f);
             }
 
             else
             {
-                bala.GetComponent<Rigidbody2D>().AddForceAtPosition(enemyPosition, transform.position, ForceMode2D.Force);
+                bala.GetComponent<Rigidbody2D>().velocity = (BossPosition - transform.position) * new Vector2(1f, 1f);
             }
 
             Shootcooldown = timeToShoot;
 
-        }
+        }*/
 
-        
+
+
 
     }
 
@@ -152,7 +128,6 @@ public class DisparoAuto : MonoBehaviour
         return closestEnemy.transform.position;
     }
 
-<<<<<<< HEAD
     private Vector2 FindClosestBoss()
     {
         float distanceToClosestBoss = Mathf.Infinity;
@@ -197,7 +172,5 @@ public class DisparoAuto : MonoBehaviour
 
 
 
-=======
->>>>>>> parent of cb7e1d5 (Mejorado)
 
 }
