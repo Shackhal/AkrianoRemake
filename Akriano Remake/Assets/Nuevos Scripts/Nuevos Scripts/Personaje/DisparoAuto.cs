@@ -15,10 +15,14 @@ public class DisparoAuto : MonoBehaviour
 
     Vector3 BossPosition;
 
+<<<<<<< HEAD
     
 =======
     Vector2 enemyPosition;
 >>>>>>> parent of cb7e1d5 (Mejorado)
+=======
+    Vector3 LargePosition;
+>>>>>>> parent of cc34bc0 (Merge branch 'main' of https://github.com/Shackhal/AkrianoRemake)
 
     void Start()
     {
@@ -26,9 +30,13 @@ public class DisparoAuto : MonoBehaviour
         objetivo = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Transform>();
 <<<<<<< HEAD
         objetivo = GameObject.FindGameObjectWithTag("Boss").GetComponent<Transform>();
+<<<<<<< HEAD
         
 =======
 >>>>>>> parent of cb7e1d5 (Mejorado)
+=======
+        objetivo = GameObject.FindGameObjectWithTag("EnemyDistance").GetComponent<Transform>();
+>>>>>>> parent of cc34bc0 (Merge branch 'main' of https://github.com/Shackhal/AkrianoRemake)
     }
 
     // Update is called once per frame
@@ -37,9 +45,13 @@ public class DisparoAuto : MonoBehaviour
         enemyPosition = FindClosestEnemy();
 <<<<<<< HEAD
         BossPosition = FindClosestBoss();
+<<<<<<< HEAD
         
 =======
 >>>>>>> parent of cb7e1d5 (Mejorado)
+=======
+        LargePosition = FindClosestEnemyDistance();
+>>>>>>> parent of cc34bc0 (Merge branch 'main' of https://github.com/Shackhal/AkrianoRemake)
         Shootcooldown -= Time.deltaTime;
 
 
@@ -75,10 +87,21 @@ public class DisparoAuto : MonoBehaviour
                     bala.GetComponent<Rigidbody2D>().velocity = (BossPosition - transform.position) * new Vector2(1f, 1f);
                 }
 
-
+                
             }
+            {
+                GameObject bala = Instantiate(projectile, transform.position, Quaternion.identity);
 
-        }
+                if (LargePosition.x < transform.position.x)
+                {
+                    bala.GetComponent<Rigidbody2D>().velocity = (LargePosition - transform.position) * new Vector2(1f, 1f);
+                }
+
+                else
+                {
+                    bala.GetComponent<Rigidbody2D>().velocity = (LargePosition - transform.position) * new Vector2(1f, 1f);
+                }
+            }
 
 
             Shootcooldown = timeToShoot;
@@ -107,7 +130,7 @@ public class DisparoAuto : MonoBehaviour
 
         
 
-    
+    }
 
      private Vector2 FindClosestEnemy()
     {
@@ -149,10 +172,26 @@ public class DisparoAuto : MonoBehaviour
         Debug.DrawLine(this.transform.position, closestBoss.transform.position);
         return closestBoss.transform.position;
     }
-}
-    
 
+    private Vector2 FindClosestEnemyDistance()
+    {
+        float distanceToClosestEnemyDistance = Mathf.Infinity;
+        EnemyDistance closestEnemyDistance = null;
+        EnemyDistance[] allEnemyDistances = GameObject.FindObjectsOfType<EnemyDistance>();
 
+        foreach (EnemyDistance currentEnemyDistance in allEnemyDistances)
+        {
+            float distanceToEnemyDistance = (currentEnemyDistance.transform.position - this.transform.position).sqrMagnitude;
+            if (distanceToEnemyDistance < distanceToClosestEnemyDistance)
+            {
+                distanceToClosestEnemyDistance = distanceToEnemyDistance;
+                closestEnemyDistance = currentEnemyDistance;
+            }
+        }
+
+        Debug.DrawLine(this.transform.position, closestEnemyDistance.transform.position);
+        return closestEnemyDistance.transform.position;
+    }
 
 
 
@@ -161,3 +200,4 @@ public class DisparoAuto : MonoBehaviour
 =======
 >>>>>>> parent of cb7e1d5 (Mejorado)
 
+}

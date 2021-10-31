@@ -1,10 +1,14 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &7843947640848803670
 =======
 --- !u!1 &8146481790467600925
 >>>>>>> parent of cb7e1d5 (Mejorado)
+=======
+--- !u!1 &7554199988306227472
+>>>>>>> parent of cc34bc0 (Merge branch 'main' of https://github.com/Shackhal/AkrianoRemake)
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12,6 +16,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
 <<<<<<< HEAD
   - component: {fileID: 7843947640848803693}
   - component: {fileID: 7843947640848803694}
@@ -35,20 +40,69 @@ GameObject:
   m_Name: ShamanGoblin
   m_TagString: Untagged
 >>>>>>> parent of cb7e1d5 (Mejorado)
+=======
+  - component: {fileID: 7554199988306227475}
+  m_Layer: 0
+  m_Name: Disparo
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
---- !u!4 &7843947640848803693
-=======
---- !u!4 &8146481790467600912
->>>>>>> parent of cb7e1d5 (Mejorado)
+--- !u!4 &7554199988306227475
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7554199988306227472}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7554199989029664580}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7554199989029664590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7554199989029664580}
+  - component: {fileID: 7554199989029664581}
+  - component: {fileID: 7554199989029664586}
+  - component: {fileID: 7554199989029664587}
+  - component: {fileID: 7554199989029664584}
+  - component: {fileID: 7554199989029664585}
+  - component: {fileID: 7554199989029664583}
+  - component: {fileID: 7554199989029664582}
+  - component: {fileID: 7554199989029664577}
+  m_Layer: 0
+  m_Name: ShamanGoblin
+  m_TagString: EnemyDistance
+>>>>>>> parent of cc34bc0 (Merge branch 'main' of https://github.com/Shackhal/AkrianoRemake)
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+<<<<<<< HEAD
+<<<<<<< HEAD
+--- !u!4 &7843947640848803693
+=======
+--- !u!4 &8146481790467600912
+>>>>>>> parent of cb7e1d5 (Mejorado)
+=======
+--- !u!4 &7554199989029664580
+>>>>>>> parent of cc34bc0 (Merge branch 'main' of https://github.com/Shackhal/AkrianoRemake)
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 7843947640848803670}
   m_LocalRotation: {x: -0, y: 0.034277, z: -0, w: -0.99941236}
@@ -58,27 +112,41 @@ Transform:
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 5.9, y: -0.13, z: -1}
 >>>>>>> parent of cb7e1d5 (Mejorado)
+=======
+  m_GameObject: {fileID: 7554199989029664590}
+  m_LocalRotation: {x: -0, y: 0.034277, z: -0, w: -0.99941236}
+  m_LocalPosition: {x: 2.65, y: 0.48, z: -1}
+>>>>>>> parent of cc34bc0 (Merge branch 'main' of https://github.com/Shackhal/AkrianoRemake)
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 7554199988306227475}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 <<<<<<< HEAD
   m_LocalEulerAnglesHint: {x: 0, y: 356.071, z: 0}
+<<<<<<< HEAD
 --- !u!212 &7843947640848803694
 =======
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!212 &8146481790467600915
 >>>>>>> parent of cb7e1d5 (Mejorado)
+=======
+--- !u!212 &7554199989029664581
+>>>>>>> parent of cc34bc0 (Merge branch 'main' of https://github.com/Shackhal/AkrianoRemake)
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 7843947640848803670}
 =======
   m_GameObject: {fileID: 8146481790467600925}
 >>>>>>> parent of cb7e1d5 (Mejorado)
+=======
+  m_GameObject: {fileID: 7554199989029664590}
+>>>>>>> parent of cc34bc0 (Merge branch 'main' of https://github.com/Shackhal/AkrianoRemake)
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -125,10 +193,14 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!95 &7843947640848803695
 =======
 --- !u!95 &8146481790467600914
 >>>>>>> parent of cb7e1d5 (Mejorado)
+=======
+--- !u!95 &7554199989029664586
+>>>>>>> parent of cc34bc0 (Merge branch 'main' of https://github.com/Shackhal/AkrianoRemake)
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -136,10 +208,14 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 7843947640848803670}
 =======
   m_GameObject: {fileID: 8146481790467600925}
 >>>>>>> parent of cb7e1d5 (Mejorado)
+=======
+  m_GameObject: {fileID: 7554199989029664590}
+>>>>>>> parent of cc34bc0 (Merge branch 'main' of https://github.com/Shackhal/AkrianoRemake)
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: e23e0adbff33ac04186f0934c8fe2a00, type: 2}
@@ -152,10 +228,14 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!50 &7843947640848803688
 =======
 --- !u!50 &7989664430622477949
 >>>>>>> parent of cb7e1d5 (Mejorado)
+=======
+--- !u!50 &7554199989029664587
+>>>>>>> parent of cc34bc0 (Merge branch 'main' of https://github.com/Shackhal/AkrianoRemake)
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -163,10 +243,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 7843947640848803670}
 =======
   m_GameObject: {fileID: 8146481790467600925}
 >>>>>>> parent of cb7e1d5 (Mejorado)
+=======
+  m_GameObject: {fileID: 7554199989029664590}
+>>>>>>> parent of cc34bc0 (Merge branch 'main' of https://github.com/Shackhal/AkrianoRemake)
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -181,20 +265,28 @@ Rigidbody2D:
   m_CollisionDetection: 0
   m_Constraints: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!61 &7843947640848803689
 =======
 --- !u!61 &7958922638968147097
 >>>>>>> parent of cb7e1d5 (Mejorado)
+=======
+--- !u!61 &7554199989029664584
+>>>>>>> parent of cc34bc0 (Merge branch 'main' of https://github.com/Shackhal/AkrianoRemake)
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 7843947640848803670}
 =======
   m_GameObject: {fileID: 8146481790467600925}
 >>>>>>> parent of cb7e1d5 (Mejorado)
+=======
+  m_GameObject: {fileID: 7554199989029664590}
+>>>>>>> parent of cc34bc0 (Merge branch 'main' of https://github.com/Shackhal/AkrianoRemake)
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -215,13 +307,32 @@ BoxCollider2D:
   m_Size: {x: 0.44983578, y: 0.5883627}
   m_EdgeRadius: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &7843947640848803690
+=======
+--- !u!114 &7554199989029664585
+>>>>>>> parent of cc34bc0 (Merge branch 'main' of https://github.com/Shackhal/AkrianoRemake)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7843947640848803670}
+  m_GameObject: {fileID: 7554199989029664590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2af9ddd5afa96544a7439908f56b141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDamage: 0
+  speed: 3
+  visionRadius: 2
+--- !u!114 &7554199989029664583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7554199989029664590}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 59d0777c0c5b1b54e850dd92f036b81f, type: 3}
@@ -230,13 +341,13 @@ MonoBehaviour:
   projectile: {fileID: 2670184615016897291, guid: fa7fd29ff25ed60498d9735ec0ea4a22, type: 3}
   timeToShoot: 3
   Shootcooldown: 0
---- !u!114 &7843947640848803691
+--- !u!114 &7554199989029664582
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7843947640848803670}
+  m_GameObject: {fileID: 7554199989029664590}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8ffe8e27294e6b40a3e99b801297981, type: 3}
@@ -244,35 +355,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   original: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   blink: {fileID: 2100000, guid: 7dcafe62a0159454094b44788a510343, type: 2}
---- !u!114 &7843947640848803668
+--- !u!114 &7554199989029664577
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7843947640848803670}
+  m_GameObject: {fileID: 7554199989029664590}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ce4a76aa7fd8ea43adadb9725ce1528, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDamage: 0
-  speed: 3
-  visionRadius: 2
---- !u!114 &7843947640848803669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7843947640848803670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2813d3cf9ca397a4480c7701e42bd76d, type: 3}
+  m_Script: {fileID: 11500000, guid: 767346dfab081a34792e7bacf0ff78d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyName: 
-  healthPoints: 45
+  EnemyhealthPoints: 35
   damageToGive: 10
   knockbackForceX: 0
   knockbackForceY: 0
