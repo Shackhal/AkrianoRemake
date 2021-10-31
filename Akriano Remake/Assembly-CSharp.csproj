@@ -69,6 +69,7 @@
     <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\Aciones_Enemigo\Disparar_Enemigo.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\PuertaFinalizar2.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\PlayerRespawn.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Enemigos\Enemigos\EnemyLarge.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\ColisionFinal.cs" />
     <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Personaje\Movimiento.cs" />
     <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Enemigos\Enemigos\EnemyDistance.cs" />
@@ -80,6 +81,8 @@
     <Compile Include="Assets\Nuevos Scripts\Scripts\AdministrarSonidos.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\PuertaMover.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\PuertaFinalizar4.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Enemigos\Enemigos\Bala.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Personaje\EnemyRadar.cs" />
     <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Personaje\Player.cs" />
     <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Personaje\DispararPersonaje.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\Plantillas\Cuarto.cs" />

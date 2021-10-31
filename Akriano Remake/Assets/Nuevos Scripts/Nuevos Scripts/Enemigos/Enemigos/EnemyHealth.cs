@@ -41,7 +41,8 @@ public class EnemyHealth : MonoBehaviour
     {
         Vector3 target = initialPosition;
 
-        float dist = Vector3.Distance(Player.transform.position, transform.position);
+        float v = Vector3.Distance(Player.transform.position, transform.position);
+        float dist = v;
         if (dist < visionRadius)
         {
             target = Player.transform.position;
@@ -77,7 +78,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (collision.CompareTag("Kill") && !isDamage) 
         {
-            enemy.healthPoints -= 5f;
+            
             if (collision.transform.position.x < transform.position.x) 
             {
                 rb.AddForce(new Vector2(enemy.knockbackForceX, enemy.knockbackForceY), ForceMode2D.Force);
@@ -86,21 +87,21 @@ public class EnemyHealth : MonoBehaviour
             {
                 rb.AddForce(new Vector2(-enemy.knockbackForceX, enemy.knockbackForceY), ForceMode2D.Force);
             }
-
-
-
+            Debug.Log(collision.gameObject.tag);
+            enemy.healthPoints -= 5f;
             StartCoroutine(Damager());
             if (enemy.healthPoints <= 0) 
             {
                 anim.SetTrigger("Muerte_Enemigo");
                 this.enabled = false;
                 GetComponent<Collider2D>().enabled = false;
-                Destroy(gameObject, 12);
+                Destroy(gameObject, 2);
             }
         }
     }
 
-    IEnumerator Damager() 
+
+    IEnumerator Damager()
     {
         isDamage = true;
         sprite.material = material.blink;
@@ -109,7 +110,6 @@ public class EnemyHealth : MonoBehaviour
         isDamage = false;
 
     }
-
 
 
 }

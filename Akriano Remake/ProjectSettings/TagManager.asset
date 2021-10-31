@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Kill
   - Enemy
+  - Bala
+  - Boss
+  - EnemyDistance
   layers:
   - Default
   - TransparentFX

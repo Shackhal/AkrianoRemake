@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyDistance : MonoBehaviour
 {
 
-    Enemy enemy;
+    EnemyLarge enemyLarge;
     public bool isDamage;
     public float speed;
     public float visionRadius;
@@ -24,7 +24,7 @@ public class EnemyDistance : MonoBehaviour
 
     private void Start()
     {
-        enemy = GetComponent<Enemy>();
+        enemyLarge = GetComponent<EnemyLarge>();
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         material = GetComponent<Blink>();
@@ -67,7 +67,7 @@ public class EnemyDistance : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
+        Gizmos.color = Color.white;
         Gizmos.DrawWireSphere(transform.position, visionRadius);
     }
 
@@ -77,25 +77,25 @@ public class EnemyDistance : MonoBehaviour
     {
         if (collision.CompareTag("Kill") && !isDamage)
         {
-            enemy.healthPoints -= 5f;
+            enemyLarge.EnemyhealthPoints -= 5f;
             if (collision.transform.position.x < transform.position.x)
             {
-                rb.AddForce(new Vector2(enemy.knockbackForceX, enemy.knockbackForceY), ForceMode2D.Force);
+                rb.AddForce(new Vector2(enemyLarge.knockbackForceX, enemyLarge.knockbackForceY), ForceMode2D.Force);
             }
             else
             {
-                rb.AddForce(new Vector2(-enemy.knockbackForceX, enemy.knockbackForceY), ForceMode2D.Force);
+                rb.AddForce(new Vector2(-enemyLarge.knockbackForceX, enemyLarge.knockbackForceY), ForceMode2D.Force);
             }
 
 
 
             StartCoroutine(Damager());
-            if (enemy.healthPoints <= 0)
+            if (enemyLarge.EnemyhealthPoints <= 0)
             {
                 anim.SetTrigger("Muerte_Enemigo");
                 this.enabled = false;
                 GetComponent<Collider2D>().enabled = false;
-                Destroy(gameObject, 12);
+                Destroy(gameObject, 2);
             }
         }
     }

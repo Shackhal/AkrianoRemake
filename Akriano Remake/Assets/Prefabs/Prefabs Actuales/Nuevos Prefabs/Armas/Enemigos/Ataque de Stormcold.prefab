@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8168931286036806118}
   m_Layer: 0
   m_Name: Ataque de Stormcold
-  m_TagString: Enemy
+  m_TagString: Bala
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,7 +137,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyName: 
   healthPoints: 0
-  speed: 0
   damageToGive: 15
   knockbackForceX: 0
   knockbackForceY: 0
