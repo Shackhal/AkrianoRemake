@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 969891441930914783}
   - component: {fileID: 8907303007824656533}
   - component: {fileID: 2919487113463175667}
+  - component: {fileID: 4254192531255713158}
   m_Layer: 0
-  m_Name: Ataque de Efrit
+  m_Name: MagiaEnemiga
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8861471381847710349, guid: 1ba858e915064a44d9035600ce02a4fd, type: 3}
+  m_Sprite: {fileID: 6105183672857809442, guid: c28559d0acd35b740b025ce57d229d4c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -139,4 +140,23 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.6
+  m_Radius: 0.28538233
+--- !u!95 &4254192531255713158
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3230540940279727358}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c578074999956bb4d8f813cb844887ea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
