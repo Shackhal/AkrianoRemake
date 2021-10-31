@@ -4,16 +4,24 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
+    
     public float health;
     public float maxHealth;
     bool isInmune;
     public float inmunityTime;
+
+    public GameObject projectile;
+
+    public float timeToShoot;
+    public float Shootcooldown;
+
+    Transform objetivo;
+
     Blink material;
     SpriteRenderer sprite;
     Animator anim;
-    
 
+    
     Vector3 target;
     public float speed = 4f;
     Rigidbody2D rb2d;
@@ -28,6 +36,9 @@ public class Player : MonoBehaviour
         anim = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
         target = transform.position;
+
+        Shootcooldown = timeToShoot;
+        objetivo = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Transform>();
     }
 
     // Update is called once per frame
@@ -39,11 +50,14 @@ public class Player : MonoBehaviour
 
             target.z = 0f;
 
+            
+
             anim.SetBool("Caminar", true);
         }
         else
         {
             anim.SetBool("Caminar", false);
+            
         }
 
         transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
@@ -53,7 +67,31 @@ public class Player : MonoBehaviour
         if (health> maxHealth) 
         {
             health = maxHealth;
-        }  
+        }
+
+        Shootcooldown -= Time.deltaTime;
+
+
+
+        if (Shootcooldown < 0)
+        {
+            GameObject bala = Instantiate(projectile, transform.position, Quaternion.identity);
+
+            if (transform.localScale.x < 0)
+            {
+                bala.GetComponent<Rigidbody2D>().AddForce(new Vector2(300f, 0f), ForceMode2D.Force);
+            }
+
+            else
+            {
+                bala.GetComponent<Rigidbody2D>().AddForce(new Vector2(-300f, 0f), ForceMode2D.Force);
+            }
+
+            Shootcooldown = timeToShoot;
+
+        }
+
+
     }
 
     
@@ -71,7 +109,7 @@ public class Player : MonoBehaviour
                 anim.SetTrigger("Muerte");
                 this.enabled = false;
                 gameObject.GetComponent<BoxCollider2D>().enabled = false;
-                Destroy(gameObject, 20);
+                Destroy(gameObject, 4);
             }
         }
                 

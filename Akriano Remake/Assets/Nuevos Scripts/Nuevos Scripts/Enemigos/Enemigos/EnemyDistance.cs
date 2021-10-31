@@ -2,20 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossHealth : MonoBehaviour
+public class EnemyDistance : MonoBehaviour
 {
 
-    Boss Boss;
+    Enemy enemy;
     public bool isDamage;
     public float speed;
     public float visionRadius;
+
 
     Blink material;
     SpriteRenderer sprite;
     Rigidbody2D rb;
     Animator anim;
 
-    
 
     GameObject Player;
 
@@ -24,20 +24,21 @@ public class BossHealth : MonoBehaviour
 
     private void Start()
     {
-        Boss = GetComponent<Boss>();
+        enemy = GetComponent<Enemy>();
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         material = GetComponent<Blink>();
         anim = GetComponent<Animator>();
 
-        
-        objetivo = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        Player = GameObject.FindGameObjectWithTag("Player");
+
+        initialPosition = transform.position;
+
 
     }
 
     void Update()
     {
-
         Vector3 target = initialPosition;
 
         float dist = Vector3.Distance(Player.transform.position, transform.position);
@@ -45,42 +46,51 @@ public class BossHealth : MonoBehaviour
         {
             target = Player.transform.position;
 
+            anim.SetBool("Caminar_Enemigo", true);
             anim.SetBool("Atacar_Enemigo", true);
 
         }
 
         else
         {
+            anim.SetBool("Caminar_Enemigo", false);
             anim.SetBool("Atacar_Enemigo", false);
         }
 
-        Debug.DrawLine(transform.position, target, Color.black);
+        float fixedSpeed = speed * Time.deltaTime;
+        transform.position = Vector3.MoveTowards(transform.position, target, fixedSpeed);
 
-        
+        Debug.DrawLine(transform.position, target, Color.white);
 
 
-
-        
     }
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.black;
+        Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, visionRadius);
     }
 
 
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Muereee");
         if (collision.CompareTag("Kill") && !isDamage)
-
         {
-            Debug.Log(collision.gameObject.tag);
-            Boss.BosshealthPoints -= 5f;
-            
+            enemy.healthPoints -= 5f;
+            if (collision.transform.position.x < transform.position.x)
+            {
+                rb.AddForce(new Vector2(enemy.knockbackForceX, enemy.knockbackForceY), ForceMode2D.Force);
+            }
+            else
+            {
+                rb.AddForce(new Vector2(-enemy.knockbackForceX, enemy.knockbackForceY), ForceMode2D.Force);
+            }
+
+
+
             StartCoroutine(Damager());
-            if (Boss.BosshealthPoints <= 0)
+            if (enemy.healthPoints <= 0)
             {
                 anim.SetTrigger("Muerte_Enemigo");
                 this.enabled = false;
@@ -99,8 +109,4 @@ public class BossHealth : MonoBehaviour
         isDamage = false;
 
     }
-
-
-
 }
-

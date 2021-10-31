@@ -10,11 +10,13 @@ public class EnemyProjectile : MonoBehaviour
     public float Shootcooldown;
 
     Transform objetivo;
+    Animator anim;
 
     void Start()
     {
         Shootcooldown = timeToShoot;
         objetivo = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -31,6 +33,7 @@ public class EnemyProjectile : MonoBehaviour
 
             if(transform.localScale.x < 0) 
             {
+                anim.SetBool("Atacar_Enemigo", true);
                 bala.GetComponent<Rigidbody2D>().AddForce(new Vector2(300f, 0f), ForceMode2D.Force);
             }
 
@@ -40,7 +43,11 @@ public class EnemyProjectile : MonoBehaviour
             }
 
             Shootcooldown = timeToShoot;
+
             
         }
+
+        
+
     }
 }

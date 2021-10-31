@@ -74,6 +74,7 @@
     <Compile Include="Assets\Nuevos Scripts\Scripts\PlayerRespawn.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\ColisionFinal.cs" />
     <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Personaje\Movimiento.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Enemigos\Enemigos\EnemyDistance.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\MotorPuerta.cs" />
     <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Enemigos\Enemigos\EnemyHealth.cs" />
     <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Blink.cs" />
@@ -98,6 +99,7 @@
     <Compile Include="Assets\Nuevos Scripts\Scripts\Niveles\Aciones_Enemigo\Seguir.cs" />
     <Compile Include="Assets\Nuevos Scripts\Scripts\DialogueManager.cs" />
     <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\Enemigos\Enemigos\Enemy.cs" />
+    <Compile Include="Assets\Nuevos Scripts\Nuevos Scripts\LookAtMouse.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
