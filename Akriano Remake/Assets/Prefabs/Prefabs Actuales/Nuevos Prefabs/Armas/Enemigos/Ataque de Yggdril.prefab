@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 665941355697218220}
   - component: {fileID: 6127373337688440847}
+  - component: {fileID: 8751753259914408696}
   - component: {fileID: 605655472045969290}
   - component: {fileID: 4176322817281533389}
-  - component: {fileID: -8906951459265042392}
   m_Layer: 0
   m_Name: Ataque de Yggdril
-  m_TagString: Bala
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86,6 +86,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8751753259914408696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4854243907275653923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2813d3cf9ca397a4480c7701e42bd76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyName: 
+  healthPoints: 0
+  damageToGive: 10
+  knockbackForceX: 0
+  knockbackForceY: 0
 --- !u!50 &605655472045969290
 Rigidbody2D:
   serializedVersion: 4
@@ -123,18 +140,3 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.6
---- !u!114 &-8906951459265042392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4854243907275653923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bc2a56e7ed21de4cbde63d717c68be8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnemyName: 
-  healthPoints: 0
-  damageToGive: 5

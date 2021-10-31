@@ -71,7 +71,7 @@ public class Player : MonoBehaviour
 
         transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
 
-        Debug.DrawLine(transform.position, target, Color.blue);
+        Debug.DrawLine(transform.position, target, Color.green);
 
         if (health> maxHealth) 
         {
@@ -98,25 +98,10 @@ public class Player : MonoBehaviour
                 anim.SetTrigger("Muerte");
                 this.enabled = false;
                 gameObject.GetComponent<BoxCollider2D>().enabled = false;
-                Destroy(gameObject, 2);
+                Destroy(gameObject, 20);
             }
         }
-
-        if (collision.CompareTag("Bala") && !isInmune)
-        {
-            health -= collision.GetComponent<Bala>().damageToGive;
-            StartCoroutine(Inmunity());
-            if (health <= 0)
-            {
-                anim.SetTrigger("Muerte");
-                this.enabled = false;
-                gameObject.GetComponent<BoxCollider2D>().enabled = false;
-                Destroy(gameObject, 2);
-            }
-        }
-
-
-
+                
 
 
     }
