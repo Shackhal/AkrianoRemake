@@ -5,49 +5,66 @@ using UnityEngine;
 public class EnemyProjectile : MonoBehaviour
 {
     public GameObject projectile;
-    
+
     public float timeToShoot;
     public float Shootcooldown;
 
     Transform objetivo;
-    Animator anim;
+    Vector3 enemyPosition;
 
     void Start()
     {
         Shootcooldown = timeToShoot;
         objetivo = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        enemyPosition = FindClosestPlayer();
         Shootcooldown -= Time.deltaTime;
 
 
 
-        if (Shootcooldown < 0) 
+        if (Shootcooldown < 0)
         {
-           GameObject bala = Instantiate(projectile, transform.position, Quaternion.identity);
+            GameObject bala = Instantiate(projectile, transform.position, Quaternion.identity);
 
-            if(transform.localScale.x < 0) 
+            if (enemyPosition.x < transform.position.x)
             {
-                anim.SetBool("Atacar_Enemigo", true);
-                bala.GetComponent<Rigidbody2D>().AddForce(new Vector2(300f, 0f), ForceMode2D.Force);
+                bala.GetComponent<Rigidbody2D>().velocity = (enemyPosition - transform.position) * new Vector2(1f, 1f);
             }
 
-            else 
+            else
             {
-                bala.GetComponent<Rigidbody2D>().AddForce(new Vector2(-300f, 0f), ForceMode2D.Force);
+                bala.GetComponent<Rigidbody2D>().velocity = (enemyPosition - transform.position) * new Vector2(1f, 1f);
             }
 
             Shootcooldown = timeToShoot;
 
-            
         }
 
-        
 
+
+    }
+
+    private Vector2 FindClosestPlayer()
+    {
+        float distanceToClosestPlayer = Mathf.Infinity;
+        Player closestPlayer = null;
+        Player[] allplayers = GameObject.FindObjectsOfType<Player>();
+
+        foreach (Player currentPlayer in allplayers)
+        {
+            float distanceToPlayer = (currentPlayer.transform.position - this.transform.position).sqrMagnitude;
+            if (distanceToPlayer < distanceToClosestPlayer)
+            {
+                distanceToClosestPlayer = distanceToPlayer;
+                closestPlayer = currentPlayer;
+            }
+        }
+
+        Debug.DrawLine(this.transform.position, closestPlayer.transform.position);
+        return closestPlayer.transform.position;
     }
 }

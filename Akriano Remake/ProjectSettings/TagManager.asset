@@ -6,15 +6,17 @@ TagManager:
   tags:
   - Kill
   - Enemy
-<<<<<<< HEAD
   - Bala
   - Boss
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> parent of cb7e1d5 (Mejorado)
 =======
   - EnemyDistance
 >>>>>>> parent of cc34bc0 (Merge branch 'main' of https://github.com/Shackhal/AkrianoRemake)
+=======
+>>>>>>> parent of 9ba1fea (otro)
   layers:
   - Default
   - TransparentFX
