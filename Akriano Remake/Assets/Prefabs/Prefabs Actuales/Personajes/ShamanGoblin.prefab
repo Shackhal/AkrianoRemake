@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59d0777c0c5b1b54e850dd92f036b81f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 4854243907275653923, guid: 71b8162fd5d227e44a0bbb31e21b4f92, type: 3}
+  projectile: {fileID: 2670184615016897291, guid: fa7fd29ff25ed60498d9735ec0ea4a22, type: 3}
   timeToShoot: 3
   Shootcooldown: 0
 --- !u!114 &7554199989029664582
