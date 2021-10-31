@@ -157,12 +157,12 @@ TextureImporter:
       name: EnemigoRango_MorirDer_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 3
-        width: 14
-        height: 21
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -178,12 +178,12 @@ TextureImporter:
       name: EnemigoRango_MorirDer_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 3
-        width: 16
-        height: 21
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -199,12 +199,12 @@ TextureImporter:
       name: EnemigoRango_MorirDer_2
       rect:
         serializedVersion: 2
-        x: 72
-        y: 3
-        width: 21
-        height: 21
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -220,12 +220,12 @@ TextureImporter:
       name: EnemigoRango_MorirDer_3
       rect:
         serializedVersion: 2
-        x: 104
-        y: 3
-        width: 22
-        height: 20
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -241,12 +241,12 @@ TextureImporter:
       name: EnemigoRango_MorirDer_4
       rect:
         serializedVersion: 2
-        x: 137
-        y: 3
-        width: 21
-        height: 20
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -262,12 +262,12 @@ TextureImporter:
       name: EnemigoRango_MorirDer_5
       rect:
         serializedVersion: 2
-        x: 171
-        y: 3
-        width: 14
-        height: 20
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -283,12 +283,12 @@ TextureImporter:
       name: EnemigoRango_MorirDer_6
       rect:
         serializedVersion: 2
-        x: 203
-        y: 3
-        width: 14
-        height: 18
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -304,12 +304,12 @@ TextureImporter:
       name: EnemigoRango_MorirDer_7
       rect:
         serializedVersion: 2
-        x: 235
-        y: 3
-        width: 14
-        height: 11
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -325,12 +325,12 @@ TextureImporter:
       name: EnemigoRango_MorirDer_8
       rect:
         serializedVersion: 2
-        x: 267
-        y: 3
-        width: 14
-        height: 7
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
