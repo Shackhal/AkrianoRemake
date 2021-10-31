@@ -77,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 3221040231139465620, guid: c6072723c01e44845b0acafc28a604e6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -170,6 +170,9 @@ MonoBehaviour:
   health: 0
   maxHealth: 30
   inmunityTime: 0
+  projectile: {fileID: 0}
+  timeToShoot: 0
+  Shootcooldown: 0
   speed: 4
 --- !u!114 &4369361602968859456
 MonoBehaviour:
@@ -198,5 +201,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 2392643576004410471, guid: 349208307985f64419a1598c3b714323, type: 3}
-  timeToShoot: 0
+  timeToShoot: 2
   Shootcooldown: 0
