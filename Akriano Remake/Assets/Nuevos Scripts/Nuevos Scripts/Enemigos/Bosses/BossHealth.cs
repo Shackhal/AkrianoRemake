@@ -85,7 +85,7 @@ public class BossHealth : MonoBehaviour
                 anim.SetTrigger("Muerte_Enemigo");
                 this.enabled = false;
                 GetComponent<Collider2D>().enabled = false;
-                Destroy(gameObject, 4);
+                Destroy(gameObject, 12);
             }
         }
     }
