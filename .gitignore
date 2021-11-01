@@ -1,3 +1,11 @@
 
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
 Akriano Remake/.vs/Akriano Remake/v16/.suo
 *.cache
