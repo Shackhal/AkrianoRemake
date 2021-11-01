@@ -104,9 +104,9 @@ public class EnemyHealth : MonoBehaviour
     IEnumerator Damager()
     {
         isDamage = true;
-        sprite.material = material.blink;
+        //sprite.material = material.blink;
         yield return new WaitForSeconds(0.5f);
-        sprite.material = material.original;
+        //sprite.material = material.original;
         isDamage = false;
 
     }

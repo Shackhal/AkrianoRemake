@@ -184,5 +184,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDamage: 0
-  speed: 3
+  speed: 2
   visionRadius: 2.5

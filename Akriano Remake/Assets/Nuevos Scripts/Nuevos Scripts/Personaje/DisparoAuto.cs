@@ -10,7 +10,7 @@ public class DisparoAuto : MonoBehaviour
     public float Shootcooldown;
 
     Transform objetivo;
-    Vector2 enemyPosition;
+    Vector3 enemyPosition;
 
     void Start()
     {
@@ -32,12 +32,12 @@ public class DisparoAuto : MonoBehaviour
 
             if (enemyPosition.x < transform.position.x)
             {
-                bala.GetComponent<Rigidbody2D>().AddForceAtPosition(enemyPosition, transform.position, ForceMode2D.Force);
+                bala.GetComponent<Rigidbody2D>().velocity = (enemyPosition - transform.position) * new Vector2(1f, 1f);
             }
 
             else
             {
-                bala.GetComponent<Rigidbody2D>().AddForceAtPosition(enemyPosition, transform.position, ForceMode2D.Force);
+                bala.GetComponent<Rigidbody2D>().velocity = (enemyPosition - transform.position) * new Vector2 (1f, 1f);
             }
 
             Shootcooldown = timeToShoot;

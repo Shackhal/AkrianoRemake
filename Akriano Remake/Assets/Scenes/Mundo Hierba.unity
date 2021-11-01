@@ -275,6 +275,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1749390371196740026, guid: a428efd67a86cd14288a68d21e62b44e, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 1404401815895284741, guid: 349208307985f64419a1598c3b714323, type: 3}
     - target: {fileID: 4369361602968859457, guid: a428efd67a86cd14288a68d21e62b44e, type: 3}
       propertyPath: m_Name
       value: Akriano
@@ -748,6 +752,10 @@ PrefabInstance:
     - target: {fileID: 347668524827418435, guid: 4a1a9d647da41c14991ade6f5bc1d459, type: 3}
       propertyPath: m_SortingOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 347668524827418436, guid: 4a1a9d647da41c14991ade6f5bc1d459, type: 3}
+      propertyPath: speed
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 347668524827418442, guid: 4a1a9d647da41c14991ade6f5bc1d459, type: 3}
       propertyPath: m_Name
