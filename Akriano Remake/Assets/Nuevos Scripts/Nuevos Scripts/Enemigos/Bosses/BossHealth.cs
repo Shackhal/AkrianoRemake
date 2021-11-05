@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class BossHealth : MonoBehaviour
 {
-
-    Boss Boss;
+    Enemy Boss;
+    //Boss Boss;
     public bool isDamage;
     public float speed;
     public float visionRadius;
+    public float timeToShoot;
+    public float Shootcooldown;
+    public GameObject proyectil;
 
     Blink material;
     SpriteRenderer sprite;
@@ -24,13 +27,14 @@ public class BossHealth : MonoBehaviour
 
     private void Start()
     {
-        Boss = GetComponent<Boss>();
+        Boss = GetComponent<Enemy>();
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         material = GetComponent<Blink>();
         anim = GetComponent<Animator>();
 
-        
+        Shootcooldown = timeToShoot;
+
         objetivo = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
 
     }
@@ -40,12 +44,24 @@ public class BossHealth : MonoBehaviour
 
         Vector3 target = initialPosition;
 
-        float dist = Vector3.Distance(Player.transform.position, transform.position);
+        if (Shootcooldown > 0)
+        {
+            Shootcooldown -= Time.deltaTime;
+        }
+
+        float dist = Vector3.Distance(objetivo.transform.position, transform.position);
         if (dist < visionRadius)
         {
-            target = Player.transform.position;
+            target = objetivo.transform.position;
 
             anim.SetBool("Atacar_Enemigo", true);
+
+            if (Shootcooldown <= 0 && dist <= visionRadius)
+            {
+                GameObject bala = Instantiate (proyectil, transform.position, Quaternion.identity);
+                bala.GetComponent<Rigidbody2D> ().velocity = (target - transform.position) * new Vector2 (1f, 1f);
+                Shootcooldown = timeToShoot;
+            }
 
         }
 
@@ -77,10 +93,10 @@ public class BossHealth : MonoBehaviour
 
         {
             Debug.Log(collision.gameObject.tag);
-            Boss.BosshealthPoints -= 5f;
+            Boss.healthPoints -= 5f;
             
             StartCoroutine(Damager());
-            if (Boss.BosshealthPoints <= 0)
+            if (Boss.healthPoints <= 0)
             {
                 anim.SetTrigger("Muerte_Enemigo");
                 this.enabled = false;

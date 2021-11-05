@@ -20,7 +20,7 @@ public class EnemyHealth : MonoBehaviour
     GameObject Player;
 
     Transform objetivo;
-    Vector3 initialPosition;
+    Vector2 initialPosition;
 
     private void Start()
     {
@@ -39,23 +39,40 @@ public class EnemyHealth : MonoBehaviour
 
     void Update()
     {
-        Vector3 target = initialPosition;
+        Vector2 target = initialPosition;
 
-        float v = Vector3.Distance(Player.transform.position, transform.position);
+        float v = Vector2.Distance(Player.transform.position, transform.position);
         float dist = v;
         if (dist < visionRadius)
         {
             target = Player.transform.position;
 
             anim.SetBool("Caminar_Enemigo", true);
-            anim.SetBool("Atacar_Enemigo", true);
-
+            if (target.x > transform.position.x)
+            {
+                sprite.flipX = false;
+            }
+            else
+            {
+                sprite.flipX = true;
+            }
+            
+            //anim.SetBool("Atacar_Enemigo", false);
+            
+            if (dist < 0.1f)
+            {
+                anim.SetBool ("Atacar_Enemigo", true);
+            }
+            else
+            {
+                anim.SetBool ("Atacar_Enemigo", false);
+            }
         }
 
         else
         {
             anim.SetBool("Caminar_Enemigo", false);
-            anim.SetBool("Atacar_Enemigo", false);
+            //anim.SetBool("Atacar_Enemigo", false);
         }
 
         float fixedSpeed = speed * Time.deltaTime;
@@ -95,7 +112,7 @@ public class EnemyHealth : MonoBehaviour
                 anim.SetTrigger("Muerte_Enemigo");
                 this.enabled = false;
                 GetComponent<Collider2D>().enabled = false;
-                Destroy(gameObject, 12);
+                Destroy(gameObject, 2);
             }
         }
     }

@@ -207,6 +207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PuertaAbajo
       objectReference: {fileID: 0}
+    - target: {fileID: 7568547612551569465, guid: a19ca70cf2045ce47a9d4806701d9fdc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8335859713048761677, guid: a19ca70cf2045ce47a9d4806701d9fdc, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -313,6 +317,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PuertaArriba
       objectReference: {fileID: 0}
+    - target: {fileID: 4744979655948108601, guid: dfdd794a28610994e94886cf85a76328, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfdd794a28610994e94886cf85a76328, type: 3}
 --- !u!4 &5852635822432046250 stripped
@@ -374,6 +382,10 @@ PrefabInstance:
     - target: {fileID: 1727576291051417682, guid: bf6497ee2fde68d40a9ac7bb3cc529b6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4548575041209539599, guid: bf6497ee2fde68d40a9ac7bb3cc529b6, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf6497ee2fde68d40a9ac7bb3cc529b6, type: 3}

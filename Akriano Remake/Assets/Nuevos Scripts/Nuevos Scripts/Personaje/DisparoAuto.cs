@@ -8,6 +8,7 @@ public class DisparoAuto : MonoBehaviour
 
     public float timeToShoot;
     public float Shootcooldown;
+    public float visualRadius;
 
     Transform objetivo;
     Vector3 enemyPosition;
@@ -22,11 +23,14 @@ public class DisparoAuto : MonoBehaviour
     void Update()
     {
         enemyPosition = FindClosestEnemy();
-        Shootcooldown -= Time.deltaTime;
+        float distanceAttack = Vector2.Distance (transform.position, enemyPosition);
 
+        if (Shootcooldown > 0)
+        {
+            Shootcooldown -= Time.deltaTime;
+        }
 
-
-        if (Shootcooldown < 0)
+        if (Shootcooldown <= 0 && distanceAttack <= visualRadius && enemyPosition != transform.position)
         {
             GameObject bala = Instantiate(projectile, transform.position, Quaternion.identity);
 
@@ -43,12 +47,14 @@ public class DisparoAuto : MonoBehaviour
             Shootcooldown = timeToShoot;
 
         }
-
-        
-
+    }
+        private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.white;
+        Gizmos.DrawWireSphere (transform.position, visualRadius);
     }
 
-     private Vector2 FindClosestEnemy()
+    private Vector2 FindClosestEnemy()
     {
         float distanceToClosestEnemy = Mathf.Infinity;
         Enemy closestEnemy = null;
@@ -64,8 +70,12 @@ public class DisparoAuto : MonoBehaviour
             }
         }
 
-        Debug.DrawLine(this.transform.position, closestEnemy.transform.position);
-        return closestEnemy.transform.position;
+        if (closestEnemy != null)
+        {
+            Debug.DrawLine (this.transform.position, closestEnemy.transform.position);
+            return closestEnemy.transform.position;
+        }
+        else return transform.position;
     }
 
 

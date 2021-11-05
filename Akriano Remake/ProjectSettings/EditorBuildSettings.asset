@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/MenuPrincipal.unity
+    guid: ab7a58ffacc855648b4e12b6ecf49be8
+  - enabled: 1
+    path: Assets/Scenes/Mundo Hierba.unity
+    guid: 337e43e06d33bad49877690371350ee3
   m_configObjects: {}

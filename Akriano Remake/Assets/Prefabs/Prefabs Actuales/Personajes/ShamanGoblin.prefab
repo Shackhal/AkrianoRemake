@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 8146481790467600914}
   - component: {fileID: 7989664430622477949}
   - component: {fileID: 7958922638968147097}
+  - component: {fileID: 4779155671560165856}
+  - component: {fileID: 3653749160918448943}
   m_Layer: 0
   m_Name: ShamanGoblin
   m_TagString: Enemy
@@ -152,3 +154,38 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.44983578, y: 0.5883627}
   m_EdgeRadius: 0
+--- !u!114 &4779155671560165856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8146481790467600925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2813d3cf9ca397a4480c7701e42bd76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyName: Shaman
+  healthPoints: 20
+  damageToGive: 5
+  knockbackForceX: 0
+  knockbackForceY: 0
+--- !u!114 &3653749160918448943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8146481790467600925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73fcba411e67fc242adbc98d816445c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDamage: 0
+  speed: 1
+  visionRadius: 5
+  proyectil: {fileID: 3230540940279727358, guid: fa7fd29ff25ed60498d9735ec0ea4a22, type: 3}
+  timeToShoot: 0
+  Shootcooldown: 0

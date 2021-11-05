@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4582882280061653107}
   - component: {fileID: 7756545510610145055}
   - component: {fileID: 2261370250985209875}
+  - component: {fileID: 6104376760559136666}
   m_Layer: 0
   m_Name: MagiaSinAtributo
   m_TagString: Kill
@@ -152,3 +153,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6104376760559136666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404401815895284741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19599b8885e630142bbb2ac7858a948f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
