@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Kill
   - Enemy
+  - ProyectilEnemy
+  - Enemigo
   layers:
   - Default
   - TransparentFX

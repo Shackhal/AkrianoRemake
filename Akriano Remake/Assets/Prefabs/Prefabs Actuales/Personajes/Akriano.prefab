@@ -170,9 +170,6 @@ MonoBehaviour:
   health: 0
   maxHealth: 30
   inmunityTime: 0
-  projectile: {fileID: 0}
-  timeToShoot: 0
-  Shootcooldown: 0
   speed: 4
 --- !u!114 &4369361602968859456
 MonoBehaviour:
@@ -200,6 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6207eaeed5b4ff2449e402470544d0fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 2392643576004410471, guid: 349208307985f64419a1598c3b714323, type: 3}
+  projectile: {fileID: 1404401815895284741, guid: 349208307985f64419a1598c3b714323, type: 3}
   timeToShoot: 2
   Shootcooldown: 0
+  visualRadius: 0

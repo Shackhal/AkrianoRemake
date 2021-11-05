@@ -10,13 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 8042041421950483589}
   - component: {fileID: 1584029629613154811}
-  - component: {fileID: 969891441930914783}
   - component: {fileID: 8907303007824656533}
   - component: {fileID: 2919487113463175667}
   - component: {fileID: 4254192531255713158}
+  - component: {fileID: 7844498682007500325}
   m_Layer: 0
   m_Name: MagiaEnemiga
-  m_TagString: Enemy
+  m_TagString: ProyectilEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87,23 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &969891441930914783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3230540940279727358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2813d3cf9ca397a4480c7701e42bd76d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnemyName: 
-  healthPoints: 0
-  damageToGive: 10
-  knockbackForceX: 0
-  knockbackForceY: 0
 --- !u!50 &8907303007824656533
 Rigidbody2D:
   serializedVersion: 4
@@ -160,3 +143,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7844498682007500325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3230540940279727358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59d0777c0c5b1b54e850dd92f036b81f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5

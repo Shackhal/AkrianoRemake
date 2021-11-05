@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 79166580134369020}
   - component: {fileID: 6729643528744788186}
   - component: {fileID: 1191228335919884551}
+  - component: {fileID: 6958925992579559573}
   - component: {fileID: 5620946805349774460}
   - component: {fileID: 8240357036816221197}
   m_Layer: 0
@@ -169,6 +170,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   original: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   blink: {fileID: 2100000, guid: 7dcafe62a0159454094b44788a510343, type: 2}
+--- !u!114 &6958925992579559573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285972175716602704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2813d3cf9ca397a4480c7701e42bd76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyName: Boss
+  healthPoints: 50
+  damageToGive: 15
+  knockbackForceX: 0
+  knockbackForceY: 0
 --- !u!114 &5620946805349774460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,7 +200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BossName: 
-  BosshealthPoints: 80
+  BosshealthPoints: 50
   damageToGive: 15
 --- !u!114 &8240357036816221197
 MonoBehaviour:
@@ -199,3 +217,6 @@ MonoBehaviour:
   isDamage: 0
   speed: 0
   visionRadius: 3
+  timeToShoot: 0
+  Shootcooldown: 0
+  proyectil: {fileID: 3230540940279727358, guid: fa7fd29ff25ed60498d9735ec0ea4a22, type: 3}
