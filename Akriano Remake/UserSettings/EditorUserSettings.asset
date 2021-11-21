@@ -24,13 +24,13 @@ EditorUserSettings:
       value: 22424703114646681d1c05361530103e03120e253f6835203f200936f1af042af7e234e8a73e3a7c2a12fd35103b1270c2181c0ef40a194b150bbd1d01ed190714d658dc5ac91115c6181fc7c213d4f09bc3dae3ccf2
       flags: 0
     RecentlyUsedScenePath-6:
-      value: 22424703114646680e0b0227036c6c111b07142f1f2b233e2867083debf42d
-      flags: 0
-    RecentlyUsedScenePath-7:
       value: 22424703114646680e0b0227036c72151802563f22213229
       flags: 0
-    RecentlyUsedScenePath-8:
+    RecentlyUsedScenePath-7:
       value: 22424703114646680e0b0227036c721518022838252625393d28117df7ee3d2cfb
+      flags: 0
+    RecentlyUsedScenePath-8:
+      value: 22424703114646680e0b0227036c6c111b07142f1f2b233e2867083debf42d
       flags: 0
     RecentlyUsedScenePath-9:
       value: 22424703114646680e0b0227036c72051813176a042123222f285326ece92021
@@ -39,7 +39,7 @@ EditorUserSettings:
       value: 29617121
       flags: 0
     UnityRemoteDevice:
-      value: 225f4d46245b0d4902070862342649191512
+      value: 2d5e5a03
       flags: 0
     UnityRemoteJoystickSource:
       value: 315459091150

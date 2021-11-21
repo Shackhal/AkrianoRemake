@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - ProyectilEnemy
   - Enemigo
+  - Puerta
   layers:
   - Default
   - TransparentFX

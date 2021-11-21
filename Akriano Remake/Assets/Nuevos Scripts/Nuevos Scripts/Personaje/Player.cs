@@ -9,15 +9,16 @@ public class Player : MonoBehaviour
     public float maxHealth;
     bool isInmune;
     public float inmunityTime;
+    public Camera cam;
 
-    private bool estaMuerto;
+    public bool estaMuerto;
      
     Blink material;
     SpriteRenderer sprite;
     Animator anim;
         
-    Vector3 target;
-    public float speed = 4f;
+    public Vector3 target;
+    public float speed;
     Rigidbody2D rb2d;
 
     Enemy enemy;
@@ -30,7 +31,9 @@ public class Player : MonoBehaviour
         health = maxHealth;
         anim = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
-        target = transform.position;        
+        target = transform.position;
+        cam = Camera.main;
+        estaMuerto = false;
     }
 
     // Update is called once per frame
@@ -38,9 +41,15 @@ public class Player : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
+            if (Input.mousePosition.x <= 16*(cam.scaledPixelWidth/18) || Input.mousePosition.y <= 8*(cam.scaledPixelHeight/10))
+            {
+                target = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+            }
+            
+            
             target.z = 0f;
+            Debug.Log (Input.mousePosition.x + ", " + Input.mousePosition.y);
+            Debug.Log (target.x + ", " + target.y);
                                                
             //anim.SetBool("Caminar", true);
 
@@ -78,50 +87,87 @@ public class Player : MonoBehaviour
 
         if (health <= 0)
         {
-            anim.SetTrigger("Muerte");
-            estaMuerto = true;
-            this.enabled = false;
+            anim.SetTrigger ("Muerte");
+            estaMuerto = true;            
             gameObject.GetComponent<BoxCollider2D> ().enabled = false;
+            this.enabled = false;
+
+            if (estaMuerto == false)
+            {
+                //gameObject.GetComponent<BoxCollider2D> ().enabled = true;
+                //health = maxHealth;
+                //estaMuerto = false;
+                //anim.SetTrigger ("Revivir");
+                //gameObject.GetComponent<BoxCollider2D> ().enabled = true;
+            }
+            
+
+            //gameObject.GetComponent<BoxCollider2D> ().enabled = false;
             //Destroy (gameObject, 20);
         }
-        else if (estaMuerto && health > 0)
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag ("Enemy") && !isInmune)
         {
-            estaMuerto = false;
-            anim.SetTrigger("Revivir");
-            this.enabled = true;
-            gameObject.GetComponent<BoxCollider2D> ().enabled = true;
+            health -= collision.gameObject.GetComponent<Enemy> ().damageToGive;
+            StartCoroutine (Inmunity ());
+
+            //if (health <= 0)
+            //{
+            //    anim.SetTrigger ("Muerte");
+            //    estaMuerto = true;
+            //    this.enabled = false;
+
+            //}
         }
+            /*
+            if (collision.gameObject.CompareTag ("ProyectilEnemy") && !isInmune)
+            {
+                health -= collision.gameObject.GetComponent<Projectile> ().damage;
+                StartCoroutine (Inmunity ());
+
+            }
+            */
+
+            /*
+            if (health <= 0)
+            {
+                anim.SetBool ("Muerte", true);
+                estaMuerto = true;
+                this.enabled = false;
+                gameObject.GetComponent<BoxCollider2D> ().enabled = false;
+                //Destroy (gameObject, 20);
+            }
+            */
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy") && !isInmune)
+        if (collision.CompareTag ("ProyectilEnemy") && !isInmune)
         {
-            health -= collision.GetComponent<Enemy>().damageToGive;
-            StartCoroutine(Inmunity());
-            
-        }
-        else if (collision.CompareTag ("ProyectilEnemy") && !isInmune)
-        {
-            health -= collision.GetComponent<Projectile> ().damage;
+            health -= collision.GetComponent<EnemyProjectile> ().damage;
             StartCoroutine (Inmunity ());
             
+            //if (health <= 0)
+            //{
+            //    anim.SetTrigger ("Muerte");
+            //    estaMuerto = true;
+            //    this.enabled = false;
+            //}
         }
-
-        /*
-        if (health <= 0)
+        
+        /*if (health <= 0)
         {
             anim.SetBool ("Muerte", true);
             estaMuerto = true;
             this.enabled = false;
             gameObject.GetComponent<BoxCollider2D> ().enabled = false;
             //Destroy (gameObject, 20);
-        }
-        */
-
-       
-
-
+        }*/
+        
     }
 
     IEnumerator Inmunity() 

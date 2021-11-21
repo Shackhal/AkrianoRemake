@@ -13,6 +13,7 @@ public class HUD_Control : MonoBehaviour
     public Button BtnMirarAd;
     public Button BtnSalir;
     public Image CuadroPausa;
+    public Image EfectoOscurecer;
     public Text ContenidoPausa;
     public Text ContenidoGameOver;
     public Player player;
@@ -23,7 +24,7 @@ public class HUD_Control : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Enemy[] allEnemies = GameObject.FindObjectsOfType<Enemy> ();
+        //Enemy[] allEnemies = GameObject.FindObjectsOfType<Enemy> ();
 
         BtnPausa.onClick.AddListener (Pausa);
         BtnContinuar.onClick.AddListener (Continuar);
@@ -36,6 +37,7 @@ public class HUD_Control : MonoBehaviour
         BtnMirarAd.gameObject.SetActive (false);
 
         CuadroPausa.enabled = false;
+        EfectoOscurecer.enabled = false;
         ContenidoPausa.gameObject.SetActive (false);
         ContenidoGameOver.gameObject.SetActive (false);
 
@@ -48,9 +50,13 @@ public class HUD_Control : MonoBehaviour
     {
         barraVida.value = player.health;
 
-        if (barraVida.value <= 0.4f)
+        if (barraVida.value <= 0.2f)
         {
-            
+            //barraVida.fillRect.GetComponent<Image> ().color = Color.red;
+        }
+        else
+        {
+            //barraVida.fillRect.GetComponent<Image> ().color = Color.clear;
         }
 
         if (barraVida.value <= 0)
@@ -63,8 +69,10 @@ public class HUD_Control : MonoBehaviour
     private void Pausa()
     {
         CuadroPausa.enabled = true;
-        barraVida.enabled = false;
-        player.gameObject.SetActive (false);
+        EfectoOscurecer.enabled = true;
+        //barraVida.enabled = false;
+        player.enabled = false;
+        Time.timeScale = 0;
         ContenidoPausa.gameObject.SetActive (true);
         BtnContinuar.gameObject.SetActive (true);
         BtnSalir.gameObject.SetActive (true);
@@ -73,8 +81,10 @@ public class HUD_Control : MonoBehaviour
     private void Continuar()
     {
         CuadroPausa.enabled = false;
-        barraVida.enabled = true;
-        player.gameObject.SetActive (true);
+        EfectoOscurecer.enabled = false;
+        //barraVida.enabled = true;
+        player.enabled = true;
+        Time.timeScale = 1;
         ContenidoPausa.gameObject.SetActive (false);
         BtnContinuar.gameObject.SetActive (false);
         BtnSalir.gameObject.SetActive (false);
@@ -82,26 +92,35 @@ public class HUD_Control : MonoBehaviour
     }
     private void SalirAMenu()
     {
+        if (Time.timeScale == 0)
+        {
+            Time.timeScale = 1;
+        }        
         SceneManager.LoadScene ("MenuPrincipal");
     }
     private void MirarAd()
     {
         CuadroPausa.enabled = false;
+        EfectoOscurecer.enabled = false;
         barraVida.enabled = true;
         
-        //player.enabled = true;
         ContenidoGameOver.gameObject.SetActive (false);
         BtnMirarAd.gameObject.SetActive (false);
         BtnSalir.gameObject.SetActive (false);
         BtnPausa.gameObject.SetActive (true);
 
+        player.enabled = true;
         player.health = player.maxHealth;
+        player.estaMuerto = false;
+        player.GetComponent<BoxCollider2D> ().enabled = true;
+        player.GetComponent<Animator> ().SetTrigger ("Revivir");
         //player.
         //barraVida.value = player.maxHealth;
     }
     private void GameOver()
     {
         CuadroPausa.enabled = true;
+        EfectoOscurecer.enabled = true;
         barraVida.enabled = false;
         //player.enabled = false;
         ContenidoGameOver.gameObject.SetActive (true);

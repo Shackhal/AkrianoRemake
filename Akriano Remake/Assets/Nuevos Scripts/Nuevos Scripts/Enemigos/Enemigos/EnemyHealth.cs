@@ -89,7 +89,31 @@ public class EnemyHealth : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, visionRadius);
     }
 
+    /*private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag ("Kill") && !isDamage)
+        {
 
+            if (collision.transform.position.x < transform.position.x)
+            {
+                rb.AddForce (new Vector2 (enemy.knockbackForceX, enemy.knockbackForceY), ForceMode2D.Force);
+            }
+            else
+            {
+                rb.AddForce (new Vector2 (-enemy.knockbackForceX, enemy.knockbackForceY), ForceMode2D.Force);
+            }
+            Debug.Log (collision.gameObject.tag);
+            enemy.healthPoints -= 5f;
+            StartCoroutine (Damager ());
+            if (enemy.healthPoints <= 0)
+            {
+                anim.SetTrigger ("Muerte_Enemigo");
+                this.enabled = false;
+                GetComponent<BoxCollider2D> ().enabled = false;
+                Destroy (gameObject, 2);
+            }
+        }
+    }*/
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -105,13 +129,13 @@ public class EnemyHealth : MonoBehaviour
                 rb.AddForce(new Vector2(-enemy.knockbackForceX, enemy.knockbackForceY), ForceMode2D.Force);
             }
             Debug.Log(collision.gameObject.tag);
-            enemy.healthPoints -= 5f;
-            StartCoroutine(Damager());
+            enemy.healthPoints -= collision.GetComponent<PlayerProjectile> ().damage;
+            StartCoroutine (Damager());
             if (enemy.healthPoints <= 0) 
             {
                 anim.SetTrigger("Muerte_Enemigo");
                 this.enabled = false;
-                GetComponent<Collider2D>().enabled = false;
+                GetComponent<BoxCollider2D>().enabled = false;
                 Destroy(gameObject, 2);
             }
         }

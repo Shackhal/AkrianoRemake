@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 6729643528744788186}
   - component: {fileID: 1191228335919884551}
   - component: {fileID: 6958925992579559573}
-  - component: {fileID: 5620946805349774460}
   - component: {fileID: 8240357036816221197}
   m_Layer: 0
   m_Name: HellishObelisk
@@ -129,7 +128,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &6729643528744788186
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -140,7 +139,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0006135106, y: 0.105914176}
@@ -184,24 +183,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyName: Boss
   healthPoints: 50
-  damageToGive: 15
+  damageToGive: 5
   knockbackForceX: 0
   knockbackForceY: 0
---- !u!114 &5620946805349774460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 285972175716602704}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 716afd1ce314793499e988a29060e71d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BossName: 
-  BosshealthPoints: 50
-  damageToGive: 15
 --- !u!114 &8240357036816221197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,7 +200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDamage: 0
   speed: 0
-  visionRadius: 3
-  timeToShoot: 0
+  visionRadius: 6
+  timeToShoot: 2
   Shootcooldown: 0
   proyectil: {fileID: 3230540940279727358, guid: fa7fd29ff25ed60498d9735ec0ea4a22, type: 3}

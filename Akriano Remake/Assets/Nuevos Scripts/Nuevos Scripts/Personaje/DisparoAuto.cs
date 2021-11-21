@@ -16,7 +16,7 @@ public class DisparoAuto : MonoBehaviour
     void Start()
     {
         Shootcooldown = timeToShoot;
-        objetivo = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Transform>();
+        //objetivo = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Transform>();
     }
 
     // Update is called once per frame

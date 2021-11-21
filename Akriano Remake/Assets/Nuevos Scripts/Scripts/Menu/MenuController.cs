@@ -10,6 +10,7 @@ public class MenuController : MonoBehaviour
     public Button BtnOpciones;
     public Button BtnCerrar;
     public Image CuadroCreditos;
+    public Image EfectoOscurecer;
     public Text TextoCreditos;
 
     // Start is called before the first frame update
@@ -20,6 +21,7 @@ public class MenuController : MonoBehaviour
         BtnOpciones.onClick.AddListener (AbrirOpciones);
 
         CuadroCreditos.enabled = false;
+        EfectoOscurecer.enabled = false;
         TextoCreditos.gameObject.SetActive(false);
         BtnCerrar.gameObject.SetActive(false);
         BtnJugar.gameObject.SetActive (true);
@@ -43,6 +45,7 @@ public class MenuController : MonoBehaviour
     {
         Debug.Log ("Opciones Cerradas");
         CuadroCreditos.enabled = false;
+        EfectoOscurecer.enabled = false;
         TextoCreditos.gameObject.SetActive (false);
         BtnCerrar.gameObject.SetActive (false);
         BtnOpciones.gameObject.SetActive (true);
@@ -53,6 +56,7 @@ public class MenuController : MonoBehaviour
     {
         Debug.Log ("Opciones Abierta");
         CuadroCreditos.enabled = true;
+        EfectoOscurecer.enabled = true;
         TextoCreditos.gameObject.SetActive(true);
         BtnCerrar.gameObject.SetActive (true);
         BtnOpciones.gameObject.SetActive (false);

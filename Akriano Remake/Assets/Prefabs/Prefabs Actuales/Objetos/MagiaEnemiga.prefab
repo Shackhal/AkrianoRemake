@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8907303007824656533}
   - component: {fileID: 2919487113463175667}
   - component: {fileID: 4254192531255713158}
+  - component: {fileID: 6791413867213492484}
   - component: {fileID: 7844498682007500325}
   m_Layer: 0
   m_Name: MagiaEnemiga
@@ -143,6 +144,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!111 &6791413867213492484
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3230540940279727358}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &7844498682007500325
 MonoBehaviour:
   m_ObjectHideFlags: 0

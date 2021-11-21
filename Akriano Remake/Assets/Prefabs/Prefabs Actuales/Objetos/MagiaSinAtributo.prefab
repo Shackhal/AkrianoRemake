@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4582882280061653107}
   - component: {fileID: 7756545510610145055}
   - component: {fileID: 2261370250985209875}
+  - component: {fileID: 5220747196318466492}
   - component: {fileID: 6104376760559136666}
   m_Layer: 0
   m_Name: MagiaSinAtributo
@@ -133,7 +134,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &2261370250985209875
 Animator:
   serializedVersion: 3
@@ -153,6 +154,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!111 &5220747196318466492
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404401815895284741}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &6104376760559136666
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -71,12 +71,6 @@ public class BossHealth : MonoBehaviour
         }
 
         Debug.DrawLine(transform.position, target, Color.black);
-
-        
-
-
-
-        
     }
 
     private void OnDrawGizmos()
@@ -85,6 +79,25 @@ public class BossHealth : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, visionRadius);
     }
 
+    /*private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log ("Muereee");
+        if (collision.gameObject.CompareTag ("Kill") && !isDamage)
+
+        {
+            Debug.Log (collision.gameObject.tag);
+            Boss.healthPoints -= 5f;
+
+            StartCoroutine (Damager ());
+            if (Boss.healthPoints <= 0)
+            {
+                anim.SetTrigger ("Muerte_Enemigo");
+                this.enabled = false;
+                GetComponent<BoxCollider2D> ().enabled = false;
+                Destroy (gameObject, 4);
+            }
+        }
+    }*/
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -93,14 +106,14 @@ public class BossHealth : MonoBehaviour
 
         {
             Debug.Log(collision.gameObject.tag);
-            Boss.healthPoints -= 5f;
-            
-            StartCoroutine(Damager());
+            Boss.healthPoints -= collision.GetComponent<PlayerProjectile> ().damage;
+
+            StartCoroutine (Damager());
             if (Boss.healthPoints <= 0)
             {
                 anim.SetTrigger("Muerte_Enemigo");
                 this.enabled = false;
-                GetComponent<Collider2D>().enabled = false;
+                GetComponent<BoxCollider2D>().enabled = false;
                 Destroy(gameObject, 12);
             }
         }
