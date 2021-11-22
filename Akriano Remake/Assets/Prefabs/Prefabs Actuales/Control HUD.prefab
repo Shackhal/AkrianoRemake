@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7424855536338733613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7424855536338733615}
+  - component: {fileID: 7424855536338733612}
+  m_Layer: 0
+  m_Name: Control HUD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7424855536338733615
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7424855536338733613}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.8664837, y: -8.457965, z: -1.3726324}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7424855536338733612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7424855536338733613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 274797b95ccc09547b8a345c00916ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barraVida: {fileID: 0}
+  BtnPausa: {fileID: 0}
+  BtnContinuar: {fileID: 0}
+  BtnMirarAd: {fileID: 0}
+  BtnSalir: {fileID: 0}
+  CuadroPausa: {fileID: 0}
+  EfectoOscurecer: {fileID: 0}
+  ContenidoPausa: {fileID: 0}
+  ContenidoGameOver: {fileID: 0}
+  player: {fileID: 0}
+  TransicionEscena: {fileID: 0}
+  transicionInicioNivel: 0
+  transicionFinNivel: 0
+  transicionAlphaSpd: 0.005
+  siguienteNivel: 0

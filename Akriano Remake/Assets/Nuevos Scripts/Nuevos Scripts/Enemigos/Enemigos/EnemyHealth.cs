@@ -136,7 +136,7 @@ public class EnemyHealth : MonoBehaviour
                 anim.SetTrigger("Muerte_Enemigo");
                 this.enabled = false;
                 GetComponent<BoxCollider2D>().enabled = false;
-                Destroy(gameObject, 2);
+                Destroy(gameObject, 2f);
             }
         }
     }

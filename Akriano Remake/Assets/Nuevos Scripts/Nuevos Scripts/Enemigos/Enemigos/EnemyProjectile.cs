@@ -33,7 +33,7 @@ public class EnemyProjectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag ("Player"))
+        if (collision.CompareTag ("Player") || collision.CompareTag ("Escenario") || collision.CompareTag ("Puerta"))
         {
             anim.SetTrigger ("Colision");
             gameObject.GetComponent<Rigidbody2D> ().velocity = new Vector2 (0f, 0f);

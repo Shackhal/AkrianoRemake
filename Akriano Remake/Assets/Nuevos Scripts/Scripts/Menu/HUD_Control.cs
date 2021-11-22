@@ -17,8 +17,14 @@ public class HUD_Control : MonoBehaviour
     public Text ContenidoPausa;
     public Text ContenidoGameOver;
     public Player player;
+    public Image TransicionEscena;
 
     private float tamañoBarraVida;
+
+    public bool transicionInicioNivel;
+    public bool transicionFinNivel;
+    public float transicionAlphaSpd;
+    public int siguienteNivel;
     //public Enemy enemy;
 
     // Start is called before the first frame update
@@ -38,16 +44,43 @@ public class HUD_Control : MonoBehaviour
 
         CuadroPausa.enabled = false;
         EfectoOscurecer.enabled = false;
+        TransicionEscena.enabled = true;
         ContenidoPausa.gameObject.SetActive (false);
         ContenidoGameOver.gameObject.SetActive (false);
 
         barraVida.maxValue = player.maxHealth;
         barraVida.value = player.health;
+        transicionInicioNivel = true;
+        transicionFinNivel = false;        
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (transicionInicioNivel == true)
+        {
+            var tempColor = TransicionEscena.color;
+            tempColor.a -= transicionAlphaSpd;
+            TransicionEscena.color = tempColor;
+
+            if (TransicionEscena.color.a <= 0)
+            {
+                TransicionEscena.enabled = false;
+                transicionInicioNivel = false;                
+            }
+        }
+        else if (transicionFinNivel == true)
+        {
+            var tempColor = TransicionEscena.color;
+            tempColor.a += transicionAlphaSpd;
+            TransicionEscena.color = tempColor;
+
+            if (TransicionEscena.color.a >= 1)
+            {
+                SceneManager.LoadScene (siguienteNivel);
+            }
+        }
+        
         barraVida.value = player.health;
 
         if (barraVida.value <= 0.2f)
@@ -109,6 +142,7 @@ public class HUD_Control : MonoBehaviour
         BtnSalir.gameObject.SetActive (false);
         BtnPausa.gameObject.SetActive (true);
 
+        Time.timeScale = 1;
         player.enabled = true;
         player.health = player.maxHealth;
         player.estaMuerto = false;
@@ -123,6 +157,7 @@ public class HUD_Control : MonoBehaviour
         EfectoOscurecer.enabled = true;
         barraVida.enabled = false;
         //player.enabled = false;
+        Time.timeScale = 0;
         ContenidoGameOver.gameObject.SetActive (true);
         BtnMirarAd.gameObject.SetActive (true);
         BtnSalir.gameObject.SetActive (true);

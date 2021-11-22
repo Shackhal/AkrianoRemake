@@ -12,6 +12,13 @@ public class MenuController : MonoBehaviour
     public Image CuadroCreditos;
     public Image EfectoOscurecer;
     public Text TextoCreditos;
+    public Image TransicionEscena;
+
+    public float transicionAlphaSpd;
+
+    //Image transicion;
+    bool enTransicion;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -22,22 +29,35 @@ public class MenuController : MonoBehaviour
 
         CuadroCreditos.enabled = false;
         EfectoOscurecer.enabled = false;
+        TransicionEscena.enabled = false;
         TextoCreditos.gameObject.SetActive(false);
         BtnCerrar.gameObject.SetActive(false);
-        BtnJugar.gameObject.SetActive (true);
+        BtnJugar.gameObject.SetActive (true);        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        //BtnJugar.onClick.RemoveListener (Jugar);
+        if (enTransicion == true)
+        {
+            var tempColor = TransicionEscena.color;
+            tempColor.a += transicionAlphaSpd;
+            TransicionEscena.color = tempColor;
+
+            if (TransicionEscena.color.a >= 1)
+            {
+                SceneManager.LoadScene ("Mundo Hierba");
+            }
+        }        
     }
 
     private void Jugar()
     {
-        Debug.Log ("Hacia el primer nivel");
-        SceneManager.LoadScene ("Mundo Hierba");
+        Debug.Log ("Hacia el primer nivel");        
+        BtnJugar.enabled = false;
+        BtnOpciones.enabled = false;
+        TransicionEscena.enabled = true;
+        enTransicion = true;
         //BtnJugar.onClick.RemoveListener (Jugar);
     }
 

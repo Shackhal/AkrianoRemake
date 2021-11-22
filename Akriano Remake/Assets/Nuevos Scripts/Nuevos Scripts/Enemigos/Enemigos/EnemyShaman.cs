@@ -148,7 +148,7 @@ public class EnemyShaman : MonoBehaviour
                 anim.SetTrigger ("Muerte_Enemigo");
                 this.enabled = false;
                 GetComponent<BoxCollider2D> ().enabled = false;
-                Destroy (gameObject, 4);
+                Destroy (gameObject, 2f);
             }
         }
     }
