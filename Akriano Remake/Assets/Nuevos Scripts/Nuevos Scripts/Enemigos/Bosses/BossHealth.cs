@@ -25,6 +25,13 @@ public class BossHealth : MonoBehaviour
     Transform objetivo;
     Vector3 initialPosition;
 
+    public AudioClip ataqueHellish;
+    private AudioSource audioSource;
+
+    public AudioClip dañoHellish;
+    private AudioSource audioMuerte;
+
+
     private void Start()
     {
         Boss = GetComponent<Enemy>();
@@ -32,6 +39,8 @@ public class BossHealth : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         material = GetComponent<Blink>();
         anim = GetComponent<Animator>();
+        audioSource = GetComponentInChildren<AudioSource>();
+        audioMuerte = GetComponentInChildren<AudioSource>();
 
         Shootcooldown = timeToShoot;
 
@@ -52,6 +61,8 @@ public class BossHealth : MonoBehaviour
         float dist = Vector3.Distance(objetivo.transform.position, transform.position);
         if (dist < visionRadius)
         {
+
+            
             target = objetivo.transform.position;
 
             anim.SetBool("Atacar_Enemigo", true);
@@ -61,6 +72,10 @@ public class BossHealth : MonoBehaviour
                 GameObject bala = Instantiate (proyectil, transform.position, Quaternion.identity);
                 bala.GetComponent<Rigidbody2D> ().velocity = (target - transform.position) * new Vector2 (1f, 1f);
                 Shootcooldown = timeToShoot;
+
+                audioSource.clip = ataqueHellish;
+
+                audioSource.Play();
             }
 
         }
@@ -105,6 +120,11 @@ public class BossHealth : MonoBehaviour
         if (collision.CompareTag("Kill") && !isDamage)
 
         {
+
+            audioSource.clip = dañoHellish;
+
+            audioSource.Play();
+
             Debug.Log(collision.gameObject.tag);
             Boss.healthPoints -= collision.GetComponent<PlayerProjectile> ().damage;
 
@@ -129,7 +149,6 @@ public class BossHealth : MonoBehaviour
 
     }
 
-
-
+    
 }
 

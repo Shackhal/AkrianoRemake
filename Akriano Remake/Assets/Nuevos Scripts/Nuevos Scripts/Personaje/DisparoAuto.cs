@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class DisparoAuto : MonoBehaviour
 {
+    public AudioClip sonidoAtaque;
+    private AudioSource audioSource;
+
+
     public GameObject projectile;
 
     public float timeToShoot;
@@ -15,6 +19,9 @@ public class DisparoAuto : MonoBehaviour
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+        
+        
         Shootcooldown = timeToShoot;
         //objetivo = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Transform>();
     }
@@ -46,6 +53,10 @@ public class DisparoAuto : MonoBehaviour
 
             Shootcooldown = timeToShoot;
 
+            audioSource.clip = sonidoAtaque;
+
+            audioSource.Play();
+
         }
     }
         private void OnDrawGizmos()
@@ -76,6 +87,9 @@ public class DisparoAuto : MonoBehaviour
             return closestEnemy.transform.position;
         }
         else return transform.position;
+
+        
+
     }
 
 

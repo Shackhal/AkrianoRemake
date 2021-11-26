@@ -22,6 +22,17 @@ public class EnemyHealth : MonoBehaviour
     Transform objetivo;
     Vector2 initialPosition;
 
+    
+    
+
+    public AudioClip ataqueEnemigo;
+    private AudioSource audioSource;
+
+    public AudioClip dañoEnemigo;
+    private AudioSource audioDaño;
+
+
+
     private void Start()
     {
         enemy = GetComponent<Enemy>();
@@ -29,6 +40,9 @@ public class EnemyHealth : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         material = GetComponent<Blink>();
         anim = GetComponent<Animator>();
+        audioSource = GetComponentInChildren<AudioSource>();
+        audioDaño = GetComponentInChildren<AudioSource>();
+
 
         Player = GameObject.FindGameObjectWithTag("Player");
 
@@ -67,12 +81,17 @@ public class EnemyHealth : MonoBehaviour
             {
                 anim.SetBool ("Atacar_Enemigo", false);
             }
+
+            
+
+
         }
 
         else
         {
             anim.SetBool("Caminar_Enemigo", false);
             //anim.SetBool("Atacar_Enemigo", false);
+
         }
 
         float fixedSpeed = speed * Time.deltaTime;
@@ -80,6 +99,9 @@ public class EnemyHealth : MonoBehaviour
 
         Debug.DrawLine(transform.position, target, Color.red);
 
+        audioSource.clip = ataqueEnemigo;
+
+        audioSource.Play();
 
     }
 
@@ -119,7 +141,11 @@ public class EnemyHealth : MonoBehaviour
     {
         if (collision.CompareTag("Kill") && !isDamage) 
         {
-            
+
+            audioSource.clip = dañoEnemigo;
+
+            audioSource.Play();
+
             if (collision.transform.position.x < transform.position.x) 
             {
                 rb.AddForce(new Vector2(enemy.knockbackForceX, enemy.knockbackForceY), ForceMode2D.Force);
@@ -151,6 +177,10 @@ public class EnemyHealth : MonoBehaviour
         isDamage = false;
 
     }
+
+    
+    
+    
 
 
 }

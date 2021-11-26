@@ -24,6 +24,13 @@ public class EnemyShaman : MonoBehaviour
     Transform objetivo;
     Vector3 initialPosition;
 
+    public AudioClip ataqueShaman;
+    private AudioSource audioSource;
+
+    public AudioClip dañoShaman;
+    private AudioSource audioDolor;
+
+
     private void Start()
     {
         enemy = GetComponent<Enemy> ();
@@ -31,6 +38,9 @@ public class EnemyShaman : MonoBehaviour
         sprite = GetComponent<SpriteRenderer> ();
         material = GetComponent<Blink> ();
         anim = GetComponent<Animator> ();
+
+        audioSource = GetComponentInChildren<AudioSource>();
+        audioDolor = GetComponentInChildren<AudioSource>();
 
         Player = GameObject.FindGameObjectWithTag ("Player");
 
@@ -51,6 +61,9 @@ public class EnemyShaman : MonoBehaviour
         float dist = v;
         if (dist <= visionRadius)
         {
+
+            
+
             target = Player.transform.position;
 
             if (target.x > transform.position.x)
@@ -67,6 +80,12 @@ public class EnemyShaman : MonoBehaviour
                 GameObject bala = Instantiate (proyectil, transform.position, Quaternion.identity);
                 bala.GetComponent<Rigidbody2D> ().velocity = (target - transform.position) * new Vector2 (1f, 1f);
                 Shootcooldown = timeToShoot;
+
+                audioSource.clip = ataqueShaman;
+
+                audioSource.Play();
+
+
             }
             anim.SetTrigger ("Atacar_Enemigo");
             //anim.SetBool ("Atacar_Enemigo", true);
@@ -89,6 +108,7 @@ public class EnemyShaman : MonoBehaviour
         //transform.position = Vector3.MoveTowards (transform.position, target, fixedSpeed);
 
         //Debug.DrawLine (transform.position, target, Color.red);
+           
 
 
     }
@@ -130,6 +150,12 @@ public class EnemyShaman : MonoBehaviour
         if (collision.CompareTag ("Kill") && !isDamage)
         {
 
+            audioSource.clip = dañoShaman;
+
+            audioSource.Play();
+
+
+
             if (collision.transform.position.x < transform.position.x)
             {
                 rb.AddForce (new Vector2 (enemy.knockbackForceX, enemy.knockbackForceY), ForceMode2D.Force);
@@ -150,6 +176,8 @@ public class EnemyShaman : MonoBehaviour
                 GetComponent<BoxCollider2D> ().enabled = false;
                 Destroy (gameObject, 2f);
             }
+
+
         }
     }
 

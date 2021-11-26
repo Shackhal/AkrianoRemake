@@ -23,6 +23,10 @@ public class Player : MonoBehaviour
 
     Enemy enemy;
 
+    public AudioClip dañoAkriano;
+    private AudioSource audioSource;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +35,8 @@ public class Player : MonoBehaviour
         health = maxHealth;
         anim = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
+        audioSource = GetComponentInChildren<AudioSource>();
+
         target = transform.position;
         cam = Camera.main;
         estaMuerto = false;
@@ -92,6 +98,9 @@ public class Player : MonoBehaviour
             gameObject.GetComponent<BoxCollider2D> ().enabled = false;
             this.enabled = false;
 
+
+
+
             if (estaMuerto == false)
             {
                 //gameObject.GetComponent<BoxCollider2D> ().enabled = true;
@@ -100,10 +109,14 @@ public class Player : MonoBehaviour
                 //anim.SetTrigger ("Revivir");
                 //gameObject.GetComponent<BoxCollider2D> ().enabled = true;
             }
-            
+
 
             //gameObject.GetComponent<BoxCollider2D> ().enabled = false;
             //Destroy (gameObject, 20);
+
+            
+
+
         }
     }
 
@@ -113,6 +126,10 @@ public class Player : MonoBehaviour
         {
             health -= collision.gameObject.GetComponent<Enemy> ().damageToGive;
             StartCoroutine (Inmunity ());
+
+            audioSource.clip = dañoAkriano;
+
+            audioSource.Play();
 
             //if (health <= 0)
             //{
@@ -150,7 +167,11 @@ public class Player : MonoBehaviour
         {
             health -= collision.GetComponent<EnemyProjectile> ().damage;
             StartCoroutine (Inmunity ());
-            
+
+            audioSource.clip = dañoAkriano;
+
+            audioSource.Play();
+
             //if (health <= 0)
             //{
             //    anim.SetTrigger ("Muerte");
@@ -178,4 +199,8 @@ public class Player : MonoBehaviour
         sprite.material = material.original;
         isInmune = false;
     }
+
+    
+
+
 }
