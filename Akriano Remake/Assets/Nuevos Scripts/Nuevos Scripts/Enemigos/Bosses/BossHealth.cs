@@ -12,24 +12,24 @@ public class BossHealth : MonoBehaviour
     public float timeToShoot;
     public float Shootcooldown;
     public GameObject proyectil;
+    public float balaSpd;
 
     Blink material;
     SpriteRenderer sprite;
     Rigidbody2D rb;
-    Animator anim;
-
-    
+    Animator anim;    
 
     GameObject Player;
 
     Transform objetivo;
     Vector3 initialPosition;
 
+    public AudioClip estandarHellish;
     public AudioClip ataqueHellish;
     private AudioSource audioSource;
 
     public AudioClip dañoHellish;
-    private AudioSource audioMuerte;
+    //private AudioSource audioMuerte;
 
 
     private void Start()
@@ -40,9 +40,14 @@ public class BossHealth : MonoBehaviour
         material = GetComponent<Blink>();
         anim = GetComponent<Animator>();
         audioSource = GetComponentInChildren<AudioSource>();
-        audioMuerte = GetComponentInChildren<AudioSource>();
+        //audioMuerte = GetComponentInChildren<AudioSource>();
+
+        audioSource.Play ();
+        audioSource.loop = true;
 
         Shootcooldown = timeToShoot;
+
+        //audioSource.clip = estandarHellish;
 
         objetivo = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
 
@@ -69,13 +74,14 @@ public class BossHealth : MonoBehaviour
 
             if (Shootcooldown <= 0 && dist <= visionRadius)
             {
+                Vector3 balaDir = (target - transform.position).normalized;
                 GameObject bala = Instantiate (proyectil, transform.position, Quaternion.identity);
-                bala.GetComponent<Rigidbody2D> ().velocity = (target - transform.position) * new Vector2 (1f, 1f);
+                bala.GetComponent<Rigidbody2D> ().velocity = balaDir * balaSpd * Time.deltaTime;
                 Shootcooldown = timeToShoot;
 
                 audioSource.clip = ataqueHellish;
-
                 audioSource.Play();
+                audioSource.loop = false;
             }
 
         }
@@ -83,6 +89,13 @@ public class BossHealth : MonoBehaviour
         else
         {
             anim.SetBool("Atacar_Enemigo", false);
+            if (audioSource.clip != estandarHellish && audioSource.clip != dañoHellish)
+            {
+                audioSource.clip = estandarHellish;
+                audioSource.Play ();
+                audioSource.loop = true;
+            }
+            
         }
 
         Debug.DrawLine(transform.position, target, Color.black);
@@ -124,6 +137,7 @@ public class BossHealth : MonoBehaviour
             audioSource.clip = dañoHellish;
 
             audioSource.Play();
+            audioSource.loop = false;
 
             Debug.Log(collision.gameObject.tag);
             Boss.healthPoints -= collision.GetComponent<PlayerProjectile> ().damage;
@@ -134,7 +148,7 @@ public class BossHealth : MonoBehaviour
                 anim.SetTrigger("Muerte_Enemigo");
                 this.enabled = false;
                 GetComponent<BoxCollider2D>().enabled = false;
-                Destroy(gameObject, 2f);
+                Destroy(gameObject, 3f);
             }
         }
     }
@@ -143,7 +157,7 @@ public class BossHealth : MonoBehaviour
     {
         isDamage = true;
         sprite.material = material.blink;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds (0.5f);
         sprite.material = material.original;
         isDamage = false;
 

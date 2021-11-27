@@ -21,18 +21,18 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: -2347109740536176804, guid: f131793a6db35304aa0f67eb799dcb49, type: 3}
-    - time: 0.11666667
+    - time: 0.083333336
       value: {fileID: 716208067723395752, guid: f131793a6db35304aa0f67eb799dcb49, type: 3}
-    - time: 0.21666667
+    - time: 0.16666667
       value: {fileID: -2439454475607666747, guid: f131793a6db35304aa0f67eb799dcb49, type: 3}
-    - time: 0.33333334
+    - time: 0.25
       value: {fileID: 4821129509679465458, guid: f131793a6db35304aa0f67eb799dcb49, type: 3}
-    - time: 0.45
+    - time: 0.33333334
       value: {fileID: -543757205487024170, guid: f131793a6db35304aa0f67eb799dcb49, type: 3}
-    - time: 0.56666666
+    - time: 0.41666666
       value: {fileID: 5248363317743775020, guid: f131793a6db35304aa0f67eb799dcb49, type: 3}
-    - time: 0.6666667
-      value: {fileID: 1060923429727944857, guid: f131793a6db35304aa0f67eb799dcb49, type: 3}
+    - time: 0.5
+      value: {fileID: 4526600599510729196, guid: f131793a6db35304aa0f67eb799dcb49, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -58,13 +58,13 @@ AnimationClip:
     - {fileID: 4821129509679465458, guid: f131793a6db35304aa0f67eb799dcb49, type: 3}
     - {fileID: -543757205487024170, guid: f131793a6db35304aa0f67eb799dcb49, type: 3}
     - {fileID: 5248363317743775020, guid: f131793a6db35304aa0f67eb799dcb49, type: 3}
-    - {fileID: 1060923429727944857, guid: f131793a6db35304aa0f67eb799dcb49, type: 3}
+    - {fileID: 4526600599510729196, guid: f131793a6db35304aa0f67eb799dcb49, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.68333334
+    m_StopTime: 0.51666665
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -83,18 +83,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0
-    functionName: Duele
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.21666667
-    functionName: Duele
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []

@@ -54,6 +54,7 @@ MonoBehaviour:
   ContenidoGameOver: {fileID: 0}
   player: {fileID: 0}
   TransicionEscena: {fileID: 0}
+  continuaciones: 3
   transicionInicioNivel: 0
   transicionFinNivel: 0
   transicionAlphaSpd: 0.005

@@ -12,13 +12,16 @@ public class PlayerProjectile : MonoBehaviour
 
     //AnimationState state;
 
-    //private bool explosion;
+    public AudioClip explosion;
+    private AudioSource audioSource;
 
     void Start()
     {
         anim = GetComponent<Animator> ();
         //animState = GetComponent<Animation> ();
         col = GetComponent<BoxCollider2D> ();
+
+        audioSource = GetComponentInChildren<AudioSource> ();
     }
 
     // Update is called once per frame
@@ -53,6 +56,9 @@ public class PlayerProjectile : MonoBehaviour
             anim.SetTrigger ("Colision");
             gameObject.GetComponent<Rigidbody2D> ().velocity = new Vector2 (0f, 0f);
             col.enabled = false;
+
+            audioSource.clip = explosion;
+            audioSource.Play ();
 
             Destroy (gameObject, 0.515f);
         }

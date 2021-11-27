@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     public float inmunityTime;
     public Camera cam;
 
-    public bool estaMuerto;
+    public bool haRevivido;
      
     Blink material;
     SpriteRenderer sprite;
@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
 
         target = transform.position;
         cam = Camera.main;
-        estaMuerto = false;
+        haRevivido = false;
     }
 
     // Update is called once per frame
@@ -93,31 +93,22 @@ public class Player : MonoBehaviour
 
         if (health <= 0)
         {
-            anim.SetTrigger ("Muerte");
-            estaMuerto = true;            
+            anim.SetTrigger ("Muerte");                     
             gameObject.GetComponent<BoxCollider2D> ().enabled = false;
             this.enabled = false;
 
-
-
-
-            if (estaMuerto == false)
-            {
-                //gameObject.GetComponent<BoxCollider2D> ().enabled = true;
-                //health = maxHealth;
-                //estaMuerto = false;
-                //anim.SetTrigger ("Revivir");
-                //gameObject.GetComponent<BoxCollider2D> ().enabled = true;
-            }
-
+            
 
             //gameObject.GetComponent<BoxCollider2D> ().enabled = false;
             //Destroy (gameObject, 20);
-
-            
-
-
         }
+
+        if (haRevivido == true)
+        {
+            StartCoroutine (Inmunity ());
+            haRevivido = false;
+        }
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

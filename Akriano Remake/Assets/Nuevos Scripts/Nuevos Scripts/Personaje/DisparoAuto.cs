@@ -7,15 +7,16 @@ public class DisparoAuto : MonoBehaviour
     public AudioClip sonidoAtaque;
     private AudioSource audioSource;
 
-
     public GameObject projectile;
 
     public float timeToShoot;
     public float Shootcooldown;
     public float visualRadius;
+    public float balaSpd;
 
     Transform objetivo;
     Vector3 enemyPosition;
+    //GameObject bala;
 
     void Start()
     {
@@ -39,17 +40,37 @@ public class DisparoAuto : MonoBehaviour
 
         if (Shootcooldown <= 0 && distanceAttack <= visualRadius && enemyPosition != transform.position)
         {
-            GameObject bala = Instantiate(projectile, transform.position, Quaternion.identity);
+            
+            Vector3 direccionBala = (enemyPosition - transform.position).normalized;
+            float balaImgAngulo = Mathf.Atan2 (direccionBala.x, direccionBala.y) * Mathf.Rad2Deg - 90f;
 
+            GameObject bala = Instantiate (projectile, transform.position, Quaternion.Euler (0, 0, -balaImgAngulo));
+            bala.GetComponent<Rigidbody2D> ().velocity = direccionBala * balaSpd * Time.deltaTime;
+
+            /*
+            GameObject bala = Instantiate(projectile, new Vector3(transform.position.x, transform.position.y, angulo), Quaternion.identity);
+            bala.GetComponent<Rigidbody2D> ().velocity = direccionBala;
+            */
+
+            /*
             if (enemyPosition.x < transform.position.x)
-            {
-                bala.GetComponent<Rigidbody2D>().velocity = (enemyPosition - transform.position) * new Vector2(1f, 1f);
-            }
+           {
+                GameObject bala = Instantiate (projectile, transform.position, Quaternion.Euler(0, 0, -angulo));
+                bala.GetComponent<Rigidbody2D>().velocity = direccionBala;
+                //bala.transform.rotation = Quaternion.Euler()
+                //bala.transform.rotation.z = angulo;
+           }
 
-            else
-            {
-                bala.GetComponent<Rigidbody2D>().velocity = (enemyPosition - transform.position) * new Vector2 (1f, 1f);
+           else
+           {
+                GameObject bala = Instantiate (projectile, transform.position, Quaternion.Euler (0, 0, -angulo));
+                bala.GetComponent<Rigidbody2D> ().velocity = direccionBala;
+                //bala.GetComponent<Rigidbody2D> ().rotation = angulo;
+                //Quaternion anguloBala = Quaternion.LookRotation (transform.position, enemyPosition);
+                //bala.transform.rotation = anguloBala;
             }
+            */
+           
 
             Shootcooldown = timeToShoot;
 

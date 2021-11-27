@@ -6,6 +6,9 @@ public class EnemyProjectile : MonoBehaviour
 {
     public float damage;
 
+    public AudioClip explosion;
+    private AudioSource audioSource;
+
 
     Animator anim;
     //Animation animation;
@@ -15,6 +18,8 @@ public class EnemyProjectile : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         col = GetComponent<CircleCollider2D> ();
+
+        audioSource = GetComponentInChildren<AudioSource> ();
     }
 
     // Update is called once per frame
@@ -38,6 +43,9 @@ public class EnemyProjectile : MonoBehaviour
             anim.SetTrigger ("Colision");
             gameObject.GetComponent<Rigidbody2D> ().velocity = new Vector2 (0f, 0f);
             col.enabled = false;
+
+            audioSource.clip = explosion;
+            audioSource.Play ();
 
             Destroy (gameObject, 0.515f);
         }

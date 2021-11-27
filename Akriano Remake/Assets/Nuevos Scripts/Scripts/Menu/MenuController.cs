@@ -15,9 +15,11 @@ public class MenuController : MonoBehaviour
     public Image TransicionEscena;
 
     public float transicionAlphaSpd;
+    public bool transicionInicio;
+    public bool transicionJugar;
 
     //Image transicion;
-    bool enTransicion;
+    //bool enTransicion;
     
 
     // Start is called before the first frame update
@@ -29,16 +31,31 @@ public class MenuController : MonoBehaviour
 
         CuadroCreditos.enabled = false;
         EfectoOscurecer.enabled = false;
-        TransicionEscena.enabled = false;
+        TransicionEscena.enabled = true;
         TextoCreditos.gameObject.SetActive(false);
         BtnCerrar.gameObject.SetActive(false);
-        BtnJugar.gameObject.SetActive (true);        
+        BtnJugar.gameObject.SetActive (true);
+
+        transicionInicio = true;
+        transicionJugar = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (enTransicion == true)
+        if (transicionInicio == true)
+        {
+            var tempColor = TransicionEscena.color;
+            tempColor.a -= transicionAlphaSpd;
+            TransicionEscena.color = tempColor;
+
+            if (TransicionEscena.color.a <= 0)
+            {
+                transicionInicio = false;
+                TransicionEscena.enabled = false;          
+            }
+        }
+        else if (transicionJugar == true)
         {
             var tempColor = TransicionEscena.color;
             tempColor.a += transicionAlphaSpd;
@@ -46,9 +63,10 @@ public class MenuController : MonoBehaviour
 
             if (TransicionEscena.color.a >= 1)
             {
-                SceneManager.LoadScene ("Mundo Hierba");
+                //Lleva al primer nivel del juego, el cual esta enumerado como "1" en Build Settings.
+                SceneManager.LoadScene (1);
             }
-        }        
+        }
     }
 
     private void Jugar()
@@ -57,7 +75,7 @@ public class MenuController : MonoBehaviour
         BtnJugar.enabled = false;
         BtnOpciones.enabled = false;
         TransicionEscena.enabled = true;
-        enTransicion = true;
+        transicionJugar = true;
         //BtnJugar.onClick.RemoveListener (Jugar);
     }
 

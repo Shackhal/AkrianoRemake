@@ -29,7 +29,7 @@ public class EnemyHealth : MonoBehaviour
     private AudioSource audioSource;
 
     public AudioClip dañoEnemigo;
-    private AudioSource audioDaño;
+    //private AudioSource audioDaño;
 
 
 
@@ -41,7 +41,7 @@ public class EnemyHealth : MonoBehaviour
         material = GetComponent<Blink>();
         anim = GetComponent<Animator>();
         audioSource = GetComponentInChildren<AudioSource>();
-        audioDaño = GetComponentInChildren<AudioSource>();
+        //audioDaño = GetComponentInChildren<AudioSource>();
 
 
         Player = GameObject.FindGameObjectWithTag("Player");
@@ -73,17 +73,17 @@ public class EnemyHealth : MonoBehaviour
             
             //anim.SetBool("Atacar_Enemigo", false);
             
-            if (dist < 0.1f)
+            if (dist <= 0.5f)
             {
                 anim.SetBool ("Atacar_Enemigo", true);
+                audioSource.clip = ataqueEnemigo;
+
+                audioSource.Play ();
             }
             else
             {
                 anim.SetBool ("Atacar_Enemigo", false);
             }
-
-            
-
 
         }
 
@@ -97,11 +97,7 @@ public class EnemyHealth : MonoBehaviour
         float fixedSpeed = speed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, target, fixedSpeed);
 
-        Debug.DrawLine(transform.position, target, Color.red);
-
-        audioSource.clip = ataqueEnemigo;
-
-        audioSource.Play();
+        Debug.DrawLine(transform.position, target, Color.red);  
 
     }
 
@@ -162,7 +158,7 @@ public class EnemyHealth : MonoBehaviour
                 anim.SetTrigger("Muerte_Enemigo");
                 this.enabled = false;
                 GetComponent<BoxCollider2D>().enabled = false;
-                Destroy(gameObject, 2f);
+                Destroy(gameObject, 1f);
             }
         }
     }
@@ -171,9 +167,11 @@ public class EnemyHealth : MonoBehaviour
     IEnumerator Damager()
     {
         isDamage = true;
-        //sprite.material = material.blink;
+        //sprite.color = Color.cyan;
+        sprite.material = material.blink;
         yield return new WaitForSeconds(0.5f);
-        //sprite.material = material.original;
+        //sprite.color = Color.white;
+        sprite.material = material.original;
         isDamage = false;
 
     }

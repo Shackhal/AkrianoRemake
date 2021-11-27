@@ -19,13 +19,20 @@ public class HUD_Control : MonoBehaviour
     public Player player;
     public Image TransicionEscena;
 
+    public int continuaciones;
+
     private float tamañoBarraVida;
+
+    private Text textoMirarAd;
+    private string mirarAd;
 
     public bool transicionInicioNivel;
     public bool transicionFinNivel;
     public float transicionAlphaSpd;
     public int siguienteNivel;
     //public Enemy enemy;
+
+    //public bool adFinalizado;
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +49,9 @@ public class HUD_Control : MonoBehaviour
         BtnPausa.gameObject.SetActive (true);
         BtnMirarAd.gameObject.SetActive (false);
 
+        textoMirarAd = BtnMirarAd.GetComponentInChildren<Text> ();
+        mirarAd = textoMirarAd.text;
+
         CuadroPausa.enabled = false;
         EfectoOscurecer.enabled = false;
         TransicionEscena.enabled = true;
@@ -51,7 +61,19 @@ public class HUD_Control : MonoBehaviour
         barraVida.maxValue = player.maxHealth;
         barraVida.value = player.health;
         transicionInicioNivel = true;
-        transicionFinNivel = false;        
+        transicionFinNivel = false;
+
+        if (PlayerPrefs.HasKey ("continuaciones"))
+        {
+            continuaciones = PlayerPrefs.GetInt ("continuaciones");
+        }
+        else
+        {
+            PlayerPrefs.SetInt ("continuaciones", continuaciones);
+        }
+        
+
+        //adFinalizado = false;
     }
 
     // Update is called once per frame
@@ -128,39 +150,88 @@ public class HUD_Control : MonoBehaviour
         if (Time.timeScale == 0)
         {
             Time.timeScale = 1;
-        }        
-        SceneManager.LoadScene ("MenuPrincipal");
+        }
+        TransicionEscena.enabled = true;
+        transicionFinNivel = true;
+
+        PlayerPrefs.DeleteKey ("continuaciones");
+        //Marcar la escena del Menu Principal, representada como "0" 
+        siguienteNivel = 0;
     }
-    private void MirarAd()
+    public void MirarAd()
+    {
+        Time.timeScale = 0;        
+        /*
+        if (adFinalizado == true)
+        {
+            CuadroPausa.enabled = false;
+            EfectoOscurecer.enabled = false;
+            barraVida.enabled = true;
+
+            ContenidoGameOver.gameObject.SetActive (false);
+            BtnMirarAd.gameObject.SetActive (false);
+            BtnSalir.gameObject.SetActive (false);
+            BtnPausa.gameObject.SetActive (true);
+
+            Time.timeScale = 1;
+            
+            player.enabled = true;
+            player.health = player.maxHealth;
+            player.estaMuerto = false;
+            player.GetComponent<BoxCollider2D> ().enabled = true;
+            player.GetComponent<Animator> ().SetTrigger ("Revivir");
+            
+        }
+        */
+
+        //adFinalizado = false;
+    }
+
+    public void adFinalizado()
     {
         CuadroPausa.enabled = false;
         EfectoOscurecer.enabled = false;
         barraVida.enabled = true;
-        
+        player.haRevivido = true;        
+
         ContenidoGameOver.gameObject.SetActive (false);
         BtnMirarAd.gameObject.SetActive (false);
         BtnSalir.gameObject.SetActive (false);
         BtnPausa.gameObject.SetActive (true);
 
+        continuaciones -= 1;
+
         Time.timeScale = 1;
-        player.enabled = true;
-        player.health = player.maxHealth;
-        player.estaMuerto = false;
-        player.GetComponent<BoxCollider2D> ().enabled = true;
-        player.GetComponent<Animator> ().SetTrigger ("Revivir");
-        //player.
-        //barraVida.value = player.maxHealth;
     }
+
+
+    //player.
+    //barraVida.value = player.maxHealth;
+
     private void GameOver()
     {
         CuadroPausa.enabled = true;
         EfectoOscurecer.enabled = true;
         barraVida.enabled = false;
-        //player.enabled = false;
-        Time.timeScale = 0;
+        player.GetComponent<DisparoAuto>().enabled = false;
+        //Time.timeScale = 0;
+
         ContenidoGameOver.gameObject.SetActive (true);
         BtnMirarAd.gameObject.SetActive (true);
         BtnSalir.gameObject.SetActive (true);
         BtnPausa.gameObject.SetActive (false);
+
+        BtnMirarAd.GetComponentInChildren<Text> ().text = mirarAd + " (" + continuaciones + ")";
+
+        if (continuaciones > 0)
+        {
+            BtnMirarAd.interactable = true;            
+        }
+        else
+        {
+            BtnMirarAd.interactable = false;
+            //BtnMirarAd.GetComponentInChildren<Text> ().text = mirarAd + " (" + continuaciones + ")";
+            textoMirarAd.color = Color.gray;
+        }
     }
 }

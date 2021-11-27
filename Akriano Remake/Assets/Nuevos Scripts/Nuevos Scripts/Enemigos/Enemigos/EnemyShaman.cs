@@ -11,6 +11,7 @@ public class EnemyShaman : MonoBehaviour
     public GameObject proyectil;
     public float timeToShoot;
     public float Shootcooldown;
+    public float balaSpd;
 
 
     Blink material;
@@ -28,7 +29,7 @@ public class EnemyShaman : MonoBehaviour
     private AudioSource audioSource;
 
     public AudioClip dañoShaman;
-    private AudioSource audioDolor;
+    //private AudioSource audioDolor;
 
 
     private void Start()
@@ -40,7 +41,7 @@ public class EnemyShaman : MonoBehaviour
         anim = GetComponent<Animator> ();
 
         audioSource = GetComponentInChildren<AudioSource>();
-        audioDolor = GetComponentInChildren<AudioSource>();
+        //audioDolor = GetComponentInChildren<AudioSource>();
 
         Player = GameObject.FindGameObjectWithTag ("Player");
 
@@ -77,8 +78,9 @@ public class EnemyShaman : MonoBehaviour
 
             if (Shootcooldown <= 0 && dist <= visionRadius)
             {
+                Vector3 balaDir = (target - transform.position).normalized;
                 GameObject bala = Instantiate (proyectil, transform.position, Quaternion.identity);
-                bala.GetComponent<Rigidbody2D> ().velocity = (target - transform.position) * new Vector2 (1f, 1f);
+                bala.GetComponent<Rigidbody2D> ().velocity = balaDir * balaSpd * Time.deltaTime;
                 Shootcooldown = timeToShoot;
 
                 audioSource.clip = ataqueShaman;
@@ -174,7 +176,7 @@ public class EnemyShaman : MonoBehaviour
                 anim.SetTrigger ("Muerte_Enemigo");
                 this.enabled = false;
                 GetComponent<BoxCollider2D> ().enabled = false;
-                Destroy (gameObject, 2f);
+                Destroy (gameObject, 1f);
             }
 
 
@@ -185,9 +187,9 @@ public class EnemyShaman : MonoBehaviour
     IEnumerator Damager()
     {
         isDamage = true;
-        //sprite.material = material.blink;
+        sprite.material = material.blink;
         yield return new WaitForSeconds (0.5f);
-        //sprite.material = material.original;
+        sprite.material = material.original;
         isDamage = false;
 
     }

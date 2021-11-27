@@ -26,5 +26,6 @@ public class CambioEscena : MonoBehaviour
         infoHUD.siguienteNivel = nuevoNivel;
         infoHUD.TransicionEscena.enabled = true;
         infoHUD.transicionFinNivel = true;
+        PlayerPrefs.SetInt ("continuaciones", infoHUD.continuaciones);
     }
 }
