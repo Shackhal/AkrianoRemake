@@ -143,7 +143,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0040051937, y: -0.12020874}
+  m_Offset: {x: -0.00000046938658, y: -0.14423747}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -154,7 +154,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3357396, y: 0.6066203}
+  m_Size: {x: 0.287682, y: 0.47045776}
   m_EdgeRadius: 0
 --- !u!114 &3103298057643934135
 MonoBehaviour:
@@ -169,10 +169,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  maxHealth: 25
-  inmunityTime: 0.75
+  maxHealth: 50
+  inmunityTime: 1
   cam: {fileID: 0}
-  estaMuerto: 0
+  haRevivido: 0
   target: {x: 0, y: 0, z: 0}
   speed: 4
   "da\xF1oAkriano": {fileID: 8300000, guid: 4e1397fa7bd7f12499073156ac469f18, type: 3}
@@ -204,9 +204,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sonidoAtaque: {fileID: 8300000, guid: 07040b462b85eae41891f995e48bb0f9, type: 3}
   projectile: {fileID: 1404401815895284741, guid: 349208307985f64419a1598c3b714323, type: 3}
-  timeToShoot: 0.8
+  timeToShoot: 0.5
   Shootcooldown: 0
-  visualRadius: 4
+  visualRadius: 3.5
   balaSpd: 1000
 --- !u!82 &3103298057643934141
 AudioSource:

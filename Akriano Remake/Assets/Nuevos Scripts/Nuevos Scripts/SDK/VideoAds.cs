@@ -8,8 +8,9 @@ public class VideoAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListe
     [SerializeField] string _iOsAdUnitId = "Rewarded_iOS";
     string _adUnitId;
 
-    public Player player;
-    public HUD_Control HUD;
+    //public Player player;
+    HUD_Control HUD;
+    //Canvas canvasBtn;
 
     void Awake()
     {
@@ -20,12 +21,20 @@ public class VideoAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListe
 
         //Disable button until ad is ready to show
         //_showAdButton.interactable = false;
+
+        //HUD = FindObjectOfType<HUD_Control> ();
+        //Debug.Log ("hud");
+
+        //canvasBtn = gameObject.GetComponentInChildren<Canvas> ();
     }
 
     private void Start()
     {
         LoadAd ();
+
         Advertisement.AddListener (this);
+
+        //_showAdButton.gameObject.SetActive (false);
     }
 
     // Load content to the Ad Unit:
@@ -60,6 +69,7 @@ public class VideoAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListe
 
         //recargar el Ad
         LoadAd ();
+        //Time.timeScale = 0;
     }
 
     // Implement the Show Listener's OnUnityAdsShowComplete callback method to determine if the user gets a reward:
@@ -118,18 +128,14 @@ public class VideoAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListe
         {
             //Aqui se debe brindar la recompensa al usuario
             //Revivir
-                        
-            player.enabled = true;
-            player.health = player.maxHealth;
-            //player.estaMuerto = false;
-            player.GetComponent<BoxCollider2D> ().enabled = true;
-            player.GetComponent<Animator> ().SetTrigger ("Revivir");
-            player.GetComponent<DisparoAuto> ().enabled = true;
+            Time.timeScale = 1;
 
+            HUD = FindObjectOfType<HUD_Control> ();
             HUD.adFinalizado ();
 
             Debug.Log ("RECOMPENSA!!");
         }
+
         if (showResult == ShowResult.Skipped)
         {
             Debug.Log ("NO HAY RECOMPENSA POR SER UN CHICO APURADO");

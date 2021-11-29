@@ -143,7 +143,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.13120279}
+  m_Offset: {x: -0.0013554692, y: -0.16643907}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -154,7 +154,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.375, y: 0.52418476}
+  m_Size: {x: 0.25844884, y: 0.38866124}
   m_EdgeRadius: 0
 --- !u!114 &1306607077227816862
 MonoBehaviour:
@@ -169,8 +169,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyName: Goblin
-  healthPoints: 30
-  damageToGive: 5
+  healthPoints: 25
+  damageToGive: 4
   knockbackForceX: 0
   knockbackForceY: 0
 --- !u!114 &1306607077227816863
@@ -187,7 +187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDamage: 0
   speed: 2
-  visionRadius: 5
+  visionRadius: 3.5
   ataqueEnemigo: {fileID: 8300000, guid: 386b832ef0c63f5409963c7f164f4ebf, type: 3}
   "da\xF1oEnemigo": {fileID: 8300000, guid: d3cbfdbe26c84604c9f1a8a2de1d8c10, type: 3}
 --- !u!114 &4498918451320493960

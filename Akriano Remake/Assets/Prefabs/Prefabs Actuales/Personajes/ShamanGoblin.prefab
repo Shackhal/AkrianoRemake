@@ -143,7 +143,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.027608395, y: -0.15914573}
+  m_Offset: {x: -0.009726286, y: -0.16748834}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -154,7 +154,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.44983578, y: 0.5883627}
+  m_Size: {x: 0.33777392, y: 0.4333802}
   m_EdgeRadius: 0
 --- !u!114 &1876233176045218558
 MonoBehaviour:
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyName: Shaman
   healthPoints: 20
-  damageToGive: 5
+  damageToGive: 3
   knockbackForceX: 0
   knockbackForceY: 0
 --- !u!114 &6336539573314541309
@@ -187,11 +187,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDamage: 0
   speed: 1
-  visionRadius: 5
+  visionRadius: 3
   proyectil: {fileID: 3230540940279727358, guid: fa7fd29ff25ed60498d9735ec0ea4a22, type: 3}
   timeToShoot: 1.5
   Shootcooldown: 0
-  balaSpd: 900
+  balaSpd: 600
   ataqueShaman: {fileID: 8300000, guid: 964842a4ca5df8147a8ec83353b6792e, type: 3}
   "da\xF1oShaman": {fileID: 8300000, guid: fde3d632319a5a4418682267958caa91, type: 3}
 --- !u!114 &9117991561619238101

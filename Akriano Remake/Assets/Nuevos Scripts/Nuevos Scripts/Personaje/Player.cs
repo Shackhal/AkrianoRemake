@@ -91,24 +91,30 @@ public class Player : MonoBehaviour
             health = maxHealth;
         }
 
-        if (health <= 0)
+        if (haRevivido == true)
         {
-            anim.SetTrigger ("Muerte");                     
+            //this.enabled = true;
+            //health = maxHealth;
+            //player.estaMuerto = false;
+
+            GetComponent<BoxCollider2D> ().enabled = true;
+            anim.SetTrigger ("Revivir");
+            GetComponent<DisparoAuto> ().enabled = true;
+
+            StartCoroutine (Inmunity ());
+            haRevivido = false;
+        }
+        else if (health <= 0)
+        {
+            anim.SetTrigger ("Muerte");
             gameObject.GetComponent<BoxCollider2D> ().enabled = false;
+            gameObject.GetComponent<DisparoAuto> ().enabled = false;
             this.enabled = false;
-
             
-
             //gameObject.GetComponent<BoxCollider2D> ().enabled = false;
             //Destroy (gameObject, 20);
         }
 
-        if (haRevivido == true)
-        {
-            StartCoroutine (Inmunity ());
-            haRevivido = false;
-        }
-        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

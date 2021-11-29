@@ -183,8 +183,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyName: Boss
-  healthPoints: 50
-  damageToGive: 5
+  healthPoints: 40
+  damageToGive: 3
   knockbackForceX: 0
   knockbackForceY: 0
 --- !u!114 &2884179291833535460
@@ -201,7 +201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDamage: 0
   speed: 0
-  visionRadius: 6
+  visionRadius: 4
   timeToShoot: 0.6
   Shootcooldown: 0
   proyectil: {fileID: 3230540940279727358, guid: fa7fd29ff25ed60498d9735ec0ea4a22, type: 3}
@@ -221,7 +221,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5b62766d44f75a441a1029556c55364b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.4
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0

@@ -169,7 +169,7 @@ public class EnemyHealth : MonoBehaviour
         isDamage = true;
         //sprite.color = Color.cyan;
         sprite.material = material.blink;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.1f);
         //sprite.color = Color.white;
         sprite.material = material.original;
         isDamage = false;

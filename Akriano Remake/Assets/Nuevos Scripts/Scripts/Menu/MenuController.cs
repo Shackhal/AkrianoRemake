@@ -18,9 +18,17 @@ public class MenuController : MonoBehaviour
     public bool transicionInicio;
     public bool transicionJugar;
 
+    public GameObject SDK;
+
+    private GameObject sdkObj;
+    private GameObject BtnMirarAd;
+
+    private int isSDK;
+
     //Image transicion;
     //bool enTransicion;
-    
+
+    //GameObject sdk;
 
     // Start is called before the first frame update
     void Start()
@@ -32,12 +40,48 @@ public class MenuController : MonoBehaviour
         CuadroCreditos.enabled = false;
         EfectoOscurecer.enabled = false;
         TransicionEscena.enabled = true;
-        TextoCreditos.gameObject.SetActive(false);
-        BtnCerrar.gameObject.SetActive(false);
+        TextoCreditos.gameObject.SetActive (false);
+        BtnCerrar.gameObject.SetActive (false);
         BtnJugar.gameObject.SetActive (true);
 
         transicionInicio = true;
         transicionJugar = false;
+
+        //PlayerPrefs "isSDK" / 0 = false, 1 = true
+
+        if (PlayerPrefs.HasKey ("isSDK"))
+        {
+            isSDK = PlayerPrefs.GetInt ("isSDK");
+        }
+        else
+        {
+            isSDK = 0;
+        }
+
+        if (isSDK == 0)
+        {
+            sdkObj = Instantiate (SDK, transform.position, Quaternion.identity);
+            BtnMirarAd = GameObject.FindGameObjectWithTag ("MirarAd");
+            BtnMirarAd.GetComponent<RectTransform> ().localPosition = new Vector3 (0f, 220f, 0f);
+            PlayerPrefs.SetString ("textBtnAd", "MIRAR AD");   
+
+            PlayerPrefs.SetInt ("isSDK", 1);
+        }
+        else
+        {
+            BtnMirarAd = GameObject.FindGameObjectWithTag ("MirarAd");
+            BtnMirarAd.GetComponentInChildren<Text>().text = PlayerPrefs.GetString ("textBtnAd");
+            BtnMirarAd.GetComponentInChildren<Text> ().color = Color.white;
+            BtnMirarAd.GetComponent<RectTransform> ().localPosition = new Vector3 (0f, 220f, 0f);
+            //BtnMirarAd.GetComponent<Text> ().text = PlayerPrefs.GetString ("textBtnAd");
+        }
+
+        
+        //PlayerPrefs.SetInt ("checkSDK", 0);
+
+
+
+
     }
 
     // Update is called once per frame
@@ -100,4 +144,10 @@ public class MenuController : MonoBehaviour
         BtnOpciones.gameObject.SetActive (false);
         BtnJugar.gameObject.SetActive (false);
     }
+    
+    private void OnApplicationQuit()
+    {
+        PlayerPrefs.DeleteAll ();
+    }
+    
 }

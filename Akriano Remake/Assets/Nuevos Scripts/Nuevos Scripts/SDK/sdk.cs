@@ -11,8 +11,9 @@ public class sdk : MonoBehaviour, IUnityAdsInitializationListener {
     void Awake()
     {
         InitializeAds ();
+        DontDestroyOnLoad (gameObject);        
     }
-
+        
     public void InitializeAds()
     {
         _gameId = (Application.platform == RuntimePlatform.IPhonePlayer)

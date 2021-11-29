@@ -188,7 +188,7 @@ public class EnemyShaman : MonoBehaviour
     {
         isDamage = true;
         sprite.material = material.blink;
-        yield return new WaitForSeconds (0.5f);
+        yield return new WaitForSeconds (0.1f);
         sprite.material = material.original;
         isDamage = false;
 

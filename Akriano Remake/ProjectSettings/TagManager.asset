@@ -10,6 +10,7 @@ TagManager:
   - Enemigo
   - Puerta
   - Escenario
+  - MirarAd
   layers:
   - Default
   - TransparentFX

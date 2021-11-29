@@ -7,8 +7,13 @@ public class CambioEscena : MonoBehaviour
     public HUD_Control infoHUD;
 
     public int nuevoNivel;
-    
+
     // Start is called before the first frame update
+    private void Awake()
+    {
+        infoHUD = FindObjectOfType<HUD_Control>();
+    }
+
     void Start()
     {
         
